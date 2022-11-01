@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "Moon Light Music (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "Moon Light Music (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}
