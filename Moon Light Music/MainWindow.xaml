@@ -8,9 +8,11 @@
     xmlns:windowex="using:WinUIEx"
     MinWidth="500"
     MinHeight="500"
+    
     PersistenceId="MainWindow"
     mc:Ignorable="d">
     <windowex:WindowEx.Backdrop>
-        <windowex:MicaSystemBackdrop/>
+        <windowex:AcrylicSystemBackdrop  DarkTintOpacity="0" LightTintOpacity="0.4" DarkLuminosityOpacity="0" LightLuminosityOpacity="0.5" LightTintColor="LightPink" />
     </windowex:WindowEx.Backdrop>
+
 </windowex:WindowEx>

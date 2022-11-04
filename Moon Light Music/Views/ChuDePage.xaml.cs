@@ -16,4 +16,6 @@ public sealed partial class ChuDePage : Page
         ViewModel = App.GetService<ChuDeViewModel>();
         InitializeComponent();
     }
+
+
 }

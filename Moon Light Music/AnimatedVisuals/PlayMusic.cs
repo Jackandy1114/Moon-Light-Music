@@ -6,7 +6,8 @@
 //           7.1.1+g046e9eb0a2
 //       
 //       Command:
-//           LottieGen -Language CSharp -Public -WinUIVersion 2.4 -InputFile PlayMusic.json
+//           LottieGen -
+//           CSharp -Public -WinUIVersion 2.4 -InputFile PlayMusic.json
 //       
 //       Input file:
 //           PlayMusic.json (206292 bytes created 6:21+07:00 Nov 1 2022)

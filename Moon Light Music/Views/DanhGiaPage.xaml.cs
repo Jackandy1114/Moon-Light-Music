@@ -16,4 +16,10 @@ public sealed partial class DanhGiaPage : Page
         ViewModel = App.GetService<DanhGiaViewModel>();
         InitializeComponent();
     }
+
+    private async void Button_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    {
+
+
+    }
 }

@@ -25,6 +25,9 @@ public class SettingsViewModel : ObservableRecipient
         set => SetProperty(ref _elementTheme, value);
     }
 
+
+
+
     public string VersionDescription
     {
         get => _versionDescription;
@@ -52,6 +55,7 @@ public class SettingsViewModel : ObservableRecipient
 
                 }
             });
+
     }
 
     private static string GetVersionDescription()

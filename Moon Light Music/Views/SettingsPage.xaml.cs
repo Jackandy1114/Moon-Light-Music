@@ -1,4 +1,5 @@
-﻿using Microsoft.UI.Xaml.Controls;
+﻿using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
 
 using Moon_Light_Music.ViewModels;
 
@@ -17,4 +18,15 @@ public sealed partial class SettingsPage : Page
         ViewModel = App.GetService<SettingsViewModel>();
         InitializeComponent();
     }
+
+
+    private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        UIElement? _shell = App.GetService<ShellPage>();
+
+        App.MainWindow.Content = _shell ?? new Frame();
+    }
+
+    //List<string> listIMG = new List<string>();
+
 }

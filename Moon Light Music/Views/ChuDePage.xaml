@@ -7,6 +7,14 @@
     mc:Ignorable="d">
 
     <Grid x:Name="ContentArea">
-        
+
+        <ListView
+            ItemsSource="{x:Bind ViewModel.Songs}"
+                      Style="{StaticResource AlbumListView}"
+                      Background="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}">
+                    
+
+                </ListView>
+          
     </Grid>
 </Page>

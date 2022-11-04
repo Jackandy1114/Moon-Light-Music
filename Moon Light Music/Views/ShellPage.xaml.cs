@@ -21,7 +21,7 @@ public sealed partial class ShellPage : Page
     }
 
 
-    public string _logoTheme;
+    public string _logoTheme = "";
     public string LogoTheme
     {
         get => _logoTheme = ActualTheme == ElementTheme.Light ? "/Image/Logo/Light.png" : "/Image/Logo/Dark.png"; set => _logoTheme = value;

@@ -9,7 +9,6 @@
     xmlns:i="using:Microsoft.Xaml.Interactivity"
       xmlns:animatedvisuals="using:Microsoft.UI.Xaml.Controls.AnimatedVisuals"
       Loaded="OnLoaded">
-
     <Grid>
         <Grid x:Name="AppTitleBar"
               Canvas.ZIndex="1"

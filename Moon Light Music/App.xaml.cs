@@ -97,9 +97,9 @@ public partial class App : Application
 
             // Configuration
             services.Configure<LocalSettingsOptions>(context.Configuration.GetSection(nameof(LocalSettingsOptions)));
+            //services.Configure<OAuthTokken>(context.Configuration.GetSection(nameof(OAuthTokken)));
         }).
         Build();
-
         App.GetService<IAppNotificationService>().Initialize();
 
         UnhandledException += App_UnhandledException;
@@ -110,12 +110,15 @@ public partial class App : Application
         // TODO: Log and handle exceptions as appropriate.
         // https://docs.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.application.unhandledexception.
     }
-
     protected async override void OnLaunched(LaunchActivatedEventArgs args)
     {
+        //CultureInfo.CurrentCulture = new CultureInfo("en-US");
+        //CultureInfo.CurrentUICulture = new CultureInfo("en-US");
+
         base.OnLaunched(args);
 
         App.GetService<IAppNotificationService>().Show(string.Format("AppNotificationSamplePayload".GetLocalized(), AppContext.BaseDirectory));
+
 
         await App.GetService<IActivationService>().ActivateAsync(args);
     }

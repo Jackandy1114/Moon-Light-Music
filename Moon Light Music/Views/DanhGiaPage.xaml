@@ -7,6 +7,11 @@
     mc:Ignorable="d">
 
     <Grid x:Name="ContentArea">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" Click="Button_Click"></Button>
         
     </Grid>
 </Page>

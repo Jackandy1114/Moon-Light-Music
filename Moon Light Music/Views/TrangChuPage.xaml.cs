@@ -16,4 +16,6 @@ public sealed partial class TrangChuPage : Page
         ViewModel = App.GetService<TrangChuViewModel>();
         InitializeComponent();
     }
+
+
 }
