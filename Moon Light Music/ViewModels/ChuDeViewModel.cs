@@ -5,6 +5,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 
+using Moon_Light_Music.Contracts.Services;
 using Moon_Light_Music.Dialog;
 using Moon_Light_Music.Models;
 
@@ -17,27 +18,32 @@ namespace Moon_Light_Music.ViewModels;
 
 public class ChuDeViewModel : ObservableRecipient
 {
+    private readonly IOAuthTokkenService _oAuthTokkenService;
+    public UIElement _shell;
+
     public ObservableCollection<Item> Songs
     {
         get; set;
     }
 
-    public static string _oAuthTokken
+    private string _oAuthTokken;
+    public string OAuthTokken
     {
-        get; set;
+        get => _oAuthTokken;
+        set => SetProperty(ref _oAuthTokken, value);
     }
 
-    = @"BQA4poEwI8SuOy1E64deES9kZAGJnECDICbZLUVdKBc_OsTX5vJJYRvs8HyyG7ehdNtIfrPZH2oiksGAqL0iWjn72VZd5BRXNa2tVf535oTzqjWbf-Hs8Df_CFgGbFuG-2u1Z-5RbTZKp3EkgAX2BWaMB7zYZbjClC0SBKcjSCFacMubfQW7eXH306Y6TUsaLto"
-    ;
-    public ChuDeViewModel()
+    public int _limit
     {
+        get; set;
+    } = 0;
 
+    public ChuDeViewModel(IOAuthTokkenService oAuthTokkenService)
+    {
+        _limit += 10;
+        _oAuthTokkenService = oAuthTokkenService;
+        _oAuthTokken = _oAuthTokkenService.OAuthTokken;
 
-        //OAuth2Tokken = (string)_dataContainer.Values["OAuthTokken"];
-
-        //Task.Run(async () => OAuth2Tokken = await App.GetService<ILocalSettingsService>().ReadSettingAsync<string>("OAuthTokken"));
-
-        //_oAuthTokken.Tokken = App.GetService<ILocalSettingsService>().ReadSettingAsync<string>("OAuthTokken").Result;
         Songs = new ObservableCollection<Item>();
         PopulationCollection(_oAuthTokken);
     }
@@ -48,7 +54,7 @@ public class ChuDeViewModel : ObservableRecipient
         var client = new RestClient();
 
         client.Authenticator = new OAuth2AuthorizationRequestHeaderAuthenticator($"{OAuth2Tokken}", "Bearer");
-        var request = new RestRequest(@"https://api.spotify.com/v1/browse/new-releases?country=VN&limit=30&offset=10", Method.Get);
+        var request = new RestRequest(@$"https://api.spotify.com/v1/browse/new-releases?country=VN&limit={_limit}&offset=10", Method.Get);
         request.AddHeader("Accept", "application/json");
         request.AddHeader("Content-Type", "application/json");
         var respone = new RestResponse();
@@ -82,13 +88,14 @@ public class ChuDeViewModel : ObservableRecipient
             {
                 var _content = (TrangChuContentDiaglog)_dialog.Content;
                 _oAuthTokken = _content.New_OAuthor2Tokken;
-                //_dataContainer.Values["OAuthTokken"] = OAuth2Tokken;
-                //await App.GetService<ILocalSettingsService>().SaveSettingAsync("OAuthTokken", _oAuthTokken.Tokken);
+
+                await _oAuthTokkenService.SetTokkenAsync(_oAuthTokken);
             }
         }
         finally
         {
-            App.MainWindow.Content.UpdateLayout();
+            //_shell = App.GetService<ChuDePage>();
+            //App.MainWindow.Content = _shell ?? new Frame();
         }
     }
 }

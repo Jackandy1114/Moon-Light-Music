@@ -7,14 +7,17 @@
     mc:Ignorable="d">
 
     <Grid x:Name="ContentArea">
-
-        <ListView
-            ItemsSource="{x:Bind ViewModel.Songs}"
-                      Style="{StaticResource AlbumListView}"
-                      Background="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}">
-                    
-
-                </ListView>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <ListView Grid.Row="0" ItemsSource="{x:Bind ViewModel.Songs}"
+                  Style="{StaticResource AlbumListView}"
+                  Background="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}">
+        </ListView>
+        <Button Grid.Row="1" x:Uid="btn_Themnoidung" Content="Tiếp" Width="200" >
+            
+        </Button>
           
     </Grid>
 </Page>
