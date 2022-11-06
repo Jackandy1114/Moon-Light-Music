@@ -9,9 +9,10 @@ namespace Moon_Light_Music.Dialog;
 /// </summary>
 public sealed partial class TrangChuContentDiaglog : Page
 {
+    private string? _new_OAuthor2Tokken;
     public string New_OAuthor2Tokken
     {
-        get; set;
+        get => _new_OAuthor2Tokken!; set => _new_OAuthor2Tokken = value;
     }
     public TrangChuContentDiaglog()
     {

@@ -6,7 +6,7 @@ public class OAuthTokkenService : IOAuthTokkenService
     public string OAuthTokken
     {
         get; set;
-    }
+    } = String.Empty;
     private const string SettingsKey = "OAuthTokken";
 
     private readonly ILocalSettingsService _localSettingsService;
@@ -24,7 +24,7 @@ public class OAuthTokkenService : IOAuthTokkenService
     private async Task<string> LoadTokkenFromSettingsAsync()
     {
         var tokken = await _localSettingsService.ReadSettingAsync<string>(SettingsKey);
-        return tokken;
+        return tokken != null ? tokken : "null";
     }
     private async Task SaveTokkenInSettingsAsync(string tokken)
     {

@@ -9,13 +9,13 @@ namespace Moon_Light_Music.Services;
 
 public class ActivationService : IActivationService
 {
-    private readonly ActivationHandler<LaunchActivatedEventArgs> _defaultHandler;
+    private readonly ActivationHandler<Microsoft.UI.Xaml.LaunchActivatedEventArgs> _defaultHandler;
     private readonly IEnumerable<IActivationHandler> _activationHandlers;
     private readonly IThemeSelectorService _themeSelectorService;
     private readonly IOAuthTokkenService _oAuthTokkenService;
     private UIElement? _shell = null;
 
-    public ActivationService(ActivationHandler<LaunchActivatedEventArgs> defaultHandler, IEnumerable<IActivationHandler> activationHandlers, IThemeSelectorService themeSelectorService, IOAuthTokkenService oAuthTokkenService)
+    public ActivationService(ActivationHandler<Microsoft.UI.Xaml.LaunchActivatedEventArgs> defaultHandler, IEnumerable<IActivationHandler> activationHandlers, IThemeSelectorService themeSelectorService, IOAuthTokkenService oAuthTokkenService)
     {
         _defaultHandler = defaultHandler;
         _activationHandlers = activationHandlers;
@@ -27,7 +27,11 @@ public class ActivationService : IActivationService
     {
         // Execute tasks before activation.
         await InitializeAsync();
-
+        //if ((activationArgs as Windows.ApplicationModel.Activation.LaunchActivatedEventArgs).PreviousExecutionState != ApplicationExecutionState.Running)
+        //{
+        //    bool loadState = ((activationArgs as Windows.ApplicationModel.Activation.LaunchActivatedEventArgs).PreviousExecutionState != ApplicationExecutionState.Terminated);
+        //    ExtendedSplash extendedSplash = new ExtendedSplash();
+        //}
         // Set the MainWindow Content.
         if (App.MainWindow.Content == null)
         {
@@ -72,5 +76,10 @@ public class ActivationService : IActivationService
         await _themeSelectorService.SetRequestedThemeAsync();
         await _oAuthTokkenService.SetRequestedTokkenAsync();
         await Task.CompletedTask;
+    }
+    void DismissExtendedSplash()
+    {
+        //Navigate to mainpage
+
     }
 }

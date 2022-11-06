@@ -26,7 +26,7 @@ namespace Moon_Light_Music.Models
     public partial class TrackModel
     {
         [JsonProperty("albums")]
-        public Albums Albums
+        public Albums? Albums
         {
             get; set;
         }
@@ -35,13 +35,13 @@ namespace Moon_Light_Music.Models
     public partial class Albums
     {
         [JsonProperty("href")]
-        public Uri Href
+        public Uri? Href
         {
             get; set;
         }
 
         [JsonProperty("items")]
-        public Item[] Items
+        public Item[]? Items
         {
             get; set;
         }
@@ -53,7 +53,7 @@ namespace Moon_Light_Music.Models
         }
 
         [JsonProperty("next")]
-        public Uri Next
+        public Uri? Next
         {
             get; set;
         }
@@ -65,7 +65,7 @@ namespace Moon_Light_Music.Models
         }
 
         [JsonProperty("previous")]
-        public Uri Previous
+        public Uri? Previous
         {
             get; set;
         }
@@ -80,49 +80,49 @@ namespace Moon_Light_Music.Models
     public partial class Item
     {
         [JsonProperty("album_type")]
-        public string AlbumType
+        public string? AlbumType
         {
             get; set;
         }
 
         [JsonProperty("artists")]
-        public Artist[] Artists
+        public Artist[]? Artists
         {
             get; set;
         }
 
         [JsonProperty("available_markets")]
-        public string[] AvailableMarkets
+        public string[]? AvailableMarkets
         {
             get; set;
         }
 
         [JsonProperty("external_urls")]
-        public ExternalUrls ExternalUrls
+        public ExternalUrls? ExternalUrls
         {
             get; set;
         }
 
         [JsonProperty("href")]
-        public Uri Href
+        public Uri? Href
         {
             get; set;
         }
 
         [JsonProperty("id")]
-        public string Id
+        public string? Id
         {
             get; set;
         }
 
         [JsonProperty("images")]
-        public Image[] Images
+        public Image[]? Images
         {
             get; set;
         }
 
         [JsonProperty("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -134,7 +134,7 @@ namespace Moon_Light_Music.Models
         }
 
         [JsonProperty("release_date_precision")]
-        public string ReleaseDatePrecision
+        public string? ReleaseDatePrecision
         {
             get; set;
         }
@@ -146,13 +146,13 @@ namespace Moon_Light_Music.Models
         }
 
         [JsonProperty("type")]
-        public string Type
+        public string? Type
         {
             get; set;
         }
 
         [JsonProperty("uri")]
-        public string Uri
+        public string? Uri
         {
             get; set;
         }
@@ -161,37 +161,37 @@ namespace Moon_Light_Music.Models
     public partial class Artist
     {
         [JsonProperty("external_urls")]
-        public ExternalUrls ExternalUrls
+        public ExternalUrls? ExternalUrls
         {
             get; set;
         }
 
         [JsonProperty("href")]
-        public Uri Href
+        public Uri? Href
         {
             get; set;
         }
 
         [JsonProperty("id")]
-        public string Id
+        public string? Id
         {
             get; set;
         }
 
         [JsonProperty("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
 
         [JsonProperty("type")]
-        public string Type
+        public string? Type
         {
             get; set;
         }
 
         [JsonProperty("uri")]
-        public string Uri
+        public string? Uri
         {
             get; set;
         }
@@ -200,7 +200,7 @@ namespace Moon_Light_Music.Models
     public partial class ExternalUrls
     {
         [JsonProperty("spotify")]
-        public Uri Spotify
+        public Uri? Spotify
         {
             get; set;
         }
@@ -215,7 +215,7 @@ namespace Moon_Light_Music.Models
         }
 
         [JsonProperty("url")]
-        public Uri Url
+        public Uri? Url
         {
             get; set;
         }
@@ -229,7 +229,7 @@ namespace Moon_Light_Music.Models
 
     public partial class TrackModel
     {
-        public static TrackModel FromJson(string json) => JsonConvert.DeserializeObject<TrackModel>(json, Models.Converter.Settings);
+        public static TrackModel FromJson(string json) => JsonConvert.DeserializeObject<TrackModel>(json, Models.Converter.Settings)!;
     }
 
     public static class Serialize

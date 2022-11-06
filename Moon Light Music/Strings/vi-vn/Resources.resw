@@ -169,7 +169,7 @@
     <value>Mặc định</value>
   </data>
   <data name="Settings_About.Text" xml:space="preserve">
-    <value>About this application</value>
+    <value>Về ứng dụng này</value>
   </data>
   <data name="Settings_AboutDescription.Text" xml:space="preserve">
     <value>Ứng dụng này là tinh túy tinh hoa những gì mà học được và có thể ứng dụng được đến hiện tại</value>
@@ -204,5 +204,8 @@ activationType="foreground"/&gt;
   </data>
   <data name="TextBlock_TrangChuDialog.Text" xml:space="preserve">
     <value>Nhập tokken mới vào đi em yêu</value>
+  </data>
+  <data name="btn_Themnoidung.Content" xml:space="preserve">
+    <value>Tải thêm nội dung</value>
   </data>
 </root>

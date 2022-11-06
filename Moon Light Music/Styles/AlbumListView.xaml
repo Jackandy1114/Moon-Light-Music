@@ -1,6 +1,8 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+﻿<ResourceDictionary x:Class="Moon_Light_Music.Styles.AlbumListView"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:local="using:Moon_Light_Music.Styles"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  
                     >
     <Style TargetType="ListView" x:Key="AlbumListView">
         <Setter Property="ItemContainerStyle">
@@ -9,42 +11,53 @@
                     <Setter Property="Template">
                         <Setter.Value>
                             <ControlTemplate TargetType="ListViewItem">
-                                <ContentPresenter Margin="12" OpticalMarginAlignment="TrimSideBearings"
-                                                   BorderBrush="{StaticResource AcrylicBackgroundFillColorDefaultInverseBrush}"/>
+                                <ContentPresenter Margin="12"
+                                        
+                                                  />
                             </ControlTemplate>
                         </Setter.Value>
+
                     </Setter>
                 </Style>
             </Setter.Value>
         </Setter>
+        <Setter Property="Background" Value="Transparent">
+            
+        </Setter>
+        <!--Có thể sử dụng flipview để nhìn cho nó đẹp hơn-->
                 <Setter Property="ItemTemplate">
             <Setter.Value>
                 <DataTemplate>
-                    <Grid VerticalAlignment="Center">
+                    <Grid VerticalAlignment="Center"  HorizontalAlignment="Left" ColumnSpacing="150"
+                          >
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
+                        <Border CornerRadius="20"
+                                PointerEntered="element_PointerEntered"
+                                PointerExited="element_PointerExited">
 
                             <Image Grid.Column="0"
-                                   Source="{Binding Images[1].Url}" Width="300" Height="300"
+                                   
+                                   Source="{Binding Images[1].Url}" Width="200" Height="200"
                                />
+                        </Border>
 
                         <Grid Grid.Column="1">
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="6*" />
-                                <RowDefinition Height="3*"/>
+                                <RowDefinition Height="3*" />
+                                <RowDefinition Height="2*"/>
                                 <RowDefinition />
                             </Grid.RowDefinitions>
-                        <TextBlock FontSize="24"  Grid.Row="0" TextWrapping="WrapWholeWords" Text="{Binding Name}" />
+                        <HyperlinkButton  FontSize="24" VerticalAlignment="Top"  Grid.Row="0" Content="{Binding Name}" />
                            
-                            <TextBlock FontSize="14"
+                            <HyperlinkButton FontSize="18"
                                        VerticalAlignment="Center"
-                                       TextWrapping="WrapWholeWords"
                                        Grid.Row="1"
-                                       Text="{Binding Artists[0].Name}" 
+                                       Content="{ Binding Artists[0].Name}" 
                                        />
-                            <TextBlock FontSize="14"
+                            <TextBlock Margin="12 0" FontSize="16"
                                        VerticalAlignment="Center"
                                        TextWrapping="WrapWholeWords"
                                        Grid.Row="2"

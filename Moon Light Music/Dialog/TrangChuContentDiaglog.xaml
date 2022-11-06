@@ -11,7 +11,7 @@
            
     <TextBlock x:Uid="TextBlock_TrangChuDialog"
                TextWrapping="Wrap"
-               Text="Nhập tokken mới vào đi em yêu" />
+               Text="Nhập tokken mới vào đi em yêu" Style="{StaticResource BodyStrongTextBlockStyle}" />
         <TextBox  Text="{x:Bind New_OAuthor2Tokken, Mode=TwoWay}"
                  PlaceholderText="Nhập tokken"></TextBox>
     </StackPanel>

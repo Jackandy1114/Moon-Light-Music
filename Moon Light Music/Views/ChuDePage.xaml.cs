@@ -1,6 +1,5 @@
 ﻿using Microsoft.UI.Xaml.Controls;
 
-using Moon_Light_Music.Helpers;
 using Moon_Light_Music.ViewModels;
 
 namespace Moon_Light_Music.Views;
@@ -13,7 +12,7 @@ public sealed partial class ChuDePage : Page
         get;
     }
 
-    public NavigationHelper _navigationHelper;
+    //public NavigationHelper _navigationHelper;
 
     public ChuDePage()
     {

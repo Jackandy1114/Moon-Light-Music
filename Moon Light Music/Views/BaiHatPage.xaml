@@ -7,6 +7,19 @@
     mc:Ignorable="d">
 
     <Grid x:Name="ContentArea">
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <ListView Grid.Row="0" HorizontalContentAlignment="Left"
+                  ItemsSource="{x:Bind ViewModel.Songs}"
+                  Style="{StaticResource AlbumListView}">
+        </ListView>
+        <Button Grid.Row="1" HorizontalAlignment="Center"
+                x:Uid="btn_Themnoidung"
+                Width="200"
+                Command="{x:Bind ViewModel.moreListcommand}">
+
+        </Button>
     </Grid>
 </Page>

@@ -17,9 +17,5 @@ public sealed partial class DanhGiaPage : Page
         InitializeComponent();
     }
 
-    private async void Button_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
-    {
 
-
-    }
 }

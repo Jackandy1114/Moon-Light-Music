@@ -15,5 +15,6 @@ public sealed partial class BaiHatPage : Page
     {
         ViewModel = App.GetService<BaiHatViewModel>();
         InitializeComponent();
+
     }
 }
