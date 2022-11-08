@@ -64,6 +64,11 @@
                   </com:ExeServer>
               </com:ComServer>
           </com:Extension>
+          <uap:Extension Category="windows.mediaPlayback">
+              <uap:MediaPlayback>
+                  <uap:Codec Name="mp3"/>
+              </uap:MediaPlayback>
+          </uap:Extension>
       </Extensions>
     </Application>
   </Applications>

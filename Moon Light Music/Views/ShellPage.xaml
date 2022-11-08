@@ -7,27 +7,36 @@
     xmlns:helpers="using:Moon_Light_Music.Helpers"
     xmlns:behaviors="using:Moon_Light_Music.Behaviors"
     xmlns:i="using:Microsoft.Xaml.Interactivity"
-      xmlns:animatedvisuals="using:Microsoft.UI.Xaml.Controls.AnimatedVisuals"
+      xmlns:animatedvisuals="using:Moon_Light_Music.AnimatedVisuals"
+      xmlns:winuiex="using:WinUIEx"
       Loaded="OnLoaded">
     <Grid>
+      
         <Grid x:Name="AppTitleBar"
-              Canvas.ZIndex="1"
+              Canvas.ZIndex="2"
               Height="{Binding ElementName=NavigationViewControl, Path=CompactPaneLength}"
               IsHitTestVisible="True"
               VerticalAlignment="Top">
-            <Image Source="/Assets/WindowIcon.ico"
-                   HorizontalAlignment="Left"
-                   Width="16"
-                   Height="16" />
-            <TextBlock x:Name="AppTitleBarText"
+            <Image 
+                   Source="\Image\Logo\1.png"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                Opacity="0.2"
+                   Stretch="UniformToFill"
+                   Height="32" Width="32" />
+            <TextBlock Grid.Column="1"
+                       x:Name="AppTitleBarText"
                        VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
                        TextWrapping="NoWrap"
+                
                        Style="{StaticResource CaptionTextBlockStyle}"
-                       Margin="28,0,0,0"/>
+                       Margin="0,0,0,0" />
+
         </Grid>
         <NavigationView
             x:Name="NavigationViewControl"
-            Canvas.ZIndex="0"
+            Canvas.ZIndex="1"
             IsBackButtonVisible="Visible"
             IsBackEnabled="{x:Bind ViewModel.IsBackEnabled, Mode=OneWay}"
             SelectedItem="{x:Bind ViewModel.Selected, Mode=OneWay}"
@@ -36,7 +45,6 @@
             DisplayModeChanged="NavigationViewControl_DisplayModeChanged"
             Header="{x:Bind ((ContentControl)ViewModel.Selected).Content, Mode=OneWay}">
             <NavigationView.PaneHeader>
-
                 <Image
                        Stretch="Uniform"
                        VerticalAlignment="Top"
@@ -57,11 +65,21 @@
                                   Glyph="&#xe80f;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Uid="Shell_ChuDe" helpers:NavigationHelper.NavigateTo="Moon_Light_Music.ViewModels.ChuDeViewModel">
+                <NavigationViewItem x:Uid="Shell_ChuDe">
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}"
                                   Glyph="&#xe90b;"/>
                     </NavigationViewItem.Icon>
+                    <NavigationViewItem.MenuItems>
+                        <NavigationViewItem x:Uid="Shell_ChuDe_child_1"
+                                            helpers:NavigationHelper.NavigateTo="Moon_Light_Music.ViewModels.ChuDeViewModel">
+                            <NavigationViewItem.Icon>
+                                
+                        <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}"
+                                  Glyph="&#xe90b;" />
+                            </NavigationViewItem.Icon>
+                        </NavigationViewItem>
+                    </NavigationViewItem.MenuItems>
                 </NavigationViewItem>
                 <NavigationViewItem x:Uid="Shell_BaiHat" helpers:NavigationHelper.NavigateTo="Moon_Light_Music.ViewModels.BaiHatViewModel">
                     <NavigationViewItem.Icon>
@@ -136,8 +154,30 @@
                 </behaviors:NavigationViewHeaderBehavior>
             </i:Interaction.Behaviors>
             <Grid Margin="{StaticResource NavigationViewPageContentMargin}">
-                <Frame x:Name="NavigationFrame" />
+                <Frame x:Name="NavigationFrame" >
+                 
+                </Frame>
             </Grid>
         </NavigationView>
+        <Grid Background="Transparent" Canvas.ZIndex="1"
+              VerticalAlignment="Top"
+              HorizontalAlignment="Right"
+              Height="200"
+              Margin="50">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Slider Grid.Row="0"
+                    MaxWidth="500"
+                    MinWidth="350" />
+            <Button Grid.Row="1" Content="Choi Nhac tu may tinh" Click="Button_Click" />
+            <Button Grid.Row="2" Content="choi nhac tren web"
+                    Click="Button_Click_1"></Button>
+            <winuiex:MediaPlayerElement Grid.Row="3"
+                                        x:Name="mediaPlayerElement" />
+        </Grid>
     </Grid>
 </Page>

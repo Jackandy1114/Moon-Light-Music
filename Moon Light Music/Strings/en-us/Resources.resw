@@ -200,4 +200,22 @@
   <data name="btn_Themnoidung.Content" xml:space="preserve">
     <value>Load More Songs</value>
   </data>
+  <data name="AlbumsListViewArtists.Text" xml:space="preserve">
+    <value>Artists:</value>
+  </data>
+  <data name="tbAlbumsTotalTracks.Text" xml:space="preserve">
+    <value>Total tracks:</value>
+  </data>
+  <data name="tbAlbumsListViewName.Text" xml:space="preserve">
+    <value>Albums Name:</value>
+  </data>
+  <data name="tbAlbumsReleaseDate.Text" xml:space="preserve">
+    <value>Rekease Date:</value>
+  </data>
+  <data name="Sehll_ChuDe_child_1.ToolTipService.ToolTip" xml:space="preserve">
+    <value>List Albums</value>
+  </data>
+  <data name="Shell_ChuDe_child_1.Content" xml:space="preserve">
+    <value>List Albums</value>
+  </data>
 </root>

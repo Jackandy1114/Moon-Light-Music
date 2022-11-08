@@ -208,4 +208,22 @@ activationType="foreground"/&gt;
   <data name="btn_Themnoidung.Content" xml:space="preserve">
     <value>Tải thêm nội dung</value>
   </data>
+  <data name="AlbumsListViewArtists.Text" xml:space="preserve">
+    <value>Nghệ sĩ: </value>
+  </data>
+  <data name="tbAlbumsTotalTracks.Text" xml:space="preserve">
+    <value>Số lượng bài:</value>
+  </data>
+  <data name="tbAlbumsListViewName.Text" xml:space="preserve">
+    <value>Tên Albums: </value>
+  </data>
+  <data name="tbAlbumsReleaseDate.Text" xml:space="preserve">
+    <value>Ngày ra mắt:</value>
+  </data>
+  <data name="Sehll_ChuDe_child_1.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Danh sách Albums</value>
+  </data>
+  <data name="Shell_ChuDe_child_1.Content" xml:space="preserve">
+    <value>Danh sách Albums</value>
+  </data>
 </root>

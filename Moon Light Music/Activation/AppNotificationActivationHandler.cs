@@ -1,10 +1,8 @@
 ﻿using Microsoft.UI.Dispatching;
 using Microsoft.UI.Xaml;
 using Microsoft.Windows.AppLifecycle;
-using Microsoft.Windows.AppNotifications;
 
 using Moon_Light_Music.Contracts.Services;
-using Moon_Light_Music.ViewModels;
 
 namespace Moon_Light_Music.Activation;
 

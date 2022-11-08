@@ -4,7 +4,6 @@ using System.Web;
 using Microsoft.Windows.AppNotifications;
 
 using Moon_Light_Music.Contracts.Services;
-using Moon_Light_Music.ViewModels;
 
 namespace Moon_Light_Music.Notifications;
 

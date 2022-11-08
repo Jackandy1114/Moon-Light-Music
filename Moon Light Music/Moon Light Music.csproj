@@ -58,23 +58,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Dialog\TrangChuContentDiaglog.xaml" />
+    <None Remove="Image\Logo\1.png" />
     <None Remove="Styles\AlbumListView.xaml" />
+    <None Remove="Views\ChildViews\ChuDeChildPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\Logo\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
     <PackageReference Include="Microsoft.Graphics.Win2D" Version="1.0.4" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.1.5" />
     <PackageReference Include="Microsoft.Xaml.Behaviors.WinUI.Managed" Version="2.0.9" />
     <PackageReference Include="RestSharp" Version="108.0.2" />
     <PackageReference Include="Selenium.Support" Version="4.6.0" />
     <PackageReference Include="Selenium.WebDriver" Version="4.6.0" />
-    <PackageReference Include="Selenium.WebDriver.MicrosoftDriver" Version="17.17134.0" />
     <PackageReference Include="Selenium.WebDriver.MSEdgeDriver" Version="106.0.1370.34" />
     <PackageReference Include="Selenium.WebDriverBackedSelenium" Version="4.1.0" />
+    <PackageReference Include="System.Threading.Timer" Version="4.3.0" />
     <PackageReference Include="WinUIEx" Version="1.8.0" />
   </ItemGroup>
   <ItemGroup>
@@ -88,6 +95,15 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+    <None Update="Audio\WaitingForYou-MONOOnionn.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Page Update="Views\ChildViews\ChuDeChildPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\MoAppLanDau.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Update="Dialog\TrangChuContentDiaglog.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -97,6 +97,8 @@ public partial class App : Application
             services.AddTransient<BaiHatPage>();
             services.AddTransient<ChuDeViewModel>();
             services.AddTransient<ChuDePage>();
+            services.AddTransient<ChuDeChildPage>();
+            services.AddTransient<ChuDeChildViewModel>();
             services.AddTransient<TrangChuViewModel>();
             services.AddTransient<TrangChuPage>();
             services.AddTransient<ShellPage>();
