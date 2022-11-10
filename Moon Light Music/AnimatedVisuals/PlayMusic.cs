@@ -53,7 +53,6 @@ using System.Numerics;
 using Windows.Graphics;
 using Windows.UI;
 using Microsoft.UI.Composition;
-using Microsoft.UI;
 
 
 namespace Moon_Light_Music.AnimatedVisuals

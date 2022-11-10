@@ -76,11 +76,20 @@
                             <NavigationViewItem.Icon>
                                 
                         <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}"
-                                  Glyph="&#xe90b;" />
+                                          Glyph="&#xe93C;" />
+                            </NavigationViewItem.Icon>
+                        </NavigationViewItem>
+                        <NavigationViewItem x:Uid="Shell_ChuDe_child_2"
+                                            helpers:NavigationHelper.NavigateTo="Moon_Light_Music.ViewModels.ChuDeChildViewModel">
+                            <NavigationViewItem.Icon>
+
+                                <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}"
+                                          Glyph="&#xe93C;" />
                             </NavigationViewItem.Icon>
                         </NavigationViewItem>
                     </NavigationViewItem.MenuItems>
                 </NavigationViewItem>
+                
                 <NavigationViewItem x:Uid="Shell_BaiHat" helpers:NavigationHelper.NavigateTo="Moon_Light_Music.ViewModels.BaiHatViewModel">
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}"
@@ -129,6 +138,7 @@
                                   Glyph="&#xe8e1;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
+                
             </NavigationView.MenuItems>
             <NavigationView.HeaderTemplate>
                 <DataTemplate>

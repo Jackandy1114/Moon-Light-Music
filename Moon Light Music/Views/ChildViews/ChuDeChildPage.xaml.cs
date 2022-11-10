@@ -1,5 +1,7 @@
 ﻿using Microsoft.UI.Xaml.Controls;
 
+using Moon_Light_Music.ViewModels;
+
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
@@ -9,13 +11,13 @@ namespace Moon_Light_Music.Views;
 /// </summary>
 public sealed partial class ChuDeChildPage : Page
 {
-    //public ChuDeChildViewModel ViewModel
-    //{
-    //    get;
-    //}
+    public ChuDeChildViewModel ViewModel
+    {
+        get;
+    }
     public ChuDeChildPage()
     {
-        //ViewModel = App.GetService<ChuDeChildViewModel>();
+        ViewModel = App.GetService<ChuDeChildViewModel>();
         InitializeComponent();
     }
 }

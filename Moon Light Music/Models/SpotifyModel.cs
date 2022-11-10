@@ -6,22 +6,118 @@
 //
 //    var albums = Albums.FromJson(jsonString);
 
+using System.Globalization;
+
+
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+
+
+using J = Newtonsoft.Json.JsonPropertyAttribute;
+using R = Newtonsoft.Json.Required;
+using N = Newtonsoft.Json.NullValueHandling;
+using System.Diagnostics;
+
 namespace Moon_Light_Music.Models
 {
-    using System;
-    using System.Collections.Generic;
-
-    using System.Globalization;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
-    using J = Newtonsoft.Json.JsonPropertyAttribute;
-    using R = Newtonsoft.Json.Required;
-    using N = Newtonsoft.Json.NullValueHandling;
-
+    
     public partial class Albums
     {
+        [J("albums")]
+        public Album Album
+        {
+            get;set;
+        }
+    }
+    public partial class Album
+    {
+        [J("album_type")]
+        public string AlbumType
+        {
+            get; set;
+        }
+        [J("artists")]
+        public List<Artist> Artists
+        {
+            get; set;
+        }
+        [J("copyrights")]
+        public List<Copyright> Copyrights
+        {
+            get; set;
+        }
+        [J("external_ids")]
+        public ExternalIds ExternalIds
+        {
+            get; set;
+        }
+        [J("external_urls")]
+        public ExternalUrls ExternalUrls
+        {
+            get; set;
+        }
+        [J("genres")]
+        public List<object> Genres
+        {
+            get; set;
+        }
         [J("href")]
         public Uri Href
+        {
+            get; set;
+        }
+        [J("id")]
+        public string Id
+        {
+            get; set;
+        }
+        [J("images")]
+        public List<Image> Images
+        {
+            get; set;
+        }
+        [J("label")]
+        public string Label
+        {
+            get; set;
+        }
+        [J("name")]
+        public string Name
+        {
+            get; set;
+        }
+        [J("popularity")]
+        public long Popularity
+        {
+            get; set;
+        }
+        [J("release_date")]
+        public DateTimeOffset ReleaseDate
+        {
+            get; set;
+        }
+        [J("release_date_precision")]
+        public string ReleaseDatePrecision
+        {
+            get; set;
+        }
+        [J("total_tracks")]
+        public long TotalTracks
+        {
+            get; set;
+        }
+        [J("tracks")]
+        public Tracks Tracks
+        {
+            get; set;
+        }
+        [J("type")]
+        public string Type
+        {
+            get; set;
+        }
+        [J("uri")]
+        public string Uri
         {
             get; set;
         }
@@ -57,19 +153,36 @@ namespace Moon_Light_Music.Models
         }
     }
 
-    public partial class Item
+    public partial class Copyright
     {
-
-        [J("release_date")]
-        public DateTimeOffset ReleaseDate
+        [J("text")]
+        public string Text
         {
             get; set;
         }
+        [J("type")]
+        public string Type
+        {
+            get; set;
+        }
+    }
 
+    public partial class ExternalIds
+    {
+        [J("upc")]
+        public string Upc
+        {
+            get; set;
+        }
+    }
 
-        [J("release_date_precision")]
-        public string ReleaseDatePrecision => ReleaseDate.DateTime.ToShortDateString();
-
+    public partial class Item
+    {
+        public int Index
+        {
+            get;set;
+        }
+       
         [J("artists")]
         public List<Artist> Artists
         {
@@ -83,8 +196,18 @@ namespace Moon_Light_Music.Models
         [J("duration_ms")]
         public long DurationMs
         {
-            get; set;
+            get;set;
         }
+        public string DurationPresent
+        {
+            get { var _sc = TimeSpan.FromMilliseconds(DurationMs);
+                int hr = _sc.Hours;
+                int mn = _sc.Minutes;
+                int sec = _sc.Seconds;
+                return ($"{hr.ToString("00")}:{mn.ToString("00")}:{sec.ToString("00")}");
+            }
+        }
+
         [J("explicit")]
         public bool Explicit
         {
@@ -140,13 +263,60 @@ namespace Moon_Light_Music.Models
         {
             get; set;
         }
+        [J("release_date")]
+        public DateTimeOffset ReleaseDate
+        {
+            get; set;
+        }
+
+        [J("release_date_precision")]
+        public string ReleaseDatePrecision => ReleaseDate.DateTime.ToShortDateString();
+
         [J("images")]
-        public Image[] Images
+        public List<Image> Images
         {
             get; set;
         }
         [J("total_tracks")]
         public long TotalTracks
+        {
+            get; set;
+        }
+    }
+    public partial class Tracks
+    {
+        [J("href")]
+        public Uri Href
+        {
+            get; set;
+        }
+        [J("items")]
+        public List<Item> Items
+        {
+            get; set;
+        }
+        [J("limit")]
+        public long Limit
+        {
+            get; set;
+        }
+        [J("next")]
+        public object Next
+        {
+            get; set;
+        }
+        [J("offset")]
+        public long Offset
+        {
+            get; set;
+        }
+        [J("previous")]
+        public object Previous
+        {
+            get; set;
+        }
+        [J("total")]
+        public long Total
         {
             get; set;
         }
@@ -215,14 +385,15 @@ namespace Moon_Light_Music.Models
         }
     }
 
-    public partial class Albums
+
+    public partial class Album
     {
-        public static Albums FromJson(string json) => JsonConvert.DeserializeObject<Albums>(json, Moon_Light_Music.Models.Converter.Settings);
+        public static Album FromJson(string json) => JsonConvert.DeserializeObject<Album>(json, Converter.Settings);
     }
 
     public static class Serialize
     {
-        public static string ToJson(this Albums self) => JsonConvert.SerializeObject(self, Moon_Light_Music.Models.Converter.Settings);
+        public static string ToJson(this Album self) => JsonConvert.SerializeObject(self, Converter.Settings);
     }
 
     internal static class Converter

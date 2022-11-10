@@ -21,7 +21,13 @@
             </FlipViewItem>
             <FlipViewItem>
                 <AnimatedVisualPlayer>
-                    <animatedvisuals:PlayMusic />
+                    <animatedvisuals:Holloween/>
+                </AnimatedVisualPlayer>
+            </FlipViewItem>
+            
+            <FlipViewItem>
+                <AnimatedVisualPlayer>
+                    <animatedvisuals:PlayMusic/>
                 </AnimatedVisualPlayer>
             </FlipViewItem>
           

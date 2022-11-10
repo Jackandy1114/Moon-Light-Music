@@ -226,4 +226,7 @@ activationType="foreground"/&gt;
   <data name="Shell_ChuDe_child_1.Content" xml:space="preserve">
     <value>Danh sách Albums</value>
   </data>
+  <data name="Shell_ChuDe_child_2.Content" xml:space="preserve">
+    <value>Album</value>
+  </data>
 </root>
