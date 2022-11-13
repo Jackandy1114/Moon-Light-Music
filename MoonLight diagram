@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-13T11:28:39.202Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42" etag="YQrUECXoqcszlrzALbjg" version="20.5.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-11-13T11:45:15.486Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42" etag="SFB0o3HNg3X1kBiKyhyq" version="20.5.3" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Classdiagram">
     <mxGraphModel dx="3732" dy="1185" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -609,7 +609,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="zDRhbh4GMor8-jSjtUil" name="Use-Case">
-    <mxGraphModel dx="2771" dy="1580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1313" dy="748" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -703,20 +703,32 @@
         <mxCell id="z_kQEIMLYVvJtWIDnPDN-14" value="&#xa;&lt;b id=&quot;docs-internal-guid-f609e29d-7fff-bd51-e43c-be6957b2322a&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Kết bạn với người dùng khác&lt;/span&gt;&lt;/b&gt;&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="720" y="440" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="z_kQEIMLYVvJtWIDnPDN-16" value="SubjectName" style="shape=rect;html=1;verticalAlign=top;fontStyle=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
-          <mxGeometry x="1260" y="120" width="560" height="350" as="geometry" />
+        <mxCell id="z_kQEIMLYVvJtWIDnPDN-16" value="Người quản lý" style="shape=rect;html=1;verticalAlign=top;fontStyle=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="120" width="410" height="300" as="geometry" />
         </mxCell>
-        <mxCell id="z_kQEIMLYVvJtWIDnPDN-17" value="&#xa;&lt;b id=&quot;docs-internal-guid-6eb62cff-7fff-b6e2-fabd-53cf66525d46&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Cập nhật tính năng cho ứng dụng.&lt;/span&gt;&lt;/b&gt;&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="z_kQEIMLYVvJtWIDnPDN-17" value="&lt;b id=&quot;docs-internal-guid-6eb62cff-7fff-b6e2-fabd-53cf66525d46&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Cập nhật tính năng cho ứng dụng.&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1320" y="160" width="150" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="z_kQEIMLYVvJtWIDnPDN-18" value="&#xa;&lt;b id=&quot;docs-internal-guid-7adeb0ea-7fff-6f09-6971-b0dccb970d59&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Thêm, xóa, sửa nhạc trong MoonLight music &lt;/span&gt;&lt;/b&gt;&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1320" y="280" width="180" height="110" as="geometry" />
+        <mxCell id="z_kQEIMLYVvJtWIDnPDN-18" value="&lt;b id=&quot;docs-internal-guid-7adeb0ea-7fff-6f09-6971-b0dccb970d59&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Thêm, xóa, sửa nhạc trong MoonLight music&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1305" y="260" width="180" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="z_kQEIMLYVvJtWIDnPDN-19" value="&lt;br&gt;&lt;b id=&quot;docs-internal-guid-2447fe8e-7fff-fd4c-b431-c2bb83cc9cbf&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Xét duyệt các upload từ người dùng lên MoonLight music library(&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1500" y="170" width="290" height="140" as="geometry" />
+        <mxCell id="z_kQEIMLYVvJtWIDnPDN-19" value="&lt;b id=&quot;docs-internal-guid-2447fe8e-7fff-fd4c-b431-c2bb83cc9cbf&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Xét duyệt các upload từ người dùng lên MoonLight music library&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1470" y="180" width="180" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="z_kQEIMLYVvJtWIDnPDN-20" value="&#xa;&lt;b id=&quot;docs-internal-guid-7ee3d8b6-7fff-3bb5-8188-9f3651ba221d&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Không thể bị xóa&lt;/span&gt;&lt;/b&gt;&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1530" y="325" width="140" height="70" as="geometry" />
+        <mxCell id="z_kQEIMLYVvJtWIDnPDN-20" value="Tránh bị xóa" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1500" y="325" width="160" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="z_kQEIMLYVvJtWIDnPDN-21" value="Người kiểm thử" style="shape=rect;html=1;verticalAlign=top;fontStyle=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="480" width="400" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="z_kQEIMLYVvJtWIDnPDN-22" value="&lt;b id=&quot;docs-internal-guid-1c696552-7fff-0f11-4587-77ca5827eee2&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Nhìn thấy các hàm(nút-buttons) hỗ trợ để test nhanh hệ thống.&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1275" y="520" width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="z_kQEIMLYVvJtWIDnPDN-23" value="&lt;b id=&quot;docs-internal-guid-b984709a-7fff-1f86-7a62-bc5a03ffb202&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Thay đổi các các dữ liệu local setting(Token, Application Local Settings Folder, Language).&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1275" y="645" width="285" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="z_kQEIMLYVvJtWIDnPDN-24" value="&#xa;&lt;b id=&quot;docs-internal-guid-2644acdd-7fff-7916-2540-7734a3061f23&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Thêm, sửa, xóa User Profile(người dùng ảo)&lt;/span&gt;&lt;/b&gt;&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="500" width="180" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
