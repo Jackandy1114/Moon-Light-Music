@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-13T11:45:15.486Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42" etag="SFB0o3HNg3X1kBiKyhyq" version="20.5.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-11-13T13:43:31.334Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42" etag="3aGfuKZ4_sTchYy5pG5w" version="20.5.3" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Classdiagram">
     <mxGraphModel dx="3732" dy="1185" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -719,7 +719,7 @@
           <mxGeometry x="1500" y="325" width="160" height="65" as="geometry" />
         </mxCell>
         <mxCell id="z_kQEIMLYVvJtWIDnPDN-21" value="Người kiểm thử" style="shape=rect;html=1;verticalAlign=top;fontStyle=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
-          <mxGeometry x="1260" y="480" width="400" height="380" as="geometry" />
+          <mxGeometry x="1260" y="470" width="410" height="380" as="geometry" />
         </mxCell>
         <mxCell id="z_kQEIMLYVvJtWIDnPDN-22" value="&lt;b id=&quot;docs-internal-guid-1c696552-7fff-0f11-4587-77ca5827eee2&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Nhìn thấy các hàm(nút-buttons) hỗ trợ để test nhanh hệ thống.&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1275" y="520" width="170" height="120" as="geometry" />
