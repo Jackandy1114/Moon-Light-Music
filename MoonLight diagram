@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-11-13T10:19:20.053Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42" etag="aIQvY7_aJK5KHw-PKZea" version="20.5.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-11-13T10:22:34.201Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42" etag="gKglgPxwkVbYGw12e_qy" version="20.5.3" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Classdiagram">
-    <mxGraphModel dx="2901" dy="711" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3732" dy="1185" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -663,6 +663,12 @@
         </mxCell>
         <mxCell id="ETUoHfz9u8sjF7M3YibS-1" value="Tính năng sau khi đăng ký" style="shape=rect;html=1;verticalAlign=top;fontStyle=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
           <mxGeometry x="690" y="120" width="500" height="960" as="geometry" />
+        </mxCell>
+        <mxCell id="z_kQEIMLYVvJtWIDnPDN-1" value="&lt;span id=&quot;docs-internal-guid-af818f08-7fff-9556-6e27-402ca17ad6d1&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Ghi nhớ mật khẩu trên thiết bị&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="380" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="z_kQEIMLYVvJtWIDnPDN-2" value="&lt;span id=&quot;docs-internal-guid-eae34ead-7fff-c91f-b4ff-5b71d624f01e&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Ghi nhớ tài khoản trên thiết bị.&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="500" width="150" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
