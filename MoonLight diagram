@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-13T10:46:12.852Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42" etag="3OU-BR6PP1O2-7BleeUE" version="20.5.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-11-13T11:19:29.976Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42" etag="2owvtQwCie2PSuTQb9Ej" version="20.5.3" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Classdiagram">
     <mxGraphModel dx="3732" dy="1185" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -614,7 +614,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="0ZfQc3Xt9OdAqjHDXBqE-1" value="Tính năng thông thường" style="shape=rect;html=1;verticalAlign=top;fontStyle=1;whiteSpace=wrap;align=center;" parent="1" vertex="1">
-          <mxGeometry x="120" y="120" width="500" height="960" as="geometry" />
+          <mxGeometry x="120" y="120" width="500" height="910" as="geometry" />
         </mxCell>
         <mxCell id="0ZfQc3Xt9OdAqjHDXBqE-2" value="&lt;span id=&quot;docs-internal-guid-64ae6b6b-7fff-6cec-f81d-cf42e1317e1a&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Nghe nhạc từ MoonLight music library&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="160" y="190" width="170" height="90" as="geometry" />
@@ -626,7 +626,7 @@
           <mxGeometry x="160" y="280" width="170" height="90" as="geometry" />
         </mxCell>
         <mxCell id="0ZfQc3Xt9OdAqjHDXBqE-5" value="&lt;span id=&quot;docs-internal-guid-ef1940cf-7fff-6faa-2dd0-b2ac8b1854e7&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Tạo, thêm, xóa, sửa playlist(&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Local&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;) của bản thân&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="350" y="600" width="190" height="100" as="geometry" />
+          <mxGeometry x="400" y="560" width="190" height="100" as="geometry" />
         </mxCell>
         <mxCell id="0ZfQc3Xt9OdAqjHDXBqE-6" value="&lt;span id=&quot;docs-internal-guid-03298695-7fff-c910-26fc-c8c7ca388df4&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Góp ý, báo lỗi&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="160" y="370" width="170" height="90" as="geometry" />
@@ -635,19 +635,19 @@
           <mxGeometry x="160" y="460" width="170" height="90" as="geometry" />
         </mxCell>
         <mxCell id="0ZfQc3Xt9OdAqjHDXBqE-8" value="&lt;span id=&quot;docs-internal-guid-8430ea5e-7fff-fec1-22b7-2754b1c957ec&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Thêm, xóa, sửa nhạc vào playlist(&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Local&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;) của bản thân&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="350" y="700" width="190" height="110" as="geometry" />
+          <mxGeometry x="410" y="670" width="190" height="110" as="geometry" />
         </mxCell>
         <mxCell id="0ZfQc3Xt9OdAqjHDXBqE-9" value="&lt;span id=&quot;docs-internal-guid-3b220848-7fff-69db-380a-de76480a0e94&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Sửa các &lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;options setting&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Local&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;)(Theme, Music player, volume, Audio Spectrum, Lyrics Font,...)&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="200" y="910" width="280" height="120" as="geometry" />
+          <mxGeometry x="320" y="890" width="280" height="120" as="geometry" />
         </mxCell>
         <mxCell id="0ZfQc3Xt9OdAqjHDXBqE-10" value="&lt;span id=&quot;docs-internal-guid-b89f1cb2-7fff-b175-6d66-1bfbd4f91607&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Tìm kiếm, xem danh sách nhạc, albums, nghệ sĩ, sáng tác, podcast&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="340" y="370" width="245" height="120" as="geometry" />
+          <mxGeometry x="367.5" y="300" width="245" height="120" as="geometry" />
         </mxCell>
         <mxCell id="0ZfQc3Xt9OdAqjHDXBqE-11" value="&lt;span id=&quot;docs-internal-guid-24b4cb66-7fff-17b2-270c-9b6345f695c5&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Thay đổi ngôn ngữ giao diện&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="350" y="810" width="170" height="90" as="geometry" />
+          <mxGeometry x="430" y="790" width="170" height="90" as="geometry" />
         </mxCell>
         <mxCell id="0ZfQc3Xt9OdAqjHDXBqE-12" value="&lt;span id=&quot;docs-internal-guid-028da227-7fff-52b7-6d3d-0360359404a8&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Chia sẻ nhạc cho người dùng khác, phần mềm khác, hoặc lưu nhạc về thiết bị&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="340" y="490" width="230" height="110" as="geometry" />
+          <mxGeometry x="370" y="440" width="230" height="110" as="geometry" />
         </mxCell>
         <mxCell id="0ZfQc3Xt9OdAqjHDXBqE-13" value="&lt;span id=&quot;docs-internal-guid-4f1bea0c-7fff-02ee-10c5-8c099a5d1af4&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Tải nhạc từ thư viện của MoonLight&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="170" y="640" width="170" height="90" as="geometry" />
@@ -659,10 +659,10 @@
           <mxGeometry x="170" y="730" width="170" height="90" as="geometry" />
         </mxCell>
         <mxCell id="0ZfQc3Xt9OdAqjHDXBqE-16" value="&lt;span id=&quot;docs-internal-guid-1ad9cd9e-7fff-584a-61a6-cebdad4c9dec&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Tải hoặc lựa chọn các bài hát trong album để tải về &lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="340" y="280" width="220" height="90" as="geometry" />
+          <mxGeometry x="380" y="190" width="220" height="90" as="geometry" />
         </mxCell>
         <mxCell id="ETUoHfz9u8sjF7M3YibS-1" value="Tính năng sau khi đăng ký" style="shape=rect;html=1;verticalAlign=top;fontStyle=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
-          <mxGeometry x="690" y="120" width="650" height="960" as="geometry" />
+          <mxGeometry x="690" y="120" width="520" height="730" as="geometry" />
         </mxCell>
         <mxCell id="z_kQEIMLYVvJtWIDnPDN-1" value="&lt;span id=&quot;docs-internal-guid-af818f08-7fff-9556-6e27-402ca17ad6d1&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Ghi nhớ mật khẩu trên thiết bị&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="720" y="350" width="170" height="90" as="geometry" />
@@ -674,31 +674,31 @@
           <mxGeometry x="720" y="600" width="200" height="100" as="geometry" />
         </mxCell>
         <mxCell id="z_kQEIMLYVvJtWIDnPDN-5" value="&#xa;&lt;b id=&quot;docs-internal-guid-6ee5d814-7fff-2fc6-6aa1-300d06972f1e&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Đăng xuất.&lt;/span&gt;&lt;/b&gt;&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="720" y="700" width="140" height="70" as="geometry" />
+          <mxGeometry x="1030" y="640" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="z_kQEIMLYVvJtWIDnPDN-6" value="&#xa;&lt;b id=&quot;docs-internal-guid-bc43ed48-7fff-5aa8-ecb2-96911e4df62e&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Thay đổi thông tin cá nhân.&lt;/span&gt;&lt;/b&gt;&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="720" y="260" width="210" height="90" as="geometry" />
         </mxCell>
         <mxCell id="z_kQEIMLYVvJtWIDnPDN-7" value="&#xa;&lt;b id=&quot;docs-internal-guid-44eb4a09-7fff-bebc-4375-02c51291237e&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Thay đổi thông tin tài khoản(Mật khẩu).&lt;/span&gt;&lt;/b&gt;&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="720" y="770" width="200" height="90" as="geometry" />
+          <mxGeometry x="725" y="710" width="200" height="90" as="geometry" />
         </mxCell>
         <mxCell id="z_kQEIMLYVvJtWIDnPDN-8" value="&#xa;&lt;b id=&quot;docs-internal-guid-072ce859-7fff-dba4-0432-201968501e71&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Tạo, thêm, xóa, sửa playlist(&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Sync&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;) của bản thân.&lt;/span&gt;&lt;/b&gt;&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="720" y="170" width="220" height="90" as="geometry" />
         </mxCell>
         <mxCell id="z_kQEIMLYVvJtWIDnPDN-9" value="&#xa;&lt;b id=&quot;docs-internal-guid-6393125c-7fff-570f-39c6-a9ffac4714c0&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Sửa các &lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;options setting&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Sync&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;)(Theme, Music player, volume, Audio Spectrum, Lyrics Font,...).&lt;/span&gt;&lt;/b&gt;&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="980" y="630" width="280" height="150" as="geometry" />
+          <mxGeometry x="900" y="490" width="280" height="150" as="geometry" />
         </mxCell>
         <mxCell id="z_kQEIMLYVvJtWIDnPDN-10" value="&#xa;&lt;b id=&quot;docs-internal-guid-c5519cd0-7fff-1c39-69e2-57ed84991389&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Thêm, xóa, sửa nhạc vào playlist(&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Sync&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;) của bản thân&lt;/span&gt;&lt;/b&gt;&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1010" y="520" width="220" height="90" as="geometry" />
+          <mxGeometry x="960" y="400" width="220" height="90" as="geometry" />
         </mxCell>
         <mxCell id="z_kQEIMLYVvJtWIDnPDN-11" value="&#xa;&lt;b id=&quot;docs-internal-guid-39337c48-7fff-c38d-7a92-fe229f5eb1aa&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Upload nhạc lên MoonLight music library.&lt;/span&gt;&lt;/b&gt;&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="730" y="860" width="190" height="90" as="geometry" />
+          <mxGeometry x="975" y="710" width="190" height="90" as="geometry" />
         </mxCell>
         <mxCell id="z_kQEIMLYVvJtWIDnPDN-12" value="&#xa;&lt;b id=&quot;docs-internal-guid-da163141-7fff-edbc-0529-bdcd3d15d4e3&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Yêu thích, Like cho bài nhạc(thêm vào danh sách nhạc yêu thích).&lt;/span&gt;&lt;/b&gt;&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1000" y="270" width="220" height="130" as="geometry" />
+          <mxGeometry x="950" y="170" width="220" height="130" as="geometry" />
         </mxCell>
         <mxCell id="z_kQEIMLYVvJtWIDnPDN-13" value="&#xa;&lt;b id=&quot;docs-internal-guid-89d00f69-7fff-92a4-2bf0-f31b1d614c37&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Follow người dùng hoặc nghệ sĩ.&lt;/span&gt;&lt;/b&gt;&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1060" y="430" width="160" height="80" as="geometry" />
+          <mxGeometry x="1010" y="310" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="z_kQEIMLYVvJtWIDnPDN-14" value="&#xa;&lt;b id=&quot;docs-internal-guid-f609e29d-7fff-bd51-e43c-be6957b2322a&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Kết bạn với người dùng khác&lt;/span&gt;&lt;/b&gt;&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="720" y="440" width="140" height="70" as="geometry" />
