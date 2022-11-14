@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-14T16:29:21.328Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42" etag="maU_ZVi0Z8w0zVnamR3M" version="20.5.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-11-14T16:53:31.533Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42" etag="Hjs0UH-TnOHhWtDEEm43" version="20.5.3" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Classdiagram">
     <mxGraphModel dx="4379" dy="1513" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -619,7 +619,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="zDRhbh4GMor8-jSjtUil" name="Use-Case">
-    <mxGraphModel dx="1635" dy="908" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="934" dy="519" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -739,6 +739,15 @@
         </mxCell>
         <mxCell id="z_kQEIMLYVvJtWIDnPDN-24" value="&#xa;&lt;b id=&quot;docs-internal-guid-2644acdd-7fff-7916-2540-7734a3061f23&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Thêm, sửa, xóa User Profile(người dùng ảo)&lt;/span&gt;&lt;/b&gt;&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1450" y="530" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="AVPfINIskLpowNNM0fZK-1" value="Người dùng thường" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="740" y="920" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AVPfINIskLpowNNM0fZK-2" value="Người dùng đã đăng ký" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="890" y="920" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AVPfINIskLpowNNM0fZK-3" value="Người quản lý" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="920" width="30" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
