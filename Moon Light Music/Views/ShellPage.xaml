@@ -11,8 +11,12 @@
       xmlns:winuiex="using:WinUIEx"
       Loaded="OnLoaded">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="120"/>
+        </Grid.RowDefinitions>
       
-        <Grid x:Name="AppTitleBar"
+        <Grid Grid.Row="0" x:Name="AppTitleBar"
               Canvas.ZIndex="2"
               Height="{Binding ElementName=NavigationViewControl, Path=CompactPaneLength}"
               IsHitTestVisible="True"
@@ -34,7 +38,7 @@
                        Margin="0,0,0,0" />
 
         </Grid>
-        <NavigationView
+        <NavigationView Grid.Row="0"
             x:Name="NavigationViewControl"
             Canvas.ZIndex="1"
             IsBackButtonVisible="Visible"
@@ -59,6 +63,12 @@
                 TODO: Update item icons by updating FontIcon.Glyph properties.
                 https://docs.microsoft.com/windows/apps/design/style/segoe-fluent-icons-font#icon-list
                 -->
+                <NavigationViewItem >
+                    <AutoSuggestBox PlaceholderText="Tìm Kiếm"
+                                    QueryIcon="Find" SuggestionChosen="AutoSuggestBox_SuggestionChosen" TextChanged="AutoSuggestBox_TextChanged" QuerySubmitted="AutoSuggestBox_QuerySubmitted">
+                        
+                    </AutoSuggestBox>
+                </NavigationViewItem>
                 <NavigationViewItem x:Uid="Shell_TrangChu" helpers:NavigationHelper.NavigateTo="Moon_Light_Music.ViewModels.TrangChuViewModel">
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}"
@@ -83,8 +93,7 @@
                                             helpers:NavigationHelper.NavigateTo="Moon_Light_Music.ViewModels.ChuDeChildViewModel">
                             <NavigationViewItem.Icon>
 
-                                <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}"
-                                          Glyph="&#xe93C;" />
+                                <SymbolIcon Symbol="SolidStar" />
                             </NavigationViewItem.Icon>
                         </NavigationViewItem>
                     </NavigationViewItem.MenuItems>
@@ -126,20 +135,26 @@
                                   Glyph="&#xe896;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Uid="Shell_TaiKhoan" helpers:NavigationHelper.NavigateTo="Moon_Light_Music.ViewModels.TaiKhoanViewModel">
+                
+                
+            </NavigationView.MenuItems>
+            <NavigationView.FooterMenuItems>
+                <NavigationViewItem x:Uid="Shell_DanhGia"
+                                    helpers:NavigationHelper.NavigateTo="Moon_Light_Music.ViewModels.DanhGiaViewModel">
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}"
-                                  Glyph="&#xe77b;"/>
+                                  Glyph="&#xe8e1;" />
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem x:Uid="Shell_DanhGia" helpers:NavigationHelper.NavigateTo="Moon_Light_Music.ViewModels.DanhGiaViewModel">
+                <NavigationViewItem x:Uid="Shell_TaiKhoan"
+                                    helpers:NavigationHelper.NavigateTo="Moon_Light_Music.ViewModels.TaiKhoanViewModel">
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}"
-                                  Glyph="&#xe8e1;"/>
+                                  Glyph="&#xe77b;" />
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
                 
-            </NavigationView.MenuItems>
+            </NavigationView.FooterMenuItems>
             <NavigationView.HeaderTemplate>
                 <DataTemplate>
                     <Grid>
@@ -169,25 +184,32 @@
                 </Frame>
             </Grid>
         </NavigationView>
-        <Grid Background="Transparent" Canvas.ZIndex="1"
-              VerticalAlignment="Top"
-              HorizontalAlignment="Right"
-              Height="200"
-              Margin="50">
-            <Grid.RowDefinitions>
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-            </Grid.RowDefinitions>
-            <Slider Grid.Row="0"
-                    MaxWidth="500"
-                    MinWidth="350" />
-            <Button Grid.Row="1" Content="Choi Nhac tu may tinh" Click="Button_Click" />
-            <Button Grid.Row="2" Content="choi nhac tren web"
-                    Click="Button_Click_1"></Button>
-            <winuiex:MediaPlayerElement Grid.Row="3"
-                                        x:Name="mediaPlayerElement" />
+
+        <Grid     Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="110"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <PersonPicture Grid.Row="0" Width="60"
+                       ProfilePicture="{x:Bind _song_img_url}" VerticalAlignment="Center" HorizontalAlignment="Center"></PersonPicture>
+                <TextBlock Grid.Row="1"
+                           TextWrapping="Wrap"
+                           FontSize="14"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center" HorizontalAlignment="Center" Text="{x:Bind _song_name}"></TextBlock>
+            </Grid>
+            <MediaPlayerElement Grid.Column="1" x:Name="_MediaPlayer" AreTransportControlsEnabled="True" >
+                <MediaPlayerElement.TransportControls>
+                    <MediaTransportControls  IsSeekBarVisible="True" IsSeekEnabled="True" IsZoomButtonVisible="False" IsAccessKeyScope="True" ExitDisplayModeOnAccessKeyInvoked="True" IsNextTrackButtonVisible="True" IsPreviousTrackButtonVisible="True" IsRepeatButtonVisible="True" IsRepeatEnabled="True">
+                       
+                    </MediaTransportControls>
+                </MediaPlayerElement.TransportControls>
+            </MediaPlayerElement>
         </Grid>
     </Grid>
 </Page>

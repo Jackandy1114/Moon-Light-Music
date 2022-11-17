@@ -23,25 +23,25 @@ public sealed partial class ChuDePage : Page
         _navigationService = ViewModel._navigationService;
         InitializeComponent();
     }
-
-
-
-    private void _borderAlbums_Tapped(object sender, Microsoft.UI.Xaml.Input.TappedRoutedEventArgs e)
+    private async void _borderAlbums_Tapped(object sender, Microsoft.UI.Xaml.Input.TappedRoutedEventArgs e)
     {
         try
         {
-            var a = JsonConvert.DeserializeObject<Album>(GetResponseFromAPIHelper.GetResponse(ViewModel._oAuthTokkenService.OAuthTokken, $"https://api.spotify.com/v1/albums/{StaticDataBindingModel.AlbumsSpotify[listviewAlbums.SelectedIndex].Id}?market=VN").Content!)!;
-            if (a != null)
+            var data = JsonConvert.DeserializeObject<Album>(GetResponseFromAPIHelper.GetResponse(ViewModel._oAuthTokkenService.OAuthTokken!, $"https://api.spotify.com/v1/albums/{StaticDataBindingModel.AlbumsSpotify[listviewAlbums.SelectedIndex].Id}?market=VN").Content!)!;
+            if (data != null)
             {
                 StaticDataBindingModel.TracksInAlbumsSpotify = new();
                 StaticDataBindingModel._AlbumSpotify = new();
-                StaticDataBindingModel._AlbumSpotify.Add(a);
+                StaticDataBindingModel._AlbumSpotify.Add(data);
+                var data_artist = JsonConvert.DeserializeObject<Artist>(GetResponseFromAPIHelper.GetResponse(ViewModel._oAuthTokkenService.OAuthTokken!, $"https://api.spotify.com/v1/artists/{data.Artists[0].Id}").Content!)!;
                 var index = 1;
-                foreach (var item in a.Tracks.Items)
+                StaticDataBindingModel.Artist = new();
+                StaticDataBindingModel.Artist.Add(data_artist);
+                StaticDataBindingModel._AlbumSpotify[0].Artists[0] = data_artist;
+                foreach (var item in data.Tracks.Items)
                 {
                     item.Index = index;
-                    item.Images ??= a.Images;
-
+                    item.Images ??= data.Images;
                     StaticDataBindingModel.TracksInAlbumsSpotify.Add(item);
                     index++;
                 }

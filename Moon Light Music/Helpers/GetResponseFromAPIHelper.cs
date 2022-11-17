@@ -1,4 +1,6 @@
-﻿using OpenQA.Selenium;
+﻿using System.Text;
+
+using OpenQA.Selenium;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Remote;
 
@@ -8,7 +10,20 @@ using RestSharp.Authenticators.OAuth2;
 namespace Moon_Light_Music.Helpers;
 public static class GetResponseFromAPIHelper
 {
+    public static RestResponse GetResponse_AndToken()
+    {
+        var clientid = "f636e05e4c5540d88ebd153ecc5a11a8";
+        var clientsecret = "5d96de639d5b43248750ea080fffbc37";
+        var encode_clientid_clientsecret = Convert.ToBase64String(Encoding.UTF8.GetBytes(string.Format("{0}:{1}", clientid, clientsecret)));
 
+        var client = new RestClient();
+        //Spotify
+        client.Authenticator = new OAuth2AuthorizationRequestHeaderAuthenticator($"{encode_clientid_clientsecret}", "Basic");
+        var request = new RestRequest(@$"https://accounts.spotify.com/api/token?grant_type=client_credentials&client_id={clientid}&client_secret={clientsecret}", Method.Post);
+        request.AddHeader("Accept", "application/json");
+        request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
+        return client.PostAsync(request).GetAwaiter().GetResult();
+    }
     public static RestResponse GetResponse(string OAuth2Tokken, string _request)
     {
         var client = new RestClient();

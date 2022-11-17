@@ -69,12 +69,12 @@ public class ActivationService : IActivationService
     private async Task StartupAsync()
     {
         await _themeSelectorService.SetRequestedThemeAsync();
-        await _oAuthTokkenService.SetRequestedTokkenAsync();
+        //await _oAuthTokkenService.SetRequestedTokkenAsync();
         await Task.CompletedTask;
     }
-    void DismissExtendedSplash()
-    {
-        //Navigate to mainpage
+    //void DismissExtendedSplash()
+    //{
+    //    //Navigate to mainpage
 
-    }
+    //}
 }

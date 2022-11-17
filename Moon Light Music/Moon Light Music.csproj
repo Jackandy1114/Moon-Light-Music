@@ -57,12 +57,69 @@
     <Content Remove="Assets\WindowIcon.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="Audio\WaitingForYou-MONOOnionn.mp3" />
     <None Remove="Dialog\TrangChuContentDiaglog.xaml" />
+    <None Remove="Image\Assets\backward-fast-solid.svg" />
+    <None Remove="Image\Assets\backward-solid.svg" />
+    <None Remove="Image\Assets\forward-fast-solid.svg" />
+    <None Remove="Image\Assets\forward-solid.svg" />
+    <None Remove="Image\Assets\music.png" />
+    <None Remove="Image\Assets\pause-solid.svg" />
+    <None Remove="Image\Assets\play-solid.svg" />
+    <None Remove="Image\Assets\repeat-solid.svg" />
+    <None Remove="Image\Assets\rotate-right-solid.svg" />
+    <None Remove="Image\Assets\shuffle-solid.svg" />
+    <None Remove="Image\Assets\stop-solid.svg" />
+    <None Remove="Image\Assets\volume-high-solid.svg" />
+    <None Remove="Image\Assets\volume-low-solid.svg" />
+    <None Remove="Image\Assets\volume-xmark-solid.svg" />
     <None Remove="Image\Logo\1.png" />
     <None Remove="Styles\AlbumListView.xaml" />
     <None Remove="Views\ChildViews\ChuDeChildPage.xaml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Audio\WaitingForYou-MONOOnionn.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Assets\backward-fast-solid.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Assets\backward-solid.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Assets\forward-fast-solid.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Assets\forward-solid.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Assets\music.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Assets\pause-solid.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Assets\repeat-solid.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Assets\rotate-right-solid.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Assets\shuffle-solid.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Assets\stop-solid.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Assets\volume-high-solid.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Assets\volume-low-solid.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Assets\volume-xmark-solid.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Image\Logo\1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -74,15 +131,20 @@
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
     <PackageReference Include="Microsoft.Graphics.Win2D" Version="1.0.4" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.1.5" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.2.221109.1" />
     <PackageReference Include="Microsoft.Xaml.Behaviors.WinUI.Managed" Version="2.0.9" />
     <PackageReference Include="RestSharp" Version="108.0.2" />
     <PackageReference Include="Selenium.Support" Version="4.6.0" />
     <PackageReference Include="Selenium.WebDriver" Version="4.6.0" />
-    <PackageReference Include="Selenium.WebDriver.MSEdgeDriver" Version="107.0.1418.35" />
+    <PackageReference Include="Selenium.WebDriver.MSEdgeDriver" Version="107.0.1418.42" />
     <PackageReference Include="Selenium.WebDriverBackedSelenium" Version="4.1.0" />
     <PackageReference Include="System.Threading.Timer" Version="4.3.0" />
     <PackageReference Include="WinUIEx" Version="1.8.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\Assets\play-solid.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Moon Light Music.Core\Moon Light Music.Core.csproj" />
@@ -94,9 +156,6 @@
     <None Update="Assets\StoreLogo.scale-400.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
-    </None>
-    <None Update="Audio\WaitingForYou-MONOOnionn.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <Page Update="Views\ChildViews\ChuDeChildPage.xaml">
       <Generator>MSBuild:Compile</Generator>

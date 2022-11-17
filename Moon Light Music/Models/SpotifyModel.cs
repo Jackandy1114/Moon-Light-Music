@@ -17,10 +17,19 @@ using J = Newtonsoft.Json.JsonPropertyAttribute;
 using R = Newtonsoft.Json.Required;
 using N = Newtonsoft.Json.NullValueHandling;
 using System.Diagnostics;
+using System.Collections.Generic;
 
 namespace Moon_Light_Music.Models
 {
-    
+
+    public class GetAPI
+    {
+        [J("access_token")]
+        public string Token
+        {
+            get; set;
+        }
+    }
     public partial class Albums
     {
         [J("albums")]
@@ -97,17 +106,14 @@ namespace Moon_Light_Music.Models
             get; set;
         }
         [J("release_date_precision")]
-        public string ReleaseDatePrecision
-        {
-            get; set;
-        }
+        public string ReleaseDatePrecision => ReleaseDate.DateTime.ToShortDateString();
         [J("total_tracks")]
         public long TotalTracks
         {
             get; set;
         }
         [J("tracks")]
-        public Tracks Tracks
+        public Track Tracks
         {
             get; set;
         }
@@ -178,6 +184,11 @@ namespace Moon_Light_Music.Models
 
     public partial class Item
     {
+        [J("album")]
+        public Album Album
+        {
+            get; set; 
+        }
         public int Index
         {
             get;set;
@@ -283,7 +294,17 @@ namespace Moon_Light_Music.Models
             get; set;
         }
     }
+
     public partial class Tracks
+    {
+        [J("tracks")]
+        public Track Track
+        {
+            get; set; 
+        }
+    }
+
+    public partial class Track
     {
         [J("href")]
         public Uri Href
@@ -331,7 +352,7 @@ namespace Moon_Light_Music.Models
         }
 
         [J("url")]
-        public Uri Url
+        public string Url
         {
             get; set;
         }
@@ -342,8 +363,41 @@ namespace Moon_Light_Music.Models
             get; set;
         }
     }
+    public partial class Follower
+    {
+        [J("href")]
+        public Uri Href
+        {
+            get;set;
+        }
+        [J("total")]
+        public long Total
+        {
+            get;set;
+        }
+
+    }
     public partial class Artist
     {
+        [J("genres")]
+        public List<string> Genres
+        {
+        get; set; }
+        [J("followers")]
+        public Follower Follower
+        {
+            get; set; 
+        }
+        [J("images")]
+        public List<Image> Images
+        {
+            get; set; 
+        }
+        [J("popularity")]
+        public long Popularity
+        {
+            get; set;
+        }
         [J("external_urls")]
         public ExternalUrls ExternalUrls
         {
