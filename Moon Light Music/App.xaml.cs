@@ -13,6 +13,8 @@ using Moon_Light_Music.Services;
 using Moon_Light_Music.ViewModels;
 using Moon_Light_Music.Views;
 
+using Newtonsoft.Json;
+
 namespace Moon_Light_Music;
 
 // To learn more about WinUI 3, see https://docs.microsoft.com/windows/apps/winui/winui3/.
@@ -24,11 +26,20 @@ public partial class App : Application
     // https://docs.microsoft.com/dotnet/core/extensions/configuration
     // https://docs.microsoft.com/dotnet/core/extensions/logging
 
-    public static string? Tokken_Album
+    public static GetAPI? _oAuthToken
     {
-        get; set;
+        get
+        {
+            try
+            {
+                return JsonConvert.DeserializeObject<GetAPI>(GetResponseFromAPIHelper.GetResponse_AndToken().Content!)!;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
     }
-
     public IHost Host
     {
         get;
@@ -77,6 +88,7 @@ public partial class App : Application
             services.AddSingleton<IFileService, FileService>();
 
             // Views and ViewModels
+
             services.AddTransient<SettingsViewModel>();
             services.AddTransient<SettingsPage>();
             services.AddTransient<DanhGiaViewModel>();
@@ -127,7 +139,6 @@ public partial class App : Application
         base.OnLaunched(args);
 
         App.GetService<IAppNotificationService>().Show(string.Format("AppNotificationSamplePayload".GetLocalized(), AppContext.BaseDirectory));
-
 
         await App.GetService<IActivationService>().ActivateAsync(args);
     }

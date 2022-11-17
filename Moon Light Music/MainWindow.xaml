@@ -5,14 +5,17 @@
     xmlns:local="using:Moon_Light_Music"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:windowex="using:WinUIEx"
-    MinWidth="500"
-    MinHeight="500"
-    
+    xmlns:windowex="using:WinUIEx"    
     PersistenceId="MainWindow"
+    MinHeight="720"
+    MinWidth="600"
     mc:Ignorable="d">
     <windowex:WindowEx.Backdrop>
-        <windowex:AcrylicSystemBackdrop  DarkTintOpacity="0.5" LightTintOpacity="0.4" DarkLuminosityOpacity="0.5" LightLuminosityOpacity="0.5" LightTintColor="LightPink" />
+        <windowex:AcrylicSystemBackdrop  DarkTintOpacity="0.8"
+                                         LightTintOpacity="0.4"
+                                         DarkLuminosityOpacity="0.8"
+                                         LightLuminosityOpacity="0.5"
+                                         LightTintColor="LightPink" />
     </windowex:WindowEx.Backdrop>
 
 </windowex:WindowEx>

@@ -1,7 +1,7 @@
 ﻿namespace Moon_Light_Music.Contracts.Services;
 public interface IOAuthTokkenService
 {
-    string OAuthTokken
+    string? OAuthTokken
     {
         get;
         set;
@@ -9,6 +9,6 @@ public interface IOAuthTokkenService
     Task InitializeAsync();
     Task SetTokkenAsync(string tokken);
 
-    Task SetRequestedTokkenAsync();
+    //Task SetRequestedTokkenAsync();
 
 }

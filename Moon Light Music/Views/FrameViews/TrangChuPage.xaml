@@ -21,7 +21,13 @@
             </FlipViewItem>
             <FlipViewItem>
                 <AnimatedVisualPlayer>
-                    <animatedvisuals:PlayMusic />
+                    <animatedvisuals:Holloween/>
+                </AnimatedVisualPlayer>
+            </FlipViewItem>
+            
+            <FlipViewItem>
+                <AnimatedVisualPlayer>
+                    <animatedvisuals:PlayMusic/>
                 </AnimatedVisualPlayer>
             </FlipViewItem>
           
@@ -31,5 +37,8 @@
                    VerticalAlignment="Bottom"
                    NumberOfPages="{x:Bind Path=Gallery.Items.Count}"
                    SelectedPageIndex="{x:Bind Path=Gallery.SelectedIndex, Mode=TwoWay}"></PipsPager>
+        <Grid Grid.Row="2">
+            <Button Click="Button_Click"></Button>
+        </Grid>
     </Grid>
 </Page>

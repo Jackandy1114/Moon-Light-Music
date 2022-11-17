@@ -27,12 +27,7 @@ public class ActivationService : IActivationService
     {
         // Execute tasks before activation.
         await InitializeAsync();
-        //if ((activationArgs as Windows.ApplicationModel.Activation.LaunchActivatedEventArgs).PreviousExecutionState != ApplicationExecutionState.Running)
-        //{
-        //    bool loadState = ((activationArgs as Windows.ApplicationModel.Activation.LaunchActivatedEventArgs).PreviousExecutionState != ApplicationExecutionState.Terminated);
-        //    ExtendedSplash extendedSplash = new ExtendedSplash();
-        //}
-        // Set the MainWindow Content.
+
         if (App.MainWindow.Content == null)
         {
             _shell = App.GetService<ShellPage>();
@@ -74,12 +69,12 @@ public class ActivationService : IActivationService
     private async Task StartupAsync()
     {
         await _themeSelectorService.SetRequestedThemeAsync();
-        await _oAuthTokkenService.SetRequestedTokkenAsync();
+        //await _oAuthTokkenService.SetRequestedTokkenAsync();
         await Task.CompletedTask;
     }
-    void DismissExtendedSplash()
-    {
-        //Navigate to mainpage
+    //void DismissExtendedSplash()
+    //{
+    //    //Navigate to mainpage
 
-    }
+    //}
 }

@@ -3,10 +3,10 @@
 namespace Moon_Light_Music.Services;
 public class OAuthTokkenService : IOAuthTokkenService
 {
-    public string OAuthTokken
+    public string? OAuthTokken
     {
         get; set;
-    } = String.Empty;
+    } = string.Empty;
     private const string SettingsKey = "OAuthTokken";
 
     private readonly ILocalSettingsService _localSettingsService;
@@ -34,13 +34,9 @@ public class OAuthTokkenService : IOAuthTokkenService
     public async Task SetTokkenAsync(string tokken)
     {
         OAuthTokken = tokken;
-
-        await SetRequestedTokkenAsync();
         await SaveTokkenInSettingsAsync(OAuthTokken);
     }
-    public async Task SetRequestedTokkenAsync()
-    {
-        App.Tokken_Album = OAuthTokken;
-        await Task.CompletedTask;
-    }
+    //public async Task SetRequestedTokkenAsync()
+    //{
+    //}
 }

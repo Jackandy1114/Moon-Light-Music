@@ -6,36 +6,35 @@
       mc:Ignorable="d">
     <Grid x:Name="ContentArea">
         <Grid.RowDefinitions>
-            <RowDefinition Height="9*" />
             <RowDefinition />
+            <RowDefinition Height="75"/>
         </Grid.RowDefinitions>
-        <ListView Grid.Row="0"
+        <ListView Grid.Row="0" x:Name="listviewAlbums"
                   CanDragItems="True"
                   CanReorderItems="True"
                   AllowDrop="True"
                   SelectionMode="Single"
                   VerticalAlignment="Top"
                   Background="Transparent"
-                  ItemsSource="{x:Bind ViewModel.Songs}">
-            <ListView.ItemTemplate>
+                  ItemsSource="{x:Bind ViewModel.AlbumsSpotify,Mode=OneWay}">
+                <ListView.ItemTemplate>
                 <DataTemplate>
-                    
-                <Grid x:Name="_borderAlbums" Margin="0 12"
-                        CornerRadius="10">
+                <Grid x:Name="_borderAlbums" 
+                      Margin="0 12"
+                      CornerRadius="10"
+                          Tapped="_borderAlbums_Tapped">
                     <ToolTipService.ToolTip>
-                        <ToolTip MinWidth="200"
-                                 BorderThickness="2"
-                                 CornerRadius="10"
-                                 Padding="10"
-                                 Placement="Right">
-
-                            <StackPanel>
-
-                                <TextBlock Text="{Binding Name}"
+                            <ToolTip MinWidth="200"
+                                     BorderThickness="2"
+                                     CornerRadius="10"
+                                     Padding="10"
+                                     Placement="Right">
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Name,Mode=OneWay}"
                                            TextAlignment="Center"
                                            FontSize="16"
                                            TextWrapping="WrapWholeWords"></TextBlock>
-                                <TextBlock Text="{Binding Path= Artists[0].Name}"
+                                <TextBlock Text="{Binding Artists[0].Name,Mode=OneWay}"
                                            TextAlignment="Center"
                                            FontSize="16"
                                            TextWrapping="WrapWholeWords"></TextBlock>
@@ -50,19 +49,25 @@
                                                TextWrapping="Wrap"></TextBlock>-->
                             </StackPanel>
                         </ToolTip>
-                    </ToolTipService.ToolTip>
-                    <Grid HorizontalAlignment="Stretch"
+                        </ToolTipService.ToolTip>
+                        <Rectangle HorizontalAlignment="Stretch"
+                                   VerticalAlignment="Stretch"
+                                   Fill="Transparent"
+                                   Grid.Column="0"
+                                   Grid.Row="0"
+                                   Tapped="_borderAlbums_Tapped" />
+                        <Grid HorizontalAlignment="Stretch"
                           ColumnSpacing="80">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="2*" />
                             <ColumnDefinition Width="5*" />
                         </Grid.ColumnDefinitions>
-
-                        <Border Grid.Column="0"
-                                CornerRadius="10"
-                                Width="200"
-                                Height="200">
-                                <Image Source="{Binding Images[1].Url}" />
+                            
+                            <Border Grid.Column="0"
+                                    CornerRadius="10"
+                                    Width="200"
+                                    Height="200">
+                                <Image Source="{Binding Images[1].Url,Mode=OneWay}" />
                             </Border>
 
                         <Grid Grid.Column="1">
@@ -80,13 +85,13 @@
                                 <TextBlock Grid.Column="0"
                                            x:Uid="tbAlbumsListViewName"
                                            Margin="0 12"></TextBlock>
-                                <TextBlock x:Name="AlbumsId"
-                                           Text="{Binding Id }"
-                                           Visibility="Collapsed" />
+                                <!--<TextBlock x:Name="_albumsId"
+                                               Text="{Binding Id,Mode=OneWay}"
+                                            />-->
                                 <HyperlinkButton Grid.Column="1"
                                                  VerticalAlignment="Center"
                                                  FontSize="24">
-                                    <TextBlock Text="{Binding Name}"
+                                        <TextBlock Text="{Binding Name,Mode=OneWay}"
                                                TextWrapping="WrapWholeWords"></TextBlock>
                                 </HyperlinkButton>
                             </Grid>
@@ -98,8 +103,8 @@
                                            VerticalAlignment="Center"></TextBlock>
                                 <HyperlinkButton FontSize="18"
                                                  VerticalAlignment="Top"
-                                                 Content="{ Binding Path= Artists[0].Name}" />
-                                <!--Comment code này lại cho đỡ lỗi binding-->
+                                                     Content="{ Binding Path= Artists[0].Name,Mode=OneWay}" />
+                                <!--Comment code này lại cho đỡ lỗi binding gỡ ra khi xong viêc nhé-->
                                 <!--<HyperlinkButton FontSize="18"
                                                      VerticalAlignment="Top"
                                                      Content="{ Binding Path= Artists[1].Name}" />
@@ -118,7 +123,7 @@
                                            VerticalAlignment="Center"
                                            TextWrapping="WrapWholeWords"
                                            Padding="12 0"
-                                           Text="{Binding ReleaseDatePrecision}" />
+                                               Text="{Binding ReleaseDatePrecision,Mode=OneWay}" />
                             </StackPanel>
                             <StackPanel VerticalAlignment="Top"
                                         Orientation="Horizontal"
@@ -129,11 +134,10 @@
                                            FontSize="16"
                                            VerticalAlignment="Center"
                                            TextWrapping="WrapWholeWords"
-                                           Text="{Binding TotalTracks}" />
+                                               Text="{Binding TotalTracks,Mode=OneWay}" />
                             </StackPanel>
 
                         </Grid>
-
                     </Grid>
                 </Grid>
 
@@ -141,16 +145,17 @@
             </ListView.ItemTemplate>
 
         </ListView>
-       
-        <Button Grid.Row="1"
+
+        <Button x:Name="btn_moreList"
+                Grid.Row="1"
                 HorizontalAlignment="Center"
                 x:Uid="btn_Themnoidung"
                 Width="200"
                 FontSize="16"
                 CornerRadius="10"
-                MinHeight="50"
+                
+                IsEnabled="{x:Bind ViewModel.IsEnableBtn_moreLoading}"
                 Command="{x:Bind ViewModel.moreListcommand}">
-
         </Button>
 
     </Grid>

@@ -218,4 +218,16 @@
   <data name="Shell_ChuDe_child_1.Content" xml:space="preserve">
     <value>List Albums</value>
   </data>
+  <data name="Shell_Album.Content" xml:space="preserve">
+    <value>Album</value>
+  </data>
+  <data name="Shell_ChuDe_child_2.Content" xml:space="preserve">
+    <value>Album</value>
+  </data>
+  <data name="DurationPresent.Text" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="tbTrackListViewName.Text" xml:space="preserve">
+    <value>Track Name:</value>
+  </data>
 </root>

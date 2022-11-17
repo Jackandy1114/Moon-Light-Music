@@ -11,8 +11,4 @@ public class LocalSettingsOptions
     {
         get; set;
     }
-    public string? Tokken
-    {
-        get; set;
-    }
 }
