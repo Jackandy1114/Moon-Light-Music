@@ -203,7 +203,10 @@
                            FontWeight="Bold"
                            VerticalAlignment="Center" HorizontalAlignment="Center" Text="{x:Bind _song_name}"></TextBlock>
             </Grid>
-            <MediaPlayerElement Grid.Column="1" x:Name="_MediaPlayer" AreTransportControlsEnabled="True" >
+            <MediaPlayerElement Grid.Column="1"
+                                x:Name="_MediaPlayer"
+                               
+                                AreTransportControlsEnabled="True" >
                 <MediaPlayerElement.TransportControls>
                     <MediaTransportControls  IsSeekBarVisible="True" IsSeekEnabled="True" IsZoomButtonVisible="False" IsAccessKeyScope="True" ExitDisplayModeOnAccessKeyInvoked="True" IsNextTrackButtonVisible="True" IsPreviousTrackButtonVisible="True" IsRepeatButtonVisible="True" IsRepeatEnabled="True">
                        
