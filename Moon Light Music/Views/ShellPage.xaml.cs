@@ -130,10 +130,6 @@ public sealed partial class ShellPage : Page
         }
     }
 
-    private async void Button_Click(object sender, RoutedEventArgs e)
-    {
-
-    }
     private void Button_Click_1(object sender, RoutedEventArgs e)
     {
         //Rất xin lỗi nhạc của tui : )))) tại bạn để lộ cái player nên tui lấy thôi
