@@ -22,6 +22,19 @@ public class ShellViewModel : ObservableRecipient
         get;
     }
 
+    //private MediaSource _mediaSource = MediaSource.CreateFromUri(new Uri("https://stream.nixcdn.com/NhacCuaTui1026/Psychofreak-CamilaCabelloWillowSmith-7182840.mp3?st=DEmuSFVapY4ThJvlRAKBew&e=1667985229"));
+
+    //public MediaSource mediaSource
+    //{
+    //    get => _mediaSource;
+    //    set => SetProperty(ref _mediaSource, value);
+    //}
+
+    //public ShellPage _shellPage
+    //{
+    //    get;
+    //}
+
 
     public bool IsBackEnabled
     {
@@ -37,9 +50,12 @@ public class ShellViewModel : ObservableRecipient
 
     public ShellViewModel(INavigationService navigationService, INavigationViewService navigationViewService)
     {
+
         NavigationService = navigationService;
         NavigationService.Navigated += OnNavigated;
         NavigationViewService = navigationViewService;
+        //_shellPage = shellPage;
+
     }
 
     private void OnNavigated(object sender, NavigationEventArgs e)

@@ -67,6 +67,7 @@
           <uap:Extension Category="windows.mediaPlayback">
               <uap:MediaPlayback>
                   <uap:Codec Name="mp3"/>
+                  <uap:Codec Name="mpeg2"/>
               </uap:MediaPlayback>
           </uap:Extension>
       </Extensions>
@@ -79,6 +80,7 @@
     <uap:Capability Name="musicLibrary"/>
     <uap:Capability Name="picturesLibrary"/>
     <Capability Name="internetClientServer"/>
+    <DeviceCapability Name="microphone"/>
   </Capabilities>
 
   <genTemplate:Metadata>
