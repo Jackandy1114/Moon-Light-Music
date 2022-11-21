@@ -6,8 +6,6 @@ using Moon_Light_Music.ViewModels;
 
 using Newtonsoft.Json;
 
-using Windows.Media.Core;
-
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
@@ -17,6 +15,11 @@ namespace Moon_Light_Music.Views;
 /// </summary>
 public sealed partial class ChuDeChildPage : Page
 {
+    public ShellPage _shell
+    {
+        get;
+    }
+
     public ChuDeChildViewModel ViewModel
     {
         get;
@@ -24,26 +27,23 @@ public sealed partial class ChuDeChildPage : Page
     public ChuDeChildPage()
     {
         ViewModel = App.GetService<ChuDeChildViewModel>();
+        _shell = (ShellPage)App.MainWindow.Content;
+
         InitializeComponent();
+        //_shell = App.GetService<ShellPage>();
     }
 
-    private async void SymbolIcon_Tapped(object sender, Microsoft.UI.Xaml.Input.TappedRoutedEventArgs e)
+    private void SymbolIcon_Tapped(object sender, Microsoft.UI.Xaml.Input.TappedRoutedEventArgs e)
     {
-        try
-        {
-            if (new Uri(StaticDataBindingModel.TracksInAlbumsSpotify[TrackAlbums.SelectedIndex].PreviewUrl.AbsoluteUri) != StaticDataBindingModel._PLayingMedia)
-            {
-                StaticDataBindingModel._PLayingMedia = new Uri(StaticDataBindingModel.TracksInAlbumsSpotify[TrackAlbums.SelectedIndex].PreviewUrl.AbsoluteUri);
-                await Task.Run(() => StaticDataBindingModel.mediaPlayer.Source = MediaSource.CreateFromUri(StaticDataBindingModel._PLayingMedia));
-                StaticDataBindingModel.mediaPlayer.Play();
-            }
-        }
-        catch (Exception)
-        {
 
+        if (new Uri(StaticDataBindingModel.TracksInAlbumsSpotify[TrackAlbums.SelectedIndex].PreviewUrl.AbsoluteUri) != StaticDataBindingModel._PLayingMedia)
+        {
+            StaticDataBindingModel._PLayingMedia = new Uri(StaticDataBindingModel.TracksInAlbumsSpotify[TrackAlbums.SelectedIndex].PreviewUrl.AbsoluteUri);
+            _shell._media.MediaPlayer.SetUriSource(new Uri(StaticDataBindingModel.TracksInAlbumsSpotify[TrackAlbums.SelectedIndex].PreviewUrl.AbsoluteUri));
+            _shell._media.MediaPlayer.Play();
         }
-
     }
+
 
     private void HyperlinkButton_Tapped(object sender, Microsoft.UI.Xaml.Input.TappedRoutedEventArgs e)
     {

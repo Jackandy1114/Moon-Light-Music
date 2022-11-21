@@ -1,7 +1,5 @@
 ﻿using System.Collections.ObjectModel;
 
-using Windows.Media.Playback;
-
 namespace Moon_Light_Music.Models;
 public static class StaticDataBindingModel
 {
@@ -29,12 +27,9 @@ public static class StaticDataBindingModel
     public static Uri? _PLayingMedia
     {
         get; set;
-    }
-    public static MediaPlayer mediaPlayer
-    {
-        get; set;
-    } = new();
+    } = new Uri("https://stream.nixcdn.com/NhacCuaTui1026/Psychofreak-CamilaCabelloWillowSmith-7182840.mp3?st=DEmuSFVapY4ThJvlRAKBew&e=1667985229");
 
+    //https://stream.nixcdn.com/NhacCuaTui940/MayonakaNoDoorStayWithMe-MikiMatsubara-4892669.mp3?st=PwGNSvVfkzi21atGdFwM4A&e=1669125309
     public static string song_img_url
     {
         get; set;
