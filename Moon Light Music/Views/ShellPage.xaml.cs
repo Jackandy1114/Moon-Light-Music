@@ -11,8 +11,6 @@ using Moon_Light_Music.ViewModels;
 using Newtonsoft.Json;
 
 using Windows.Media.Core;
-using Windows.Storage;
-using Windows.Storage.Pickers;
 using Windows.System;
 
 namespace Moon_Light_Music.Views;
@@ -25,6 +23,9 @@ public sealed partial class ShellPage : Page
     {
         get;
     }
+
+    public Microsoft.UI.Xaml.Controls.MediaPlayerElement _media => MainMPE;
+
     public INavigationService _navigationService;
 
     public string _song_img_url { get; set; } = StaticDataBindingModel.song_img_url;
@@ -34,9 +35,8 @@ public sealed partial class ShellPage : Page
         get; set;
     } = StaticDataBindingModel.song_name;
 
-    public string _logoTheme = "";
-    //private MediaPlayer _MediaPlayer = StaticDataBindingModel._MediaPlayer;
 
+    public string _logoTheme = "";
     public string LogoTheme
     {
         get => _logoTheme = ActualTheme == ElementTheme.Light ? "/Image/Logo/Light.png" : "/Image/Logo/Dark.png"; set => _logoTheme = value;
@@ -47,7 +47,9 @@ public sealed partial class ShellPage : Page
     {
         ViewModel = viewModel;
         InitializeComponent();
-        _MediaPlayer.SetMediaPlayer(StaticDataBindingModel.mediaPlayer);
+
+        MainMPE.Source = MediaSource.CreateFromUri(new Uri("https://stream.nixcdn.com/NhacCuaTui1026/Psychofreak-CamilaCabelloWillowSmith-7182840.mp3?st=DEmuSFVapY4ThJvlRAKBew&e=1667985229"));
+
         _navigationService = ViewModel.NavigationService;
 
         ViewModel.NavigationService.Frame = NavigationFrame;
@@ -128,41 +130,15 @@ public sealed partial class ShellPage : Page
         }
     }
 
-
     private async void Button_Click(object sender, RoutedEventArgs e)
     {
-        var hwnd = WinRT.Interop.WindowNative.GetWindowHandle(App.MainWindow);
 
-        FileOpenPicker openPicker = new FileOpenPicker();
-        openPicker.ViewMode = PickerViewMode.Thumbnail;
-        openPicker.SuggestedStartLocation = PickerLocationId.PicturesLibrary;
-        var fileTypes = new string[] { ".wmv", ".mp4", ".mkv", ".mp3" };
-
-        //Add your fileTypes to the FileTypeFilter list of filePicker.
-        foreach (var fileType in fileTypes)
-        {
-            openPicker.FileTypeFilter.Add(fileType);
-        }
-        openPicker.FileTypeFilter.Add("*");
-        WinRT.Interop.InitializeWithWindow.Initialize(openPicker, hwnd);
-
-
-        StorageFile file = await openPicker.PickSingleFileAsync();
-        if (file != null)
-        {
-            // Application now has read/write access to the picked file
-            //var _mediaSource = MediaSource.CreateFromStorageFile(file);
-            //_MediaPlayer.Source = _mediaSource;
-            //mediaPlayerElement.SetMediaPlayer(_mediaPlayer);
-            //_MediaPlayer.Play();
-        }
     }
     private void Button_Click_1(object sender, RoutedEventArgs e)
     {
         //Rất xin lỗi nhạc của tui : )))) tại bạn để lộ cái player nên tui lấy thôi
         Uri manifestUri = new Uri("https://stream.nixcdn.com/NhacCuaTui1026/Psychofreak-CamilaCabelloWillowSmith-7182840.mp3?st=DEmuSFVapY4ThJvlRAKBew&e=1667985229");
-        StaticDataBindingModel.mediaPlayer.Source = MediaSource.CreateFromUri(manifestUri);
-        StaticDataBindingModel.mediaPlayer.Play();
+        StaticDataBindingModel._PLayingMedia = manifestUri;
     }
 
     private void AutoSuggestBox_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
@@ -197,12 +173,8 @@ public sealed partial class ShellPage : Page
             {
 
             }
-
-
         }
-
     }
-
     private void AutoSuggestBox_SuggestionChosen(AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)
     {
 
@@ -212,4 +184,11 @@ public sealed partial class ShellPage : Page
     {
 
     }
+
+    private void PersonPicture_Tapped(object sender, TappedRoutedEventArgs e)
+    {
+        //ViewModel.mediaSource = );
+        //_media.MediaPlayer.SetUriSource(new Uri("https://stream.nixcdn.com/NhacCuaTui940/MayonakaNoDoorStayWithMe-MikiMatsubara-4892669.mp3?st=PwGNSvVfkzi21atGdFwM4A&e=1669125309"));
+    }
+
 }

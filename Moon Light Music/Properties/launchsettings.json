@@ -1,10 +1,14 @@
-﻿{
-    "profiles": {
-      "Moon Light Music (Package)": {
-        "commandName": "MsixPackage"
-      },
-      "Moon Light Music (Unpackaged)": {
-        "commandName": "Project"
-      }
+{
+  "profiles": {
+    "Moon Light Music (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Moon Light Music (Unpackaged)": {
+      "commandName": "Project"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
     }
+  }
 }

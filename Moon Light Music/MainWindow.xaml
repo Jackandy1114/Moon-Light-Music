@@ -11,9 +11,9 @@
     MinWidth="600"
     mc:Ignorable="d">
     <windowex:WindowEx.Backdrop>
-        <windowex:AcrylicSystemBackdrop  DarkTintOpacity="0.8"
-                                         LightTintOpacity="0.4"
-                                         DarkLuminosityOpacity="0.8"
+        <windowex:AcrylicSystemBackdrop  DarkTintOpacity="0.5"
+                                         DarkLuminosityOpacity="0.6"
+                                         LightTintOpacity="0.3"
                                          LightLuminosityOpacity="0.5"
                                          LightTintColor="LightPink" />
     </windowex:WindowEx.Backdrop>

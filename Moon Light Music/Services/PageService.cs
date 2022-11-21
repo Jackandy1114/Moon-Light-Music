@@ -26,6 +26,7 @@ public class PageService : IPageService
         Configure<DanhGiaViewModel, DanhGiaPage>();
         Configure<SettingsViewModel, SettingsPage>();
         Configure<ChuDeChildViewModel, ChuDeChildPage>();
+        //Configure<ShellViewModel, ShellPage>();
     }
 
     public Type GetPageType(string key)

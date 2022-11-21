@@ -3,6 +3,7 @@ using Microsoft.UI.Xaml.Controls;
 
 using Moon_Light_Music.Activation;
 using Moon_Light_Music.Contracts.Services;
+using Moon_Light_Music.Helpers;
 using Moon_Light_Music.Views;
 
 namespace Moon_Light_Music.Services;
@@ -33,15 +34,16 @@ public class ActivationService : IActivationService
             _shell = App.GetService<ShellPage>();
             App.MainWindow.Content = _shell ?? new Frame();
         }
-
         // Handle activation via ActivationHandlers.
         await HandleActivationAsync(activationArgs);
-
         // Activate the MainWindow.
-        App.MainWindow.Activate();
+
+        //await HandleActivationAsync(activationArgs);
 
         // Execute tasks after activation.
         await StartupAsync();
+
+
     }
 
     private async Task HandleActivationAsync(object activationArgs)
@@ -62,14 +64,18 @@ public class ActivationService : IActivationService
     private async Task InitializeAsync()
     {
         await _themeSelectorService.InitializeAsync().ConfigureAwait(false);
+
         await _oAuthTokkenService.InitializeAsync().ConfigureAwait(false);
         await Task.CompletedTask;
     }
 
     private async Task StartupAsync()
     {
+        await AnimatedSplashScreenHelpers.RunAnimatedSplashScreenAsync();
         await _themeSelectorService.SetRequestedThemeAsync();
+        //await _themeSelectorService.SetRequestedThemeAsync();
         //await _oAuthTokkenService.SetRequestedTokkenAsync();
+
         await Task.CompletedTask;
     }
     //void DismissExtendedSplash()

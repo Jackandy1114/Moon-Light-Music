@@ -56,7 +56,14 @@ public partial class App : Application
         return service;
     }
 
-    public static WindowEx MainWindow { get; } = new MainWindow();
+    public static WindowEx MainWindow
+    {
+        get;
+    } = new MainWindow()
+    {
+        ExtendsContentIntoTitleBar = true,
+
+    };
 
     public App()
     {
@@ -141,5 +148,8 @@ public partial class App : Application
         App.GetService<IAppNotificationService>().Show(string.Format("AppNotificationSamplePayload".GetLocalized(), AppContext.BaseDirectory));
 
         await App.GetService<IActivationService>().ActivateAsync(args);
+
+
+
     }
 }

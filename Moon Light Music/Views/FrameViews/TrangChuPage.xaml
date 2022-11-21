@@ -38,7 +38,24 @@
                    NumberOfPages="{x:Bind Path=Gallery.Items.Count}"
                    SelectedPageIndex="{x:Bind Path=Gallery.SelectedIndex, Mode=TwoWay}"></PipsPager>
         <Grid Grid.Row="2">
-            <Button Click="Button_Click"></Button>
+            <DropDownButton x:Uid="TrangChuDropDown" >
+                <DropDownButton.Flyout>
+                    <MenuFlyout Placement="Bottom">
+                        <MenuFlyoutItem x:Uid="TranChuDropDownItemOpenFile"
+                                        Tapped="MenuFlyoutItem_TappedAsync">
+                            <MenuFlyoutItem.Icon>
+                                <SymbolIcon Symbol="OpenFile"></SymbolIcon>
+                            </MenuFlyoutItem.Icon>
+                        </MenuFlyoutItem>
+
+                        <MenuFlyoutItem x:Uid="TranChuDropDownItemOpenUrl" Tapped="MenuFlyoutItem_Tapped">
+                            <MenuFlyoutItem.Icon>
+                                <SymbolIcon Symbol="Globe" ></SymbolIcon>
+                            </MenuFlyoutItem.Icon>
+                        </MenuFlyoutItem>
+                    </MenuFlyout>
+                </DropDownButton.Flyout>
+            </DropDownButton>
         </Grid>
     </Grid>
 </Page>
