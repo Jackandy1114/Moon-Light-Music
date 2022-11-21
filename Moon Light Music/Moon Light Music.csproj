@@ -17,17 +17,17 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <PackageCertificateThumbprint>48B88B909CF22FC6666E95E36256FA4616D3A72F</PackageCertificateThumbprint>
     <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <Authors>Tran Phu Dat</Authors>
     <PackageIcon>StoreLogo.scale-400.png</PackageIcon>
     <NeutralLanguage>en-US</NeutralLanguage>
     <GenerateAppInstallerFile>True</GenerateAppInstallerFile>
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
-    <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
+    <AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
     <GenerateTestArtifacts>True</GenerateTestArtifacts>
     <AppxBundle>Auto</AppxBundle>
-    <AppxBundlePlatforms>x86</AppxBundlePlatforms>
+    <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
     <AppInstallerUri>D:\Moon Light</AppInstallerUri>
   </PropertyGroup>
   <ItemGroup>

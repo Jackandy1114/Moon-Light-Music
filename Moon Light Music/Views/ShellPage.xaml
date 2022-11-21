@@ -180,7 +180,7 @@
                     </behaviors:NavigationViewHeaderBehavior.DefaultHeaderTemplate>
                 </behaviors:NavigationViewHeaderBehavior>
             </i:Interaction.Behaviors>
-            <Grid Margin="{StaticResource NavigationViewPageContentMargin}">
+            <Grid Margin="{StaticResource NavigationViewPageContentMargin}" >
                 <Frame x:Name="NavigationFrame" >
                  
                 </Frame>

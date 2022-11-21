@@ -11,8 +11,6 @@ using Moon_Light_Music.ViewModels;
 using Newtonsoft.Json;
 
 using Windows.Media.Core;
-using Windows.Storage;
-using Windows.Storage.Pickers;
 using Windows.System;
 
 namespace Moon_Light_Music.Views;
@@ -52,7 +50,6 @@ public sealed partial class ShellPage : Page
 
         MainMPE.Source = MediaSource.CreateFromUri(new Uri("https://stream.nixcdn.com/NhacCuaTui1026/Psychofreak-CamilaCabelloWillowSmith-7182840.mp3?st=DEmuSFVapY4ThJvlRAKBew&e=1667985229"));
 
-        //_MediaPlayer.SetMediaPlayer(StaticDataBindingModel.mediaPlayer);
         _navigationService = ViewModel.NavigationService;
 
         ViewModel.NavigationService.Frame = NavigationFrame;
@@ -135,31 +132,7 @@ public sealed partial class ShellPage : Page
 
     private async void Button_Click(object sender, RoutedEventArgs e)
     {
-        var hwnd = WinRT.Interop.WindowNative.GetWindowHandle(App.MainWindow);
 
-        FileOpenPicker openPicker = new FileOpenPicker();
-        openPicker.ViewMode = PickerViewMode.Thumbnail;
-        openPicker.SuggestedStartLocation = PickerLocationId.PicturesLibrary;
-        var fileTypes = new string[] { ".wmv", ".mp4", ".mkv", ".mp3" };
-
-        //Add your fileTypes to the FileTypeFilter list of filePicker.
-        foreach (var fileType in fileTypes)
-        {
-            openPicker.FileTypeFilter.Add(fileType);
-        }
-        openPicker.FileTypeFilter.Add("*");
-        WinRT.Interop.InitializeWithWindow.Initialize(openPicker, hwnd);
-
-
-        StorageFile file = await openPicker.PickSingleFileAsync();
-        if (file != null)
-        {
-            // Application now has read/write access to the picked file
-            //var _mediaSource = MediaSource.CreateFromStorageFile(file);
-            //_MediaPlayer.Source = _mediaSource;
-            //mediaPlayerElement.SetMediaPlayer(_mediaPlayer);
-            //_MediaPlayer.Play();
-        }
     }
     private void Button_Click_1(object sender, RoutedEventArgs e)
     {
