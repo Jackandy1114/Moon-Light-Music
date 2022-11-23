@@ -35,12 +35,12 @@ public class ChuDeViewModel : ObservableRecipient
         }
         moreListcommand = new RelayCommand(async () =>
         {
-            AlbumsCollection(oAuthTokkenService.OAuthTokken!, oAuthTokkenService);
+            await AlbumsCollection(oAuthTokkenService.OAuthTokken!, oAuthTokkenService).ConfigureAwait(false);
         }
        );
     }
 
-    public async void AlbumsCollection(string OAuth2Tokken, IOAuthTokkenService _oAuthTokkenService)
+    public static async Task AlbumsCollection(string OAuth2Tokken, IOAuthTokkenService _oAuthTokkenService)
     {
         if (StaticDataBindingModel._isEnableBtn_moreLoading)
         {
@@ -55,7 +55,7 @@ public class ChuDeViewModel : ObservableRecipient
                 _albums = JsonConvert.DeserializeObject<Albums>(GetResponseFromAPIHelper.GetResponse(OAuth2Tokken, StaticDataBindingModel.RequestSpotifyALbums).Content!)!;
                 if (_albums != null)
                 {
-                    for (var i = 1; i < _albums.Album.Limit; i++)
+                    for (var i = 1; i < _albums.Album.Items.Count; i++)
                     {
                         if (_albums.Album.Items != null)
                         {
@@ -123,9 +123,10 @@ public class ChuDeViewModel : ObservableRecipient
         }
         else
         {
+            //Chổ này có thể set vào thẳng view luôn : | tự dưng làm rườm rà zậy Hoàng(Bản thể A của Đạt)
             StaticDataBindingModel._isEnableBtn_moreLoading = false;
-
         }
+        await Task.CompletedTask.WaitAsync(new TimeSpan(ticks: 3000));
     }
 
 }

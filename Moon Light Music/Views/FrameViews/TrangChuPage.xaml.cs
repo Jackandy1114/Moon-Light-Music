@@ -1,5 +1,7 @@
-﻿using Microsoft.UI.Xaml.Controls;
+﻿using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
 
+using Moon_Light_Music.Dialog;
 using Moon_Light_Music.ViewModels;
 
 using Windows.Media.Core;
@@ -34,7 +36,7 @@ public sealed partial class TrangChuPage : Page
         //StaticDataBindingModel.mediaPlayer.Play();
     }
 
-    private async void MenuFlyoutItem_TappedAsync(object sender, Microsoft.UI.Xaml.Input.TappedRoutedEventArgs e)
+    private async void MenuFlyoutOpenFile_TappedAsync(object sender, Microsoft.UI.Xaml.Input.TappedRoutedEventArgs e)
     {
         var hwnd = WinRT.Interop.WindowNative.GetWindowHandle(App.MainWindow);
 
@@ -64,14 +66,26 @@ public sealed partial class TrangChuPage : Page
         }
     }
 
-    private void MenuFlyoutItem_Tapped(object sender, Microsoft.UI.Xaml.Input.TappedRoutedEventArgs e)
+    private async void MenuFlyoutOpenLink_TappedAsync(object sender, Microsoft.UI.Xaml.Input.TappedRoutedEventArgs e)
     {
-        if (_shell._media.MediaPlayer.Source != MediaSource.CreateFromUri(new Uri("https://stream.nixcdn.com/NhacCuaTui940/MayonakaNoDoorStayWithMe-MikiMatsubara-4892669.mp3?st=PwGNSvVfkzi21atGdFwM4A&e=1669125309")))
+        ContentDialog _dialog = new OpenUrlMusicLink()
         {
+            XamlRoot = App.MainWindow.Content.XamlRoot,
+            Style = Application.Current.Resources["DefaultContentDialogStyle"] as Style,
 
-            _shell._media.MediaPlayer.SetUriSource(new Uri("https://stream.nixcdn.com/NhacCuaTui940/MayonakaNoDoorStayWithMe-MikiMatsubara-4892669.mp3?st=PwGNSvVfkzi21atGdFwM4A&e=1669125309"));
-            _shell._media.MediaPlayer.Play();
+        };
 
+        ContentDialogResult result = await _dialog.ShowAsync();
+        if (result == ContentDialogResult.Primary)
+        {
+            var _content = (OpenUrlMusicLink)_dialog;
+            if (_shell._media.MediaPlayer.Source != MediaSource.CreateFromUri(new Uri(_content.Link)))
+            {
+                _shell._media.MediaPlayer.SetUriSource(new Uri(_content.Link));
+
+                _shell._media.MediaPlayer.Play();
+            }
         }
+
     }
 }

@@ -201,9 +201,8 @@
                 <Grid.RowDefinitions>
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <PersonPicture Grid.Row="0"
+                <PersonPicture x:Name="Shell_MediaPicture" Grid.Row="0"
                                Width="80"
-                               ProfilePicture="{x:Bind _song_img_url}"
                                VerticalAlignment="Center"
                                Tapped="PersonPicture_Tapped"
                                HorizontalAlignment="Center"></PersonPicture>
@@ -217,20 +216,21 @@
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <TextBlock Grid.Row="0"
+                <TextBlock x:Name="Shell_MediaName" Grid.Row="0"
                            TextWrapping="Wrap"
                            FontSize="14"
                            FontWeight="Bold"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
                            Text="{x:Bind _song_name}"></TextBlock>
-                <TextBlock Grid.Row="1"
+                <TextBlock x:Name="Shell_MediaArtist"
+                           Grid.Row="1"
                            TextWrapping="Wrap"
                            FontSize="14"
                            FontWeight="Bold"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
-                           Text="{x:Bind _song_name}"></TextBlock>
+                           Text="{x:Bind _song_artist}"></TextBlock>
 
             </Grid>
             <MediaPlayerElement x:Name="MainMPE"  Grid.Column="2"

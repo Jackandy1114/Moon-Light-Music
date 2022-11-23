@@ -159,6 +159,8 @@
                 FontSize="16"
                 CornerRadius="10"
                 MinHeight="50"
+                Click="btn_moreList_Click"
+                
                 >
         </Button>
     </Grid>

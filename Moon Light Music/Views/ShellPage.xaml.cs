@@ -23,17 +23,24 @@ public sealed partial class ShellPage : Page
     {
         get;
     }
+    public BaiHatPage _baiHatPage
+    {
+        get;
+    }
 
     public Microsoft.UI.Xaml.Controls.MediaPlayerElement _media => MainMPE;
+    public PersonPicture _MediaPicture => Shell_MediaPicture;
 
     public INavigationService _navigationService;
-
-    public string _song_img_url { get; set; } = StaticDataBindingModel.song_img_url;
 
     public string _song_name
     {
         get; set;
-    } = StaticDataBindingModel.song_name;
+    } = "Tên bài hát";
+    public string _song_artist
+    {
+        get; set;
+    } = "Tên nghệ sĩ";
 
 
     public string _logoTheme = "";
@@ -47,7 +54,7 @@ public sealed partial class ShellPage : Page
     {
         ViewModel = viewModel;
         InitializeComponent();
-
+        _baiHatPage = App.GetService<BaiHatPage>();
         MainMPE.Source = MediaSource.CreateFromUri(new Uri("https://stream.nixcdn.com/NhacCuaTui1026/Psychofreak-CamilaCabelloWillowSmith-7182840.mp3?st=DEmuSFVapY4ThJvlRAKBew&e=1667985229"));
 
         _navigationService = ViewModel.NavigationService;
@@ -130,45 +137,50 @@ public sealed partial class ShellPage : Page
         }
     }
 
-    private void Button_Click_1(object sender, RoutedEventArgs e)
-    {
-        //Rất xin lỗi nhạc của tui : )))) tại bạn để lộ cái player nên tui lấy thôi
-        Uri manifestUri = new Uri("https://stream.nixcdn.com/NhacCuaTui1026/Psychofreak-CamilaCabelloWillowSmith-7182840.mp3?st=DEmuSFVapY4ThJvlRAKBew&e=1667985229");
-        StaticDataBindingModel._PLayingMedia = manifestUri;
-    }
-
     private void AutoSuggestBox_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
     {
         if (!string.IsNullOrEmpty(args.QueryText))
         {
             StaticDataBindingModel._TracksSpotify = new();
-            Tracks _tracks;
+            Tracks _tracks = null;
             var token = App._oAuthToken.Token;
             try
             {
                 _tracks = JsonConvert.DeserializeObject<Tracks>(GetResponseFromAPIHelper.GetResponse(token, StaticDataBindingModel.stringTo_RequestSpotifyTracks(args.QueryText)).Content!)!;
-                if (_tracks.Track != null)
-                {
-                    for (var i = 1; i < _tracks.Track.Limit; i++)
-                    {
-                        if (_tracks.Track.Items != null)
-                        {
-                            var track = _tracks.Track.Items[i];
-                            StaticDataBindingModel._TracksSpotify.Add(track);
-                        }
-                    }
-                    if (_tracks.Track.Next != null)
-                    {
-                        StaticDataBindingModel.RequestSpotifyTracks = _tracks.Track.Next.ToString()!;
-                    }
-                }
-                _navigationService.NavigateTo("Moon_Light_Music.ViewModels.TrangChuViewModel");
-                _navigationService.NavigateTo("Moon_Light_Music.ViewModels.BaiHatViewModel");
             }
             catch (Exception)
             {
 
             }
+            if (_tracks == null)
+            {
+                _baiHatPage._btn_moreList.IsEnabled = false;
+            }
+            else if (_tracks.Track == null)
+            {
+                _baiHatPage._btn_moreList.IsEnabled = false;
+            }
+            else
+            {
+                for (var i = 0; i < _tracks.Track.Items.Count; i++)
+                {
+                    if (_tracks.Track.Items != null)
+                    {
+                        var track = _tracks.Track.Items[i];
+                        StaticDataBindingModel._TracksSpotify.Add(track);
+                    }
+                }
+                if (_tracks.Track.Next != null)
+                {
+                    StaticDataBindingModel.RequestSpotifyTracks = _tracks.Track.Next.ToString()!;
+                }
+                else
+                {
+                    _baiHatPage._btn_moreList.IsEnabled = false;
+                }
+            }
+            _navigationService.NavigateTo("Moon_Light_Music.ViewModels.XepHangViewModel");
+            _navigationService.NavigateTo("Moon_Light_Music.ViewModels.BaiHatViewModel");
         }
     }
     private void AutoSuggestBox_SuggestionChosen(AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)

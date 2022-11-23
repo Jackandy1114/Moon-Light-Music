@@ -164,19 +164,25 @@
                             </Grid>
                         <Grid Grid.Column="1"
                               
-                              CornerRadius="5" ColumnSpacing="0">
+                               ColumnSpacing="0">
                                 <Grid.ColumnDefinitions>
-                                <ColumnDefinition />
+                                    <ColumnDefinition Width="2*" />
                                 <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                               
-                                <SymbolIcon Grid.Column="1" Symbol="Play" Tapped="SymbolIcon_Tapped"
-                                            Visibility="Visible"></SymbolIcon>
-                                <Image VerticalAlignment="Center"
+
+                                <Border Grid.Column="0"
+                                        CornerRadius="10">
+                                    
+                                <Image 
                                        Tapped="SymbolIcon_Tapped"
-                                   HorizontalAlignment="Center"
-                                   Source="{Binding Images[1].Url}" />
-                        </Grid>
+                                       Stretch="UniformToFill"
+                                   Source="{Binding Images[2].Url}" />
+                                </Border>
+                                <SymbolIcon Grid.Column="1"
+                                            Symbol="Play"
+                                            Tapped="SymbolIcon_Tapped"
+                                            Visibility="Visible"></SymbolIcon>
+                            </Grid>
                         <Grid Grid.Column="2" RowSpacing="10">
                             <Grid.RowDefinitions>
                                 <RowDefinition />

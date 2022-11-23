@@ -24,18 +24,11 @@ public static class StaticDataBindingModel
     public static ObservableCollection<Item> TracksInAlbumsSpotify = new();
     public static ObservableCollection<Artist> Artist = new();
 
-    public static Uri? _PLayingMedia
-    {
-        get; set;
-    } = new Uri("https://stream.nixcdn.com/NhacCuaTui1026/Psychofreak-CamilaCabelloWillowSmith-7182840.mp3?st=DEmuSFVapY4ThJvlRAKBew&e=1667985229");
 
     //https://stream.nixcdn.com/NhacCuaTui940/MayonakaNoDoorStayWithMe-MikiMatsubara-4892669.mp3?st=PwGNSvVfkzi21atGdFwM4A&e=1669125309
-    public static string song_img_url
-    {
-        get; set;
-    } = @"\Image\Logo\1.png";
 
-    public static string song_name { get; set; } = "Tên bài hát";
+    //https://stream.nixcdn.com/NhacCuaTui877/NuocNgoai-PhanManhQuynh-3640447.mp3?st=cGl4BcsPWLKV-km-pb08qg&e=1669176567
+
 
     public static bool _isEnableBtn_moreLoading = true;
 
