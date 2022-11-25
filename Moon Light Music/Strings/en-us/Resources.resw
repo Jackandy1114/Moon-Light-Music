@@ -248,4 +248,10 @@
   <data name="OpenUrlDialog.Title" xml:space="preserve">
     <value>Open music by link</value>
   </data>
+  <data name="Shell_MediaArtist.Text" xml:space="preserve">
+    <value>Artist name</value>
+  </data>
+  <data name="Shell_MediaName.Text" xml:space="preserve">
+    <value>Song name</value>
+  </data>
 </root>

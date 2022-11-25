@@ -31,17 +31,10 @@ public sealed partial class ShellPage : Page
     public Microsoft.UI.Xaml.Controls.MediaPlayerElement _media => MainMPE;
     public PersonPicture _MediaPicture => Shell_MediaPicture;
 
+    public TextBlock _MediaName => Shell_MediaName;
+    public TextBlock _MediaArtist => Shell_MediaArtist;
+
     public INavigationService _navigationService;
-
-    public string _song_name
-    {
-        get; set;
-    } = "Tên bài hát";
-    public string _song_artist
-    {
-        get; set;
-    } = "Tên nghệ sĩ";
-
 
     public string _logoTheme = "";
     public string LogoTheme
@@ -193,10 +186,6 @@ public sealed partial class ShellPage : Page
 
     }
 
-    private void PersonPicture_Tapped(object sender, TappedRoutedEventArgs e)
-    {
-        //ViewModel.mediaSource = );
-        //_media.MediaPlayer.SetUriSource(new Uri("https://stream.nixcdn.com/NhacCuaTui940/MayonakaNoDoorStayWithMe-MikiMatsubara-4892669.mp3?st=PwGNSvVfkzi21atGdFwM4A&e=1669125309"));
-    }
+
 
 }

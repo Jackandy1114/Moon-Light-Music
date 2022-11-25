@@ -41,12 +41,12 @@ public sealed partial class BaiHatPage : Page
                 _shell._media.MediaPlayer.SetUriSource(new Uri(StaticDataBindingModel._TracksSpotify[listviewAlbums.SelectedIndex].PreviewUrl.AbsoluteUri));
                 _shell._media.MediaPlayer.Play();
                 /// đang làm việc ở đây
-                var a = StaticDataBindingModel._TracksSpotify[listviewAlbums.SelectedIndex].Images[2].Url;
-                _shell._MediaPicture.ProfilePicture = new BitmapImage() { UriSource = new Uri(a) };
+
+                _shell._MediaPicture.ProfilePicture = new BitmapImage() { UriSource = new Uri(StaticDataBindingModel._TracksSpotify[listviewAlbums.SelectedIndex].Album.Images[2].Url) };
 
                 //_shell._song_img_url = StaticDataBindingModel._TracksSpotify[listviewAlbums.SelectedIndex].Images[2].Url;
-                _shell._song_name = StaticDataBindingModel._TracksSpotify[listviewAlbums.SelectedIndex].Name;
-                _shell._song_artist = StaticDataBindingModel._TracksSpotify[listviewAlbums.SelectedIndex].Artists[0].Name;
+                _shell._MediaName.Text = StaticDataBindingModel._TracksSpotify[listviewAlbums.SelectedIndex].Name;
+                _shell._MediaArtist.Text = StaticDataBindingModel._TracksSpotify[listviewAlbums.SelectedIndex].Artists[0].Name;
 
             }
         }

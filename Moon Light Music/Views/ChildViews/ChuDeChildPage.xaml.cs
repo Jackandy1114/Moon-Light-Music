@@ -43,9 +43,9 @@ public sealed partial class ChuDeChildPage : Page
             _shell._media.MediaPlayer.Play();
             _shell._MediaPicture.ProfilePicture = new BitmapImage() { UriSource = new Uri(StaticDataBindingModel.TracksInAlbumsSpotify[TrackAlbums.SelectedIndex].Images[2].Url) };
 
-            _shell._song_name = StaticDataBindingModel.TracksInAlbumsSpotify[TrackAlbums.SelectedIndex].Name;
+            _shell._MediaName.Text = StaticDataBindingModel.TracksInAlbumsSpotify[TrackAlbums.SelectedIndex].Name;
 
-            _shell._song_artist = StaticDataBindingModel.TracksInAlbumsSpotify[TrackAlbums.SelectedIndex].Artists[0].Name;
+            _shell._MediaArtist.Text = StaticDataBindingModel.TracksInAlbumsSpotify[TrackAlbums.SelectedIndex].Artists[0].Name;
 
         }
         catch (Exception)
