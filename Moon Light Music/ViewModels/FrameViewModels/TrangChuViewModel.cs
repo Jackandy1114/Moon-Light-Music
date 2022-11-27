@@ -13,7 +13,7 @@ public class TrangChuViewModel : ObservableRecipient
     public TrangChuViewModel(IOAuthTokkenService oAuthTokkenService)
     {
         _oAuthTokkenService = oAuthTokkenService;
-        oAuthTokkenService.SetTokkenAsync(App._oAuthToken.Token);
+        oAuthTokkenService.SetTokkenAsync(tokken: App._oAuthToken.Token);
     }
 
 }

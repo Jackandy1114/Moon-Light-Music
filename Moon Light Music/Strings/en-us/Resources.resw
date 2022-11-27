@@ -230,4 +230,28 @@
   <data name="tbTrackListViewName.Text" xml:space="preserve">
     <value>Track Name:</value>
   </data>
+  <data name="TranChuDropDownItemOpenFile.Text" xml:space="preserve">
+    <value>By file</value>
+  </data>
+  <data name="TranChuDropDownItemOpenUrl.Text" xml:space="preserve">
+    <value>By link(Url)</value>
+  </data>
+  <data name="TrangChuDropDown.Content" xml:space="preserve">
+    <value>Open music</value>
+  </data>
+  <data name="TextBlock_OpenUrlMusicDialog.Text" xml:space="preserve">
+    <value>Input link(Url)</value>
+  </data>
+  <data name="TextBox_OpenUrlMusicDialog.PlaceholderText" xml:space="preserve">
+    <value>Input your link in this feild</value>
+  </data>
+  <data name="OpenUrlDialog.Title" xml:space="preserve">
+    <value>Open music by link</value>
+  </data>
+  <data name="Shell_MediaArtist.Text" xml:space="preserve">
+    <value>Artist name</value>
+  </data>
+  <data name="Shell_MediaName.Text" xml:space="preserve">
+    <value>Song name</value>
+  </data>
 </root>

@@ -10,7 +10,7 @@ public class ChuDeChildViewModel : ObservableRecipient
 {
     public IOAuthTokkenService _oAuthTokkenService;
     public ObservableCollection<Item> TracksInAlbumsSpotify => StaticDataBindingModel.TracksInAlbumsSpotify;
-    public ObservableCollection<Album> _AlbumSpotify => StaticDataBindingModel._AlbumSpotify;
+    public ObservableCollection<Album> _AlbumSpotify => StaticDataBindingModel.AlbumSpotify;
     public ObservableCollection<Artist> Artist => StaticDataBindingModel.Artist;
 
     public ChuDeChildViewModel(IOAuthTokkenService oAuthTokkenService)

@@ -10,23 +10,26 @@
           Margin="0 0 0 12"
           HorizontalAlignment="Stretch">
         <Grid.RowDefinitions>
-            <RowDefinition Height="300"/>
-            <RowDefinition />
+            <RowDefinition MaxHeight="300"/>
+            <RowDefinition Height="0.5*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             
             <GridView ItemsSource="{x:Bind ViewModel._AlbumSpotify}">
                 <GridView.ItemTemplate>
                     <DataTemplate>
-                        <Grid ColumnSpacing="100">
+                        <Grid ColumnSpacing="50" Padding="12">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="250"/>
-                                <ColumnDefinition />
+                                <ColumnDefinition Width="1*" MinWidth="100" MaxWidth="250"/>
+                                <ColumnDefinition Width="2*"/>
                             </Grid.ColumnDefinitions>
-                            
-                            <Border CornerRadius="20" Grid.Column="0" >
+
+                            <Border MinWidth="100" MaxWidth="250" MaxHeight="250" MinHeight="100"
+                                    CornerRadius="20"
+                                    Grid.Column="0"
+                                   >
                                 
-                        <Image HorizontalAlignment="Left" Source="{Binding Images[1].Url}"></Image>
+                        <Image  Source="{Binding Images[1].Url}"></Image>
                             </Border>
                             <Grid Grid.Column="1">
                                 <Grid.RowDefinitions>
@@ -35,22 +38,22 @@
                                     <RowDefinition />
                                     <RowDefinition />
                                 </Grid.RowDefinitions>
-                            <TextBlock Grid.Row="0" Text="{Binding AlbumType}" TextWrapping="WrapWholeWords"
+                            <TextBlock Grid.Row="0" Text="{Binding AlbumType}" TextWrapping="Wrap"
                                            FontSize="24"
                                            FontWeight="Bold" />
                             <TextBlock Grid.Row="1"
-                                       Text="{Binding Name}" TextWrapping="WrapWholeWords"
-                                       FontSize="54" FontWeight="ExtraBlack" />
+                                       Text="{Binding Name}" TextWrapping="Wrap"
+                                       FontSize="36" FontWeight="ExtraBlack" />
                                 <Grid Width="450"
                                       HorizontalAlignment="Left"
                                       Grid.Row="2"
                                       ColumnSpacing="5"
                                       VerticalAlignment="Center">
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="3*" />
-                                        <ColumnDefinition Width="1*" />
-                                        <ColumnDefinition Width="1*" />
-
+                                        <ColumnDefinition Width="3*"/>
+                                        <ColumnDefinition Width="1*" MaxWidth="100" />
+                                        <ColumnDefinition Width="1*"
+                                                          MaxWidth="50" />     
                                     </Grid.ColumnDefinitions>
                                     <Grid Grid.Column="0">
                                         <Grid.ColumnDefinitions>
@@ -59,9 +62,9 @@
                                         </Grid.ColumnDefinitions>
                                         <TextBlock x:Uid="_Artist" VerticalAlignment="Center" Text="Tác giả"></TextBlock>
                                         <HyperlinkButton Grid.Column="1">
-                                            
-                                    <TextBlock   TextWrapping="Wrap"
-                                                Text="{Binding Artists[0].Name}"
+                                            <TextBlock   TextWrapping="Wrap"
+                                                         Tapped="HyperlinkButton_Tapped"
+                                                         Text="{Binding Artists[0].Name}"
                                                 FontSize="18"
                                                 FontWeight="Bold" />
                                         </HyperlinkButton>
@@ -89,7 +92,11 @@
                                         <ColumnDefinition Width="50" />
                                         <ColumnDefinition />
                                     </Grid.ColumnDefinitions>
-                                    <PersonPicture Grid.Column="0" Width="50" Height="50" ProfilePicture="{Binding Artists[0].Images[0].Url}"></PersonPicture>
+                                    <PersonPicture Grid.Column="0"
+                                                   Width="50"
+                                                   Height="50"
+                                                   Tapped="HyperlinkButton_Tapped"
+                                                   ProfilePicture="{Binding Artists[0].Images[0].Url}"></PersonPicture>
                                     <TextBlock Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Text="{Binding Copyrights[0].Text}" />
                                 </Grid>
                             </Grid>
@@ -130,6 +137,7 @@
             </ListView.Header>
             <ListView.ItemTemplate>
                 <DataTemplate>
+                    
                     <Grid Background="Transparent">
                         <ToolTipService.ToolTip>
                             <ToolTip MinWidth="200" 
@@ -143,11 +151,16 @@
                                     <TextBlock Text="Nghe thử"
                                                TextAlignment="Center"
                                                FontSize="16"
-                                               TextWrapping="WrapWholeWords"></TextBlock>
+                                               TextWrapping="Wrap"></TextBlock>
                                     
                                 </StackPanel>
                             </ToolTip>
+                            
                         </ToolTipService.ToolTip>
+                        <Rectangle HorizontalAlignment="Stretch"
+                                   VerticalAlignment="Stretch"
+                                   Fill="Transparent"
+                                   Tapped="SymbolIcon_Tapped" />
                         <Grid Margin="0 12" ColumnSpacing="10"
                           CornerRadius="10">
                         <Grid.ColumnDefinitions>
@@ -159,43 +172,58 @@
                         </Grid.ColumnDefinitions>
                         <Grid Grid.Column="0" VerticalAlignment="Center" >
                                 <TextBlock Text="{Binding Index}"
+                                           Tapped="SymbolIcon_Tapped"
                                            TextAlignment="Center" />
 
                             </Grid>
                         <Grid Grid.Column="1"
-                              
-                              CornerRadius="5" ColumnSpacing="0">
+                               ColumnSpacing="0">
                                 <Grid.ColumnDefinitions>
-                                <ColumnDefinition />
+                                    <ColumnDefinition Width="2*" MinWidth="64" MaxWidth="64" />
                                 <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                               
-                                <SymbolIcon Grid.Column="1" Symbol="Play" Tapped="SymbolIcon_Tapped"
-                                            Visibility="Visible"></SymbolIcon>
-                                <Image VerticalAlignment="Center"
+
+                                <Border Grid.Column="0" MaxHeight="64" MinHeight="64"
+                                        CornerRadius="10">
+                                    
+                                <Image 
                                        Tapped="SymbolIcon_Tapped"
-                                   HorizontalAlignment="Center"
-                                   Source="{Binding Images[1].Url}" />
-                        </Grid>
-                        <Grid Grid.Column="2" RowSpacing="10">
-                            <Grid.RowDefinitions>
-                                <RowDefinition />
-                                <RowDefinition />
-                            </Grid.RowDefinitions>
-                                <HyperlinkButton Tapped="SymbolIcon_Tapped" Grid.Row="0" ToolTipService.ToolTip="{Binding Name}">
-                            <TextBlock 
-                                           
-                                       TextWrapping="WrapWholeWords"
-                                           Text="{Binding Name}"></TextBlock>
-                                </HyperlinkButton>
-                                <HyperlinkButton Grid.Row="1" Tapped="HyperlinkButton_Tapped"
-                                                 ToolTipService.ToolTip="{Binding Artists[0].Name}">
-                                <TextBlock 
-                                           Text="{Binding Artists[0].Name}" />
-                                </HyperlinkButton>
+                                       Stretch="UniformToFill"
+                                   Source="{Binding Images[2].Url}" />
+                                </Border>
+                                <SymbolIcon Grid.Column="1"
+                                            Symbol="Play"
+                                            Tapped="SymbolIcon_Tapped"
+                                            Visibility="Visible"></SymbolIcon>
                             </Grid>
-                        
-                        <Grid Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center">
+
+                            <Grid  Grid.Column="2"
+                                   RowSpacing="10"
+                                   HorizontalAlignment="Stretch"
+                                   >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                              
+                                <TextBlock Grid.Row="0"
+                                           Foreground="{ThemeResource AccentAAFillColorDefaultBrush}"
+                                           ToolTipService.ToolTip="{Binding Name}"
+                                           FontSize="18"
+                                           Tapped="SymbolIcon_Tapped"
+                                           TextWrapping="Wrap"
+                                           Text="{Binding Name}"></TextBlock>
+
+                         
+                                    <TextBlock Grid.Row="1" Tapped="HyperlinkButton_Tapped"
+                                           Foreground="{ThemeResource AccentAAFillColorDefaultBrush}"
+                                           ToolTipService.ToolTip="{Binding Artists[0].Name}"
+                                               Text="{Binding Artists[0].Name}" />
+                         
+                                
+                            </Grid>
+
+                            <Grid Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center">
                             <TextBlock Grid.Row="2"
                                        
                                            Tapped="SymbolIcon_Tapped"

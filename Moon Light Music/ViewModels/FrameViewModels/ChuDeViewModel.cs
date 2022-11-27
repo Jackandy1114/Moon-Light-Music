@@ -14,37 +14,36 @@ namespace Moon_Light_Music.ViewModels;
 
 public class ChuDeViewModel : ObservableRecipient
 {
-    public static bool first = false;
+    private static bool First = false;
     public IOAuthTokkenService _oAuthTokkenService;
     public INavigationService _navigationService;
     public IAppNotificationService _appNotification;
-    public bool IsEnableBtn_moreLoading
+    public bool IsEnableBtnMoreLoading
     => StaticDataBindingModel._isEnableBtn_moreLoading;
     public ObservableCollection<Item> AlbumsSpotify => StaticDataBindingModel.AlbumsSpotify;
 
     public ICommand moreListcommand;
-    public ChuDeViewModel(IOAuthTokkenService oAuthTokkenService, INavigationService navigationService, IAppNotificationService appNotification)
+    public ChuDeViewModel(IOAuthTokkenService oAuthTokkenService, INavigationService navigationService)
     {
-        _appNotification = appNotification;
         _navigationService = navigationService;
         _oAuthTokkenService = oAuthTokkenService;
-        if (!first)
+        if (!First)
         {
-            AlbumsCollection(oAuthTokkenService.OAuthTokken!, oAuthTokkenService);
-            first = true;
+            AlbumsCollection(oAuthTokkenService.OAuthTokken!).WaitAsync(new TimeSpan(3000));
+            First = true;
         }
         moreListcommand = new RelayCommand(async () =>
         {
-            AlbumsCollection(oAuthTokkenService.OAuthTokken!, oAuthTokkenService);
+            await AlbumsCollection(oAuthTokkenService.OAuthTokken!).ConfigureAwait(false);
         }
        );
     }
 
-    public async void AlbumsCollection(string OAuth2Tokken, IOAuthTokkenService _oAuthTokkenService)
+    public static async Task AlbumsCollection(string OAuth2Tokken)
     {
         if (StaticDataBindingModel._isEnableBtn_moreLoading)
         {
-            Albums _albums;
+            Albums? _albums;
 
             if (StaticDataBindingModel.RequestSpotifyALbums == "")
             {
@@ -55,21 +54,25 @@ public class ChuDeViewModel : ObservableRecipient
                 _albums = JsonConvert.DeserializeObject<Albums>(GetResponseFromAPIHelper.GetResponse(OAuth2Tokken, StaticDataBindingModel.RequestSpotifyALbums).Content!)!;
                 if (_albums != null)
                 {
-                    for (var i = 1; i < _albums.Album.Limit; i++)
+                    if (_albums.Album.Items != null)
                     {
-                        if (_albums.Album.Items != null)
+
+                        for (var i = 1; i < _albums.Album.Items.Count; i++)
                         {
-                            var track = _albums.Album.Items[i];
-                            StaticDataBindingModel.AlbumsSpotify.Add(track);
+                            if (_albums.Album.Items != null)
+                            {
+                                var track = _albums.Album.Items[i];
+                                StaticDataBindingModel.AlbumsSpotify.Add(track);
+                            }
                         }
-                    }
-                    if (_albums.Album.Next != null)
-                    {
-                        StaticDataBindingModel.RequestSpotifyALbums = _albums.Album.Next.ToString()!;
-                    }
-                    else
-                    {
-                        StaticDataBindingModel._isEnableBtn_moreLoading = false;
+                        if (_albums.Album.Next != null)
+                        {
+                            StaticDataBindingModel.RequestSpotifyALbums = _albums.Album.Next.ToString()!;
+                        }
+                        else
+                        {
+                            StaticDataBindingModel._isEnableBtn_moreLoading = false;
+                        }
                     }
                 }
             }
@@ -123,9 +126,10 @@ public class ChuDeViewModel : ObservableRecipient
         }
         else
         {
+            //Chổ này có thể set vào thẳng view luôn : | tự dưng làm rườm rà zậy Hoàng(Bản thể A của Đạt)
             StaticDataBindingModel._isEnableBtn_moreLoading = false;
-
         }
+        await Task.CompletedTask.WaitAsync(new TimeSpan(ticks: 3000));
     }
 
 }

@@ -14,7 +14,7 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <FlipView x:Name="Gallery" Grid.Row="0" Background="Transparent">
-            <FlipViewItem>
+            <!--<FlipViewItem>
                 <AnimatedVisualPlayer>
                     <animatedvisuals:Music />
                 </AnimatedVisualPlayer>
@@ -29,7 +29,7 @@
                 <AnimatedVisualPlayer>
                     <animatedvisuals:PlayMusic/>
                 </AnimatedVisualPlayer>
-            </FlipViewItem>
+            </FlipViewItem>-->
           
         </FlipView>
         <PipsPager Grid.Row="1"
@@ -42,13 +42,13 @@
                 <DropDownButton.Flyout>
                     <MenuFlyout Placement="Bottom">
                         <MenuFlyoutItem x:Uid="TranChuDropDownItemOpenFile"
-                                        Tapped="MenuFlyoutItem_TappedAsync">
+                                        Tapped="MenuFlyoutOpenFile_TappedAsync">
                             <MenuFlyoutItem.Icon>
                                 <SymbolIcon Symbol="OpenFile"></SymbolIcon>
                             </MenuFlyoutItem.Icon>
                         </MenuFlyoutItem>
 
-                        <MenuFlyoutItem x:Uid="TranChuDropDownItemOpenUrl" Tapped="MenuFlyoutItem_Tapped">
+                        <MenuFlyoutItem x:Uid="TranChuDropDownItemOpenUrl" Tapped="MenuFlyoutOpenLink_TappedAsync">
                             <MenuFlyoutItem.Icon>
                                 <SymbolIcon Symbol="Globe" ></SymbolIcon>
                             </MenuFlyoutItem.Icon>

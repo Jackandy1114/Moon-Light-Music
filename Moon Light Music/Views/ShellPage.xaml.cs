@@ -23,18 +23,18 @@ public sealed partial class ShellPage : Page
     {
         get;
     }
+    public BaiHatPage BaiHatPage
+    {
+        get;
+    }
 
-    public Microsoft.UI.Xaml.Controls.MediaPlayerElement _media => MainMPE;
+    public Microsoft.UI.Xaml.Controls.MediaPlayerElement Media => MainMPE;
+    public PersonPicture _MediaPicture => Shell_MediaPicture;
+
+    public TextBlock _MediaName => Shell_MediaName;
+    public TextBlock MediaArtist => Shell_MediaArtist;
 
     public INavigationService _navigationService;
-
-    public string _song_img_url { get; set; } = StaticDataBindingModel.song_img_url;
-
-    public string _song_name
-    {
-        get; set;
-    } = StaticDataBindingModel.song_name;
-
 
     public string _logoTheme = "";
     public string LogoTheme
@@ -47,7 +47,7 @@ public sealed partial class ShellPage : Page
     {
         ViewModel = viewModel;
         InitializeComponent();
-
+        BaiHatPage = App.GetService<BaiHatPage>();
         MainMPE.Source = MediaSource.CreateFromUri(new Uri("https://stream.nixcdn.com/NhacCuaTui1026/Psychofreak-CamilaCabelloWillowSmith-7182840.mp3?st=DEmuSFVapY4ThJvlRAKBew&e=1667985229"));
 
         _navigationService = ViewModel.NavigationService;
@@ -75,7 +75,7 @@ public sealed partial class ShellPage : Page
         KeyboardAccelerators.Add(BuildKeyboardAccelerator(VirtualKey.GoBack));
     }
 
-    private void MainWindow_Activated(object sender, WindowActivatedEventArgs args)
+    private void MainWindow_Activated(object sender, Microsoft.UI.Xaml.WindowActivatedEventArgs args)
     {
         var resource = args.WindowActivationState == WindowActivationState.Deactivated ? "WindowCaptionForegroundDisabled" : "WindowCaptionForeground";
 
@@ -130,45 +130,52 @@ public sealed partial class ShellPage : Page
         }
     }
 
-    private void Button_Click_1(object sender, RoutedEventArgs e)
-    {
-        //Rất xin lỗi nhạc của tui : )))) tại bạn để lộ cái player nên tui lấy thôi
-        Uri manifestUri = new Uri("https://stream.nixcdn.com/NhacCuaTui1026/Psychofreak-CamilaCabelloWillowSmith-7182840.mp3?st=DEmuSFVapY4ThJvlRAKBew&e=1667985229");
-        StaticDataBindingModel._PLayingMedia = manifestUri;
-    }
-
     private void AutoSuggestBox_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
     {
         if (!string.IsNullOrEmpty(args.QueryText))
         {
-            StaticDataBindingModel._TracksSpotify = new();
-            Tracks _tracks;
-            var token = App._oAuthToken.Token;
+            StaticDataBindingModel.TracksSpotify = new();
+            Tracks? _tracks = null;
             try
             {
-                _tracks = JsonConvert.DeserializeObject<Tracks>(GetResponseFromAPIHelper.GetResponse(token, StaticDataBindingModel.stringTo_RequestSpotifyTracks(args.QueryText)).Content!)!;
-                if (_tracks.Track != null)
+                _tracks = JsonConvert.DeserializeObject<Tracks>(GetResponseFromAPIHelper.GetResponse(App._oAuthToken.Token, StaticDataBindingModel.StringToRequestSpotifyTracks(args.QueryText)).Content!);
+            }
+            catch (Exception)
+            {
+
+            }
+            if (_tracks == null)
+            {
+                BaiHatPage.Btn_moreList.IsEnabled = false;
+            }
+            else if (_tracks.Track == null)
+            {
+                BaiHatPage.Btn_moreList.IsEnabled = false;
+            }
+            else
+            {
+                if (_tracks.Track.Items != null)
                 {
-                    for (var i = 1; i < _tracks.Track.Limit; i++)
+                    for (var i = 0; i < _tracks.Track.Items.Count; i++)
                     {
                         if (_tracks.Track.Items != null)
                         {
                             var track = _tracks.Track.Items[i];
-                            StaticDataBindingModel._TracksSpotify.Add(track);
+                            StaticDataBindingModel.TracksSpotify.Add(track);
                         }
                     }
                     if (_tracks.Track.Next != null)
                     {
                         StaticDataBindingModel.RequestSpotifyTracks = _tracks.Track.Next.ToString()!;
                     }
+                    else
+                    {
+                        BaiHatPage.Btn_moreList.IsEnabled = false;
+                    }
                 }
-                _navigationService.NavigateTo("Moon_Light_Music.ViewModels.TrangChuViewModel");
-                _navigationService.NavigateTo("Moon_Light_Music.ViewModels.BaiHatViewModel");
             }
-            catch (Exception)
-            {
-
-            }
+            _navigationService.NavigateTo("Moon_Light_Music.ViewModels.XepHangViewModel");
+            _navigationService.NavigateTo("Moon_Light_Music.ViewModels.BaiHatViewModel");
         }
     }
     private void AutoSuggestBox_SuggestionChosen(AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)
@@ -181,10 +188,35 @@ public sealed partial class ShellPage : Page
 
     }
 
-    private void PersonPicture_Tapped(object sender, TappedRoutedEventArgs e)
+    private void AppBarToggleButton_Click(object sender, RoutedEventArgs e)
     {
-        //ViewModel.mediaSource = );
-        //_media.MediaPlayer.SetUriSource(new Uri("https://stream.nixcdn.com/NhacCuaTui940/MayonakaNoDoorStayWithMe-MikiMatsubara-4892669.mp3?st=PwGNSvVfkzi21atGdFwM4A&e=1669125309"));
+        var btn = (AppBarToggleButton)sender;
+        if (btn.IsChecked == true)
+        {
+            Media.MediaPlayer.IsLoopingEnabled = true;
+
+        }
+        else
+        {
+            Media.MediaPlayer.IsLoopingEnabled = false;
+
+        }
     }
 
+    private void Page_KeyDown(object sender, KeyRoutedEventArgs e)
+    {
+        if (e != null && e.Key == VirtualKey.Space)
+        {
+            if (Media.MediaPlayer.CurrentState == Windows.Media.Playback.MediaPlayerState.Playing)
+            {
+                Media.MediaPlayer.Pause();
+
+            }
+            else
+            {
+                Media.MediaPlayer.Play();
+
+            }
+        }
+    }
 }

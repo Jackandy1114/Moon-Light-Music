@@ -7,6 +7,21 @@
     mc:Ignorable="d">
 
     <Grid x:Name="ContentArea">
-        
+        <StackPanel>
+            
+        <TextBlock Text="Danh sách đã tải"></TextBlock>
+            
+            
+
+        <TextBlock Text="Danh sách đang tải"></TextBlock>
+            <Button Content="Tải nhạc thử"
+                    Click="Button_ClickAsync"></Button>
+
+            <TextBlock x:Name="musicName" Text=""></TextBlock>
+
+            <ProgressBar x:Name="progressBar"></ProgressBar>
+
+            <TextBlock x:Name="DowloadStatus" Text="Đang tải"></TextBlock>
+        </StackPanel>
     </Grid>
 </Page>
