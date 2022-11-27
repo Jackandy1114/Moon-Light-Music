@@ -21,7 +21,7 @@ public sealed partial class TaiKhoanPage : Page
 
     private async void HyperlinkButton_ClickAsync(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-        ContentDialog _LoginDialog = new TaiKhoanLoginDialog()
+        TaiKhoanLoginDialog _LoginDialog = new TaiKhoanLoginDialog()
         {
             XamlRoot = App.MainWindow.Content.XamlRoot,
             Style = Application.Current.Resources["DefaultContentDialogStyle"] as Style,
@@ -29,9 +29,8 @@ public sealed partial class TaiKhoanPage : Page
         ContentDialogResult result = await _LoginDialog.ShowAsync();
         if (result == ContentDialogResult.Primary)
         {
-            var _content = (TaiKhoanLoginDialog)_LoginDialog.Content;
-            var a = _content.UserName;
-            var b = _content.Password;
+            //var a = (string)_LoginDialog.UserName;
+            //var b = (string)_LoginDialog.Password;
 
         }
 

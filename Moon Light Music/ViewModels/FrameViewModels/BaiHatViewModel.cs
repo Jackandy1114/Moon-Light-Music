@@ -9,7 +9,7 @@ namespace Moon_Light_Music.ViewModels;
 
 public class BaiHatViewModel : ObservableRecipient
 {
-    public ObservableCollection<Item> TracksSpotify => StaticDataBindingModel._TracksSpotify;
+    public ObservableCollection<Item> TracksSpotify => StaticDataBindingModel.TracksSpotify;
     public INavigationService _navigationService;
     public BaiHatViewModel(INavigationService navigationService)
     {

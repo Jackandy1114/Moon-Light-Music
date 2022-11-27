@@ -37,11 +37,11 @@
                                     <TextBlock Text="{Binding Name,Mode=OneWay}"
                                                TextAlignment="Center"
                                                FontSize="16"
-                                               TextWrapping="WrapWholeWords"></TextBlock>
+                                               TextWrapping="Wrap"></TextBlock>
                                     <TextBlock Text="{Binding Artists[0].Name,Mode=OneWay}"
                                                TextAlignment="Center"
                                                FontSize="16"
-                                               TextWrapping="WrapWholeWords"></TextBlock>
+                                               TextWrapping="Wrap"></TextBlock>
                                     <!--Comment code này lại cho đỡ lỗi binding-->
                                     <!--<TextBlock Text="{Binding Path= Artists[1].Name,TargetNullValue=''}"
                                                TextAlignment="Center"
@@ -63,14 +63,13 @@
                         <Grid HorizontalAlignment="Stretch"
                               ColumnSpacing="80">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="2*" MinWidth="200" />
                                 <ColumnDefinition Width="5*" />
                             </Grid.ColumnDefinitions>
 
                             <Border Grid.Column="0"
                                     CornerRadius="10"
-                                    Width="200"
-                                    Height="200">
+                                    Width="200">
                                 <Image Source="{Binding Album.Images[1].Url,Mode=OneWay}" />
                             </Border>
 
@@ -83,8 +82,8 @@
                                 </Grid.RowDefinitions>
                                 <Grid VerticalAlignment="Top">
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition />
-                                        <ColumnDefinition Width="4*" />
+                                        <ColumnDefinition MinWidth="75" MaxWidth="100" />
+                                        <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
                                     <TextBlock Grid.Column="0"
                                                x:Uid="tbTrackListViewName"
@@ -92,12 +91,12 @@
                                     <!--<TextBlock x:Name="_albumsId"
                                                Text="{Binding Id,Mode=OneWay}"
                                             />-->
-                                    <HyperlinkButton Grid.Column="1"
-                                                     VerticalAlignment="Center"
-                                                     FontSize="24">
-                                        <TextBlock Text="{Binding Name,Mode=OneWay}"
-                                                   TextWrapping="WrapWholeWords"></TextBlock>
-                                    </HyperlinkButton>
+                                   
+                                        <TextBlock Grid.Column="1" Text="{Binding Name,Mode=OneWay}"
+                                                   VerticalAlignment="Center"
+                                                   FontSize="24" Foreground="{ThemeResource AccentAAFillColorDefaultBrush}"
+                                                   TextWrapping="Wrap"></TextBlock>
+                           
                                 </Grid>
 
                                 <StackPanel VerticalAlignment="Top"
@@ -122,10 +121,10 @@
                                     <TextBlock x:Uid="tbAlbumsReleaseDate"
                                                FontSize="16"
                                                VerticalAlignment="Center"
-                                               TextWrapping="WrapWholeWords" />
+                                               TextWrapping="Wrap" />
                                     <TextBlock FontSize="16"
                                                VerticalAlignment="Center"
-                                               TextWrapping="WrapWholeWords"
+                                               TextWrapping="Wrap"
                                                Padding="12 0"
                                                Text="{Binding Album.ReleaseDatePrecision,Mode=OneWay}" />
                                 </StackPanel>
@@ -138,7 +137,7 @@
                                     <TextBlock Margin="12 0"
                                                FontSize="16"
                                                VerticalAlignment="Center"
-                                               TextWrapping="WrapWholeWords"
+                                               TextWrapping="Wrap"
                                                Text="{Binding  DurationPresent,Mode=OneWay}" />
                                 </StackPanel>
 
@@ -159,7 +158,7 @@
                 FontSize="16"
                 CornerRadius="10"
                 MinHeight="50"
-                Click="btn_moreList_Click"
+                Click="Btn_moreList_Click"
                 
                 >
         </Button>

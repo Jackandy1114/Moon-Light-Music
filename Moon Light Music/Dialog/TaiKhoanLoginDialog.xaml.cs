@@ -1,25 +1,20 @@
 ﻿using Microsoft.UI.Xaml.Controls;
 
-namespace Moon_Light_Music.Dialog
+namespace Moon_Light_Music.Dialog;
+
+public sealed partial class TaiKhoanLoginDialog : ContentDialog
 {
-    public sealed partial class TaiKhoanLoginDialog : ContentDialog
+    public string? UserName
     {
-        private string _UserName;
-        private string _Password;
-        public string UserName
-        {
-            get => _UserName; set => _UserName = value;
-        }
+        get; set;
+    }
 
-        public string Password
-        {
-            get => _Password; set => _Password = value;
-        }
-        public TaiKhoanLoginDialog()
-        {
-            this.InitializeComponent();
-        }
-
-
+    public string? Password
+    {
+        get; set;
+    }
+    public TaiKhoanLoginDialog()
+    {
+        InitializeComponent();
     }
 }
