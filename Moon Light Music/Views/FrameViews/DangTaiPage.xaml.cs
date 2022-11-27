@@ -4,6 +4,8 @@ using Microsoft.UI.Xaml.Controls;
 
 using Moon_Light_Music.ViewModels;
 
+using Windows.Storage.Pickers;
+
 namespace Moon_Light_Music.Views;
 
 public sealed partial class DangTaiPage : Page
@@ -20,20 +22,30 @@ public sealed partial class DangTaiPage : Page
 
     }
 
-    private async void Button_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    private async void Button_ClickAsync(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-        using (WebClient wc = new WebClient())
+        using (var wc = new WebClient())
         {
             wc.DownloadProgressChanged += wc_DownloadProgressChanged;
             var st = "https://stream.nixcdn.com/NhacCuaTui940/MayonakaNoDoorStayWithMe-MikiMatsubara-4892669.mp3?st=PwGNSvVfkzi21atGdFwM4A&e=1669125309";
             var uri = new Uri(st);
             var name = st.Split('/')[4].Split('?')[0];
             musicName.Text = name;
+            var hwnd = WinRT.Interop.WindowNative.GetWindowHandle(App.MainWindow);
+
+            //var a = Directory.GetCurrentDirectory();
+            FolderPicker folderPicker = new FolderPicker()
+            {
+                CommitButtonText = "What?",
+            };
+            WinRT.Interop.InitializeWithWindow.Initialize(folderPicker, hwnd);
+            var folder = await folderPicker.PickSingleFolderAsync();
+
             wc.DownloadFileAsync(
                 // Param1 = Link of file
                 uri,
                 // Param2 = Path to save
-                @$"./Downloads/{name}"
+                @$"{folder.Path}/{name}"
             );
         }
     }
