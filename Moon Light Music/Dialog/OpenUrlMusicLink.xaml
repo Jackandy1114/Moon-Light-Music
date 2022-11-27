@@ -13,7 +13,7 @@
             PrimaryButtonText = "Lưu"
             CloseButtonText = "Rời đi"
             DefaultButton =  "Primary"
-               x:Uid="OpenUrlDialog"
+               x:Uid="LoginDialogDialog"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <StackPanel>

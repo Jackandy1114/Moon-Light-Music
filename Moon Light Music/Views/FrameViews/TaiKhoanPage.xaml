@@ -4,9 +4,182 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    >
 
-    <Grid x:Name="ContentArea">
-        
+    <Grid x:Name="ContentArea" ColumnSpacing="100" RowSpacing="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"  />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+        <PersonPicture Width="80" HorizontalAlignment="Left" Grid.Column="0" ></PersonPicture>
+            <HyperlinkButton Grid.Column="1"
+                             Click="HyperlinkButton_ClickAsync">
+                
+        <TextBlock FontSize="20" TextDecorations="Underline" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="12 0" Text="Đăng nhập"></TextBlock>
+            </HyperlinkButton>
+
+        </Grid >
+        <GridView Grid.Row="1" CanBeScrollAnchor="True" >
+            <GridView.Header>
+                <TextBlock Text="Chức năng" FontSize="24"></TextBlock>
+            </GridView.Header>
+            <GridView.ItemContainerStyle>
+                <Style TargetType="GridViewItem">
+                    <Setter Property="Margin"
+                            Value="20" />
+                    <Setter Property="Padding"
+                            Value="10" />
+                    <Setter Property="CornerRadius" Value="20"></Setter>
+                    <Setter Property="BorderBrush">
+                        <Setter.Value>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#051937"
+                                              Offset="0" />
+                                <GradientStop Color="#004d7a"
+                                              Offset="0.2" />
+                                <GradientStop Color="#008793"
+                                              Offset="0.5" />
+                                <GradientStop Color="#00bf72"
+                                              Offset="0.7" />
+                                <GradientStop Color="#a8eb12"
+                                              Offset="1" />
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="IsAccessKeyScope" Value="True"></Setter>
+                    <Setter Property="BorderThickness"
+                            Value="1" />
+                </Style>
+
+                <!--background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);-->
+            </GridView.ItemContainerStyle>
+
+            <GridView.Items>
+                <StackPanel Spacing="20">
+                    <TextBlock Style="{StaticResource SubtitleTextBlockStyle}"
+                               Text="Nhạc trong tài khoản" />
+                    <Button Width="250">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="32" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <FontIcon HorizontalAlignment="Left"
+                                      FontFamily="{StaticResource SymbolThemeFontFamily}"
+                                      Glyph="&#xe8d6;" />
+                            <TextBlock Grid.Column="1"
+                                       Text="Playlist" />
+
+                        </Grid>
+                    </Button>
+                    <Button Width="250">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="32" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <FontIcon HorizontalAlignment="Left"
+                                      FontFamily="{StaticResource SymbolThemeFontFamily}"
+                                      Glyph="&#xe786;" />
+                            <TextBlock Grid.Column="1"
+                                       Text="Video" />
+
+                        </Grid>
+                    </Button>
+                </StackPanel>
+                <StackPanel Spacing="20">
+                    <TextBlock Style="{StaticResource SubtitleTextBlockStyle}"
+                               Text="Offline" />
+                    <Button Width="250">
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="32" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <FontIcon HorizontalAlignment="Left"
+                                      FontFamily="{StaticResource SymbolThemeFontFamily}"
+                                      Glyph="&#xe8cc;" />
+                            <TextBlock Grid.Column="1"
+                                       Text="Nhạc trong thiết bị" />
+
+                        </Grid>
+                    </Button>
+                    <Button Width="250">
+                        <Grid>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="32" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+
+                            <FontIcon HorizontalAlignment="Left"
+                                      FontFamily="{StaticResource SymbolThemeFontFamily}"
+                                      Glyph="&#xe8da;" />
+                            <TextBlock Grid.Column="1"
+                                       Text="Đã tải về" />
+
+                        </Grid>
+                    </Button>
+                </StackPanel>
+                <StackPanel Spacing="20">
+                    <TextBlock Style="{StaticResource SubtitleTextBlockStyle}"
+                               Text="Tính năng khác" />
+
+                    <Button Width="250">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="32" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <SymbolIcon HorizontalAlignment="Left"
+                                        Symbol="Clock"></SymbolIcon>
+                            <TextBlock Grid.Column="1"
+                                       Text="Lịch sử nghe nhạc"></TextBlock>
+
+                        </Grid>
+
+                    </Button>
+
+                    <Button Width="250">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="32" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <FontIcon HorizontalAlignment="Left"
+                                      FontFamily="{StaticResource SymbolThemeFontFamily}"
+                                      Glyph="&#xe8e1;" />
+                            <TextBlock Grid.Column="1"
+                                       Text="Đánh giá ứng dụng"></TextBlock>
+
+                        </Grid>
+
+                    </Button>
+                    <Button Width="250">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="32" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <FontIcon HorizontalAlignment="Left"
+                                      FontFamily="{StaticResource SymbolThemeFontFamily}"
+                                      Glyph="&#xe708;" />
+                            <TextBlock Grid.Column="1"
+                                       FontSize="16"
+                                       Text="😘 Chưa phát triẻn 😌" />
+
+                        </Grid>
+                    </Button>
+                </StackPanel>
+            </GridView.Items>
+            
+        </GridView>
     </Grid>
 </Page>
