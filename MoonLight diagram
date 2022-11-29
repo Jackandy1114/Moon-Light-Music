@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-11-29T12:45:50.189Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.56" etag="w-xKn6d1knZ37_46u7fp" version="20.6.0" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2022-11-29T13:23:42.286Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="vihquwzW7IZW2hTqncoR" version="20.6.0" type="github" pages="7">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Classdiagram">
-    <mxGraphModel dx="2452" dy="443" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2522" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -619,7 +619,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="zDRhbh4GMor8-jSjtUil" name="Use-Case">
-    <mxGraphModel dx="1021" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="868" dy="393" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -816,7 +816,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="AVPfINIskLpowNNM0fZK-19" value="" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;rounded=0;exitX=0.003;exitY=0.53;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="z_kQEIMLYVvJtWIDnPDN-16" edge="1" target="AVPfINIskLpowNNM0fZK-15">
+        <mxCell id="AVPfINIskLpowNNM0fZK-19" value="" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;rounded=0;exitX=0.003;exitY=0.53;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="z_kQEIMLYVvJtWIDnPDN-16" target="AVPfINIskLpowNNM0fZK-15" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1270" y="850" as="sourcePoint" />
             <mxPoint x="1250" y="120" as="targetPoint" />
@@ -836,11 +836,11 @@
     </mxGraphModel>
   </diagram>
   <diagram id="XgIiuVuHAuXb0oNEqACm" name="Người dùng thường">
-    <mxGraphModel dx="1635" dy="908" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1578" dy="715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="qBqGSmW5DnT_QXb4LkyJ-1" value="Người dùng thường" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;" parent="1" vertex="1">
+        <mxCell id="qBqGSmW5DnT_QXb4LkyJ-1" value="Người dùng thường" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="200" y="510" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="T0hlaqrm2XRj94CO9rEC-1" value="Tính năng thông thường" style="shape=rect;html=1;verticalAlign=top;fontStyle=1;whiteSpace=wrap;align=center;" parent="1" vertex="1">
@@ -903,10 +903,10 @@
             <mxPoint x="170" y="180" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="T0hlaqrm2XRj94CO9rEC-20" value="Nhập thông tin&lt;br&gt;xác thực thông tin&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="T0hlaqrm2XRj94CO9rEC-20" value="Nhập thông tin&lt;br style=&quot;font-size: 15px;&quot;&gt;xác thực thông tin&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="90" y="119.99999999999989" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="T0hlaqrm2XRj94CO9rEC-21" value="Chấp nhận điều khoản&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="T0hlaqrm2XRj94CO9rEC-21" value="Chấp nhận điều khoản&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="90" y="200" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="T0hlaqrm2XRj94CO9rEC-38" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;endArrow=open;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="T0hlaqrm2XRj94CO9rEC-4" target="T0hlaqrm2XRj94CO9rEC-21" edge="1">
@@ -915,8 +915,8 @@
             <mxPoint x="234.51447625966352" y="168.58199500203443" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="T0hlaqrm2XRj94CO9rEC-39" value="Ghi nội dung/ đính kèm tệp hình ảnh,..." style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="90" y="280" width="140" height="70" as="geometry" />
+        <mxCell id="T0hlaqrm2XRj94CO9rEC-39" value="Ghi nội dung/ đính kèm tệp hình ảnh,..." style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="80" y="280" width="150" height="70" as="geometry" />
         </mxCell>
         <mxCell id="T0hlaqrm2XRj94CO9rEC-40" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="T0hlaqrm2XRj94CO9rEC-2" target="T0hlaqrm2XRj94CO9rEC-41" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -924,7 +924,7 @@
             <mxPoint x="170" y="60" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="T0hlaqrm2XRj94CO9rEC-41" value="Lựa chọn bài hát" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="T0hlaqrm2XRj94CO9rEC-41" value="Lựa chọn bài hát" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="60" y="30" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="T0hlaqrm2XRj94CO9rEC-42" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;endArrow=open;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="T0hlaqrm2XRj94CO9rEC-6" target="T0hlaqrm2XRj94CO9rEC-39" edge="1">
@@ -933,7 +933,7 @@
             <mxPoint x="490" y="310" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="T0hlaqrm2XRj94CO9rEC-45" value="Lựa chọn sao review&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="T0hlaqrm2XRj94CO9rEC-45" value="Lựa chọn sao review&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="70" y="360" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="T0hlaqrm2XRj94CO9rEC-46" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;endArrow=open;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="T0hlaqrm2XRj94CO9rEC-7" target="T0hlaqrm2XRj94CO9rEC-45" edge="1">
@@ -942,8 +942,8 @@
             <mxPoint x="490" y="370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="T0hlaqrm2XRj94CO9rEC-47" value="Nhập nhận xét đánh giá" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="70" y="440" width="140" height="70" as="geometry" />
+        <mxCell id="T0hlaqrm2XRj94CO9rEC-47" value="Nhập nhận xét đánh giá" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="70" y="440" width="110" height="90" as="geometry" />
         </mxCell>
         <mxCell id="T0hlaqrm2XRj94CO9rEC-48" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="T0hlaqrm2XRj94CO9rEC-7" target="T0hlaqrm2XRj94CO9rEC-47" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -957,10 +957,10 @@
             <mxPoint x="185" y="660" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="T0hlaqrm2XRj94CO9rEC-50" value="Lựa chọn bài hát hoặc album, hoặc danh sách các bài hát" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="70" y="605" width="150" height="80" as="geometry" />
+        <mxCell id="T0hlaqrm2XRj94CO9rEC-50" value="Lựa chọn bài hát hoặc album, hoặc danh sách các bài hát" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="70" y="605" width="190" height="95" as="geometry" />
         </mxCell>
-        <mxCell id="T0hlaqrm2XRj94CO9rEC-51" value="Nhập tên, id người dùng, user name" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="T0hlaqrm2XRj94CO9rEC-51" value="Nhập tên, id người dùng, user name" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="100" y="780" width="150" height="80" as="geometry" />
         </mxCell>
         <mxCell id="T0hlaqrm2XRj94CO9rEC-52" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="T0hlaqrm2XRj94CO9rEC-51" target="T0hlaqrm2XRj94CO9rEC-14" edge="1">
@@ -969,8 +969,8 @@
             <mxPoint x="490" y="800" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="T0hlaqrm2XRj94CO9rEC-53" value="Lựa chọn ngôn ngữ&lt;br&gt;(Anh-Việt)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="910" y="610" width="140" height="70" as="geometry" />
+        <mxCell id="T0hlaqrm2XRj94CO9rEC-53" value="Lựa chọn ngôn ngữ&lt;br style=&quot;font-size: 15px;&quot;&gt;(Anh-Việt)" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="910" y="610" width="150" height="70" as="geometry" />
         </mxCell>
         <mxCell id="T0hlaqrm2XRj94CO9rEC-54" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="T0hlaqrm2XRj94CO9rEC-11" target="T0hlaqrm2XRj94CO9rEC-53" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -978,8 +978,8 @@
             <mxPoint x="840" y="570" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="T0hlaqrm2XRj94CO9rEC-55" value="Chọn bài hát cần chia sẻ --&amp;gt; nhấn chia sẻ" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="930" y="280" width="140" height="70" as="geometry" />
+        <mxCell id="T0hlaqrm2XRj94CO9rEC-55" value="Chọn bài hát cần chia sẻ --&amp;gt; nhấn chia sẻ" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="920" y="270" width="150" height="80" as="geometry" />
         </mxCell>
         <mxCell id="T0hlaqrm2XRj94CO9rEC-56" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;endArrow=open;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="T0hlaqrm2XRj94CO9rEC-12" target="T0hlaqrm2XRj94CO9rEC-55" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -987,25 +987,25 @@
             <mxPoint x="840" y="260" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="T0hlaqrm2XRj94CO9rEC-57" value="Chọn cách chia sẻ&lt;br&gt;Người dùng ứng dụng, zalo,.." style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1150" y="200" width="140" height="70" as="geometry" />
+        <mxCell id="T0hlaqrm2XRj94CO9rEC-57" value="Chọn cách chia sẻ&lt;br style=&quot;font-size: 15px;&quot;&gt;Người dùng ứng dụng, zalo,.." style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="1150" y="200" width="160" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="T0hlaqrm2XRj94CO9rEC-59" value="Lưu bài hát về máy" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="T0hlaqrm2XRj94CO9rEC-59" value="Lưu bài hát về máy" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="1150" y="330" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="T0hlaqrm2XRj94CO9rEC-60" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.9;exitY=0.786;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="T0hlaqrm2XRj94CO9rEC-55" target="T0hlaqrm2XRj94CO9rEC-59" edge="1">
+        <mxCell id="T0hlaqrm2XRj94CO9rEC-60" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.9;exitY=0.786;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=15;" parent="1" source="T0hlaqrm2XRj94CO9rEC-55" target="T0hlaqrm2XRj94CO9rEC-59" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="680" y="340" as="sourcePoint" />
             <mxPoint x="840" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="T0hlaqrm2XRj94CO9rEC-61" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" source="T0hlaqrm2XRj94CO9rEC-55" target="T0hlaqrm2XRj94CO9rEC-57" edge="1">
+        <mxCell id="T0hlaqrm2XRj94CO9rEC-61" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;fontSize=15;" parent="1" source="T0hlaqrm2XRj94CO9rEC-55" target="T0hlaqrm2XRj94CO9rEC-57" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="680" y="340" as="sourcePoint" />
             <mxPoint x="840" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="T0hlaqrm2XRj94CO9rEC-62" value="Nhập nội dung tìm kiếm" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="T0hlaqrm2XRj94CO9rEC-62" value="Nhập nội dung tìm kiếm" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="920" y="70" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="T0hlaqrm2XRj94CO9rEC-63" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" source="T0hlaqrm2XRj94CO9rEC-10" target="T0hlaqrm2XRj94CO9rEC-62" edge="1">
@@ -1014,8 +1014,8 @@
             <mxPoint x="870" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="T0hlaqrm2XRj94CO9rEC-64" value="Lựa chọn các bộ lọc&lt;br&gt;Album, nghệ sĩ, bài hát" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="920" y="165" width="140" height="70" as="geometry" />
+        <mxCell id="T0hlaqrm2XRj94CO9rEC-64" value="Lựa chọn các bộ lọc&lt;br style=&quot;font-size: 15px;&quot;&gt;Album, nghệ sĩ, bài hát" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="920" y="165" width="170" height="75" as="geometry" />
         </mxCell>
         <mxCell id="T0hlaqrm2XRj94CO9rEC-65" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="T0hlaqrm2XRj94CO9rEC-10" target="T0hlaqrm2XRj94CO9rEC-64" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -1023,7 +1023,7 @@
             <mxPoint x="870" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="T0hlaqrm2XRj94CO9rEC-66" value="Lựa chọn các cài đặt" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="T0hlaqrm2XRj94CO9rEC-66" value="Lựa chọn các cài đặt" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="900" y="755" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="T0hlaqrm2XRj94CO9rEC-67" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="T0hlaqrm2XRj94CO9rEC-9" target="T0hlaqrm2XRj94CO9rEC-66" edge="1">
@@ -1036,7 +1036,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="yQBgFay1axNTkfKIwd3s" name="Người dùng đã đăng ký">
-    <mxGraphModel dx="5190" dy="1965" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1871" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1061,7 +1061,7 @@
         <mxCell id="pm4-TSk2wgXTeJmCN4yv-7" value="&lt;span id=&quot;docs-internal-guid-03298695-7fff-c910-26fc-c8c7ca388df4&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Góp ý, báo lỗi&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="590" y="580" width="170" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="pm4-TSk2wgXTeJmCN4yv-8" value="&lt;span id=&quot;docs-internal-guid-dc99f27c-7fff-ed2d-a81d-7f8e9a078616&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Đánh gi&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="pm4-TSk2wgXTeJmCN4yv-8" value="&lt;span id=&quot;docs-internal-guid-dc99f27c-7fff-ed2d-a81d-7f8e9a078616&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Đánh giá&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="590" y="690" width="170" height="90" as="geometry" />
         </mxCell>
         <mxCell id="pm4-TSk2wgXTeJmCN4yv-9" value="&lt;span id=&quot;docs-internal-guid-8430ea5e-7fff-fec1-22b7-2754b1c957ec&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Thêm, xóa, sửa nhạc vào playlist (&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Local&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;) của bản thân&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -1103,10 +1103,10 @@
             <mxPoint x="410" y="530" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pm4-TSk2wgXTeJmCN4yv-20" value="Nhập thông tin&lt;br&gt;xác thực thông tin&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="pm4-TSk2wgXTeJmCN4yv-20" value="Nhập thông tin&lt;br style=&quot;font-size: 15px;&quot;&gt;xác thực thông tin&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="330" y="469.9999999999999" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="pm4-TSk2wgXTeJmCN4yv-21" value="Chấp nhận điều khoản&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="pm4-TSk2wgXTeJmCN4yv-21" value="Chấp nhận điều khoản&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="330" y="550" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="pm4-TSk2wgXTeJmCN4yv-22" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;endArrow=open;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="pm4-TSk2wgXTeJmCN4yv-5" target="pm4-TSk2wgXTeJmCN4yv-21" edge="1">
@@ -1115,8 +1115,8 @@
             <mxPoint x="474.5144762596635" y="518.5819950020344" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pm4-TSk2wgXTeJmCN4yv-23" value="Ghi nội dung/ đính kèm tệp hình ảnh,..." style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="330" y="630" width="140" height="70" as="geometry" />
+        <mxCell id="pm4-TSk2wgXTeJmCN4yv-23" value="Ghi nội dung/ đính kèm tệp hình ảnh,..." style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="320" y="630" width="150" height="70" as="geometry" />
         </mxCell>
         <mxCell id="pm4-TSk2wgXTeJmCN4yv-24" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="pm4-TSk2wgXTeJmCN4yv-3" target="pm4-TSk2wgXTeJmCN4yv-25" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -1124,7 +1124,7 @@
             <mxPoint x="410" y="410" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pm4-TSk2wgXTeJmCN4yv-25" value="Lựa chọn bài hát" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="pm4-TSk2wgXTeJmCN4yv-25" value="Lựa chọn bài hát" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="300" y="380" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="pm4-TSk2wgXTeJmCN4yv-26" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;endArrow=open;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="pm4-TSk2wgXTeJmCN4yv-7" target="pm4-TSk2wgXTeJmCN4yv-23" edge="1">
@@ -1133,7 +1133,7 @@
             <mxPoint x="730" y="660" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pm4-TSk2wgXTeJmCN4yv-27" value="Lựa chọn sao review&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="pm4-TSk2wgXTeJmCN4yv-27" value="Lựa chọn sao review&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="310" y="710" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="pm4-TSk2wgXTeJmCN4yv-28" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;endArrow=open;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="pm4-TSk2wgXTeJmCN4yv-8" target="pm4-TSk2wgXTeJmCN4yv-27" edge="1">
@@ -1142,8 +1142,8 @@
             <mxPoint x="730" y="720" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pm4-TSk2wgXTeJmCN4yv-29" value="Nhập nhận xét đánh giá" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="310" y="790" width="140" height="70" as="geometry" />
+        <mxCell id="pm4-TSk2wgXTeJmCN4yv-29" value="Nhập nhận xét đánh giá" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="340" y="790" width="110" height="80" as="geometry" />
         </mxCell>
         <mxCell id="pm4-TSk2wgXTeJmCN4yv-30" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="pm4-TSk2wgXTeJmCN4yv-8" target="pm4-TSk2wgXTeJmCN4yv-29" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -1157,11 +1157,11 @@
             <mxPoint x="425" y="1010" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pm4-TSk2wgXTeJmCN4yv-32" value="Lựa chọn bài hát hoặc album, hoặc danh sách các bài hát" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="pm4-TSk2wgXTeJmCN4yv-32" value="Lựa chọn bài hát hoặc album, hoặc danh sách các bài hát" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="290" y="940" width="180" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="pm4-TSk2wgXTeJmCN4yv-33" value="Nhập tên, id người dùng, user name" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="320" y="1140" width="170" height="80" as="geometry" />
+        <mxCell id="pm4-TSk2wgXTeJmCN4yv-33" value="Nhập tên, id người dùng, user name" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="300" y="1140" width="190" height="80" as="geometry" />
         </mxCell>
         <mxCell id="pm4-TSk2wgXTeJmCN4yv-34" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="pm4-TSk2wgXTeJmCN4yv-33" target="pm4-TSk2wgXTeJmCN4yv-15" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -1169,8 +1169,8 @@
             <mxPoint x="730" y="1150" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pm4-TSk2wgXTeJmCN4yv-35" value="Lựa chọn ngôn ngữ&lt;br&gt;(Anh Việt)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1220" y="940" width="140" height="70" as="geometry" />
+        <mxCell id="pm4-TSk2wgXTeJmCN4yv-35" value="Lựa chọn ngôn ngữ&lt;br style=&quot;font-size: 15px;&quot;&gt;(Anh Việt)" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="1220" y="940" width="150" height="70" as="geometry" />
         </mxCell>
         <mxCell id="pm4-TSk2wgXTeJmCN4yv-36" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="pm4-TSk2wgXTeJmCN4yv-12" target="pm4-TSk2wgXTeJmCN4yv-35" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -1178,7 +1178,7 @@
             <mxPoint x="1080" y="920" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pm4-TSk2wgXTeJmCN4yv-37" value="Chọn bài hát cần chia sẻ --&amp;gt; nhấn chia sẻ" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="pm4-TSk2wgXTeJmCN4yv-37" value="Chọn bài hát cần chia sẻ --&amp;gt; nhấn chia sẻ" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="1170" y="630" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="pm4-TSk2wgXTeJmCN4yv-38" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;endArrow=open;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="pm4-TSk2wgXTeJmCN4yv-13" target="pm4-TSk2wgXTeJmCN4yv-37" edge="1">
@@ -1187,25 +1187,25 @@
             <mxPoint x="1080" y="610" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pm4-TSk2wgXTeJmCN4yv-39" value="Chọn cách chia sẻ&lt;br&gt;Người dùng ứng dụng, zalo,.." style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1400" y="535" width="140" height="70" as="geometry" />
+        <mxCell id="pm4-TSk2wgXTeJmCN4yv-39" value="Chọn cách chia sẻ&lt;br style=&quot;font-size: 15px;&quot;&gt;Người dùng ứng dụng, zalo,.." style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="1400" y="535" width="160" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="pm4-TSk2wgXTeJmCN4yv-40" value="Lưu bài hát về máy" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="pm4-TSk2wgXTeJmCN4yv-40" value="Lưu bài hát về máy" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="1400" y="690" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="pm4-TSk2wgXTeJmCN4yv-41" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.786;exitY=0.957;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="pm4-TSk2wgXTeJmCN4yv-37" target="pm4-TSk2wgXTeJmCN4yv-40" edge="1">
+        <mxCell id="pm4-TSk2wgXTeJmCN4yv-41" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.786;exitY=0.957;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=15;" parent="1" source="pm4-TSk2wgXTeJmCN4yv-37" target="pm4-TSk2wgXTeJmCN4yv-40" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="920" y="690" as="sourcePoint" />
             <mxPoint x="1080" y="690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pm4-TSk2wgXTeJmCN4yv-42" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="pm4-TSk2wgXTeJmCN4yv-37" target="pm4-TSk2wgXTeJmCN4yv-39" edge="1">
+        <mxCell id="pm4-TSk2wgXTeJmCN4yv-42" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=15;" parent="1" source="pm4-TSk2wgXTeJmCN4yv-37" target="pm4-TSk2wgXTeJmCN4yv-39" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="920" y="690" as="sourcePoint" />
             <mxPoint x="1080" y="690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pm4-TSk2wgXTeJmCN4yv-43" value="Nhập nội dung tìm kiếm" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="pm4-TSk2wgXTeJmCN4yv-43" value="Nhập nội dung tìm kiếm" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="1180" y="420" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="pm4-TSk2wgXTeJmCN4yv-44" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" source="pm4-TSk2wgXTeJmCN4yv-11" target="pm4-TSk2wgXTeJmCN4yv-43" edge="1">
@@ -1214,8 +1214,8 @@
             <mxPoint x="1110" y="590" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pm4-TSk2wgXTeJmCN4yv-45" value="Lựa chọn các bộ lọc&lt;br&gt;Album, nghệ sĩ, bài hát" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1170" y="510" width="140" height="70" as="geometry" />
+        <mxCell id="pm4-TSk2wgXTeJmCN4yv-45" value="Lựa chọn các bộ lọc&lt;br style=&quot;font-size: 15px;&quot;&gt;Album, nghệ sĩ, bài hát" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="1165" y="500" width="170" height="80" as="geometry" />
         </mxCell>
         <mxCell id="pm4-TSk2wgXTeJmCN4yv-46" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="pm4-TSk2wgXTeJmCN4yv-11" target="pm4-TSk2wgXTeJmCN4yv-45" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -1223,7 +1223,7 @@
             <mxPoint x="1110" y="710" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pm4-TSk2wgXTeJmCN4yv-47" value="Lựa chọn các cài đặt" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="pm4-TSk2wgXTeJmCN4yv-47" value="Lựa chọn các cài đặt" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="1200" y="1090" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="pm4-TSk2wgXTeJmCN4yv-48" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="pm4-TSk2wgXTeJmCN4yv-10" target="pm4-TSk2wgXTeJmCN4yv-47" edge="1">
@@ -1293,141 +1293,285 @@
     </mxGraphModel>
   </diagram>
   <diagram id="SJ8JYKKPsZmaH9LvlUNO" name="Người kiểm thử">
-    <mxGraphModel dx="1447" dy="655" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1021" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="ipOHaZo9tftv0nmQrPwW-1" value="Người kiểm thử" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+        <mxCell id="ipOHaZo9tftv0nmQrPwW-1" value="Người kiểm thử" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="1100" y="579" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="1ioygv_L8oTHPTQc6RYt-17" value="Tính năng thông thường" style="shape=rect;html=1;verticalAlign=top;fontStyle=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+        <mxCell id="1ioygv_L8oTHPTQc6RYt-17" value="Tính năng thông thường" style="shape=rect;html=1;verticalAlign=top;fontStyle=1;whiteSpace=wrap;align=center;" parent="1" vertex="1">
           <mxGeometry x="410" y="140" width="500" height="840" as="geometry" />
         </mxCell>
-        <mxCell id="1ioygv_L8oTHPTQc6RYt-18" value="&lt;span id=&quot;docs-internal-guid-64ae6b6b-7fff-6cec-f81d-cf42e1317e1a&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Nghe nhạc từ MoonLight &lt;br&gt;music library&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1ioygv_L8oTHPTQc6RYt-18" value="&lt;span id=&quot;docs-internal-guid-64ae6b6b-7fff-6cec-f81d-cf42e1317e1a&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Nghe nhạc từ MoonLight &lt;br&gt;music library&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="445" y="170" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="1ioygv_L8oTHPTQc6RYt-19" value="&lt;span id=&quot;docs-internal-guid-c30b62ff-7fff-f9df-de79-6c09710e4303&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Nghe nhạc từ thiết bị của người dùng&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1ioygv_L8oTHPTQc6RYt-19" value="&lt;span id=&quot;docs-internal-guid-c30b62ff-7fff-f9df-de79-6c09710e4303&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Nghe nhạc từ thiết bị của người dùng&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="430" y="530" width="190" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="1ioygv_L8oTHPTQc6RYt-20" value="&lt;span id=&quot;docs-internal-guid-9efc2a66-7fff-7272-6fa3-f771eed4fd69&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Tạo tài khoản&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1ioygv_L8oTHPTQc6RYt-20" value="&lt;span id=&quot;docs-internal-guid-9efc2a66-7fff-7272-6fa3-f771eed4fd69&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Tạo tài khoản&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="460" y="260" width="140" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="1ioygv_L8oTHPTQc6RYt-21" value="&lt;span id=&quot;docs-internal-guid-ef1940cf-7fff-6faa-2dd0-b2ac8b1854e7&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Tạo, thêm, xóa, sửa playlist (&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Local&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;) của bản thân&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1ioygv_L8oTHPTQc6RYt-21" value="&lt;span id=&quot;docs-internal-guid-ef1940cf-7fff-6faa-2dd0-b2ac8b1854e7&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Tạo, thêm, xóa, sửa playlist (&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Local&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;) của bản thân&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="657.5" y="500" width="230" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="1ioygv_L8oTHPTQc6RYt-22" value="&lt;span id=&quot;docs-internal-guid-03298695-7fff-c910-26fc-c8c7ca388df4&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Góp ý, báo lỗi&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1ioygv_L8oTHPTQc6RYt-22" value="&lt;span id=&quot;docs-internal-guid-03298695-7fff-c910-26fc-c8c7ca388df4&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Góp ý, báo lỗi&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="455" y="350" width="140" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="1ioygv_L8oTHPTQc6RYt-23" value="&lt;span id=&quot;docs-internal-guid-dc99f27c-7fff-ed2d-a81d-7f8e9a078616&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Đánh giá&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1ioygv_L8oTHPTQc6RYt-23" value="&lt;span id=&quot;docs-internal-guid-dc99f27c-7fff-ed2d-a81d-7f8e9a078616&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Đánh giá&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="457.5" y="440" width="135" height="72.5" as="geometry" />
         </mxCell>
-        <mxCell id="1ioygv_L8oTHPTQc6RYt-24" value="&lt;span id=&quot;docs-internal-guid-8430ea5e-7fff-fec1-22b7-2754b1c957ec&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Thêm, xóa, sửa nhạc vào playlist (&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Local&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;) của bản thân&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1ioygv_L8oTHPTQc6RYt-24" value="&lt;span id=&quot;docs-internal-guid-8430ea5e-7fff-fec1-22b7-2754b1c957ec&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Thêm, xóa, sửa nhạc vào playlist (&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Local&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;) của bản thân&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="677.5" y="610" width="190" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="1ioygv_L8oTHPTQc6RYt-25" value="&lt;span id=&quot;docs-internal-guid-3b220848-7fff-69db-380a-de76480a0e94&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Sửa các &lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;options settingc&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Local&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;)(Theme, Music player, volume, Audio Spectrum, Lyrics Font,...)&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1ioygv_L8oTHPTQc6RYt-25" value="&lt;span id=&quot;docs-internal-guid-3b220848-7fff-69db-380a-de76480a0e94&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Sửa các &lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;options settingc&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Local&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;)(Theme, Music player, volume, Audio Spectrum, Lyrics Font,...)&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="620" y="829" width="280" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="1ioygv_L8oTHPTQc6RYt-26" value="&lt;span id=&quot;docs-internal-guid-b89f1cb2-7fff-b175-6d66-1bfbd4f91607&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Tìm kiếm, xem danh sách nhạc, albums, nghệ sĩ, &lt;br&gt;sáng tác, podcast&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1ioygv_L8oTHPTQc6RYt-26" value="&lt;span id=&quot;docs-internal-guid-b89f1cb2-7fff-b175-6d66-1bfbd4f91607&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Tìm kiếm, xem danh sách nhạc, albums, nghệ sĩ, &lt;br&gt;sáng tác, podcast&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="647.5" y="265" width="240" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="1ioygv_L8oTHPTQc6RYt-27" value="&lt;span id=&quot;docs-internal-guid-24b4cb66-7fff-17b2-270c-9b6345f695c5&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Thay đổi ngôn ngữ giao diện&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1ioygv_L8oTHPTQc6RYt-27" value="&lt;span id=&quot;docs-internal-guid-24b4cb66-7fff-17b2-270c-9b6345f695c5&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Thay đổi ngôn ngữ giao diện&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="690" y="735" width="165" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="1ioygv_L8oTHPTQc6RYt-28" value="&lt;span id=&quot;docs-internal-guid-028da227-7fff-52b7-6d3d-0360359404a8&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Chia sẻ nhạc cho người dùng khác, phần mềm khác, hoặc lưu nhạc về thiết bị&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1ioygv_L8oTHPTQc6RYt-28" value="&lt;span id=&quot;docs-internal-guid-028da227-7fff-52b7-6d3d-0360359404a8&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Chia sẻ nhạc cho người dùng khác, phần mềm khác, hoặc lưu nhạc về thiết bị&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="645" y="380" width="230" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="1ioygv_L8oTHPTQc6RYt-29" value="&lt;span id=&quot;docs-internal-guid-4f1bea0c-7fff-02ee-10c5-8c099a5d1af4&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Tải nhạc từ thư viện của MoonLight&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1ioygv_L8oTHPTQc6RYt-29" value="&lt;span id=&quot;docs-internal-guid-4f1bea0c-7fff-02ee-10c5-8c099a5d1af4&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Tải nhạc từ thư viện của MoonLight&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="445" y="620" width="170" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="1ioygv_L8oTHPTQc6RYt-30" value="&lt;span id=&quot;docs-internal-guid-bea66086-7fff-3080-8c35-c283c6cdfea5&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Tìm kiếm thông tin người dùng khác&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1ioygv_L8oTHPTQc6RYt-30" value="&lt;span id=&quot;docs-internal-guid-bea66086-7fff-3080-8c35-c283c6cdfea5&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Tìm kiếm thông tin người dùng khác&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="440" y="835" width="170" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="1ioygv_L8oTHPTQc6RYt-31" value="&lt;span id=&quot;docs-internal-guid-1fd2e7e3-7fff-180a-764a-1a2add238ec5&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Nhận thông báo từ ứng dụng&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1ioygv_L8oTHPTQc6RYt-31" value="&lt;span id=&quot;docs-internal-guid-1fd2e7e3-7fff-180a-764a-1a2add238ec5&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Nhận thông báo từ ứng dụng&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="440" y="730" width="170" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="1ioygv_L8oTHPTQc6RYt-32" value="&lt;span id=&quot;docs-internal-guid-1ad9cd9e-7fff-584a-61a6-cebdad4c9dec&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Tải hoặc lựa chọn các bài hát trong album để tải về &lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1ioygv_L8oTHPTQc6RYt-32" value="&lt;span id=&quot;docs-internal-guid-1ad9cd9e-7fff-584a-61a6-cebdad4c9dec&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Tải hoặc lựa chọn các bài hát trong album để tải về &lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="655" y="165" width="220" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="WCAhdfDyXNgSblpAfxki-1" value="Tính năng sau khi đăng ký" style="shape=rect;html=1;verticalAlign=top;fontStyle=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+        <mxCell id="WCAhdfDyXNgSblpAfxki-1" value="Tính năng sau khi đăng ký" style="shape=rect;html=1;verticalAlign=top;fontStyle=1;whiteSpace=wrap;align=center;" parent="1" vertex="1">
           <mxGeometry x="1330" y="10" width="520" height="689" as="geometry" />
         </mxCell>
-        <mxCell id="WCAhdfDyXNgSblpAfxki-2" value="&lt;span id=&quot;docs-internal-guid-af818f08-7fff-9556-6e27-402ca17ad6d1&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Ghi nhớ mật khẩu trên thiết bị&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WCAhdfDyXNgSblpAfxki-2" value="&lt;span id=&quot;docs-internal-guid-af818f08-7fff-9556-6e27-402ca17ad6d1&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Ghi nhớ mật khẩu trên thiết bị&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1390" y="209" width="170" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="WCAhdfDyXNgSblpAfxki-3" value="&lt;span id=&quot;docs-internal-guid-eae34ead-7fff-c91f-b4ff-5b71d624f01e&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Ghi nhớ tài khoản trên thiết bị&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WCAhdfDyXNgSblpAfxki-3" value="&lt;span id=&quot;docs-internal-guid-eae34ead-7fff-c91f-b4ff-5b71d624f01e&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Ghi nhớ tài khoản trên thiết bị&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1370" y="364" width="170" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="WCAhdfDyXNgSblpAfxki-4" value="&lt;b id=&quot;docs-internal-guid-cf874ba3-7fff-fa96-0f2b-b0b6715eb8ca&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Nhận hỗ trợ về tài khoản (Quên mật khẩu)&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WCAhdfDyXNgSblpAfxki-4" value="&lt;b id=&quot;docs-internal-guid-cf874ba3-7fff-fa96-0f2b-b0b6715eb8ca&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Nhận hỗ trợ về tài khoản (Quên mật khẩu)&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1360" y="449" width="210" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="WCAhdfDyXNgSblpAfxki-5" value="&lt;b id=&quot;docs-internal-guid-6ee5d814-7fff-2fc6-6aa1-300d06972f1e&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Đăng xuất&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WCAhdfDyXNgSblpAfxki-5" value="&lt;b id=&quot;docs-internal-guid-6ee5d814-7fff-2fc6-6aa1-300d06972f1e&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Đăng xuất&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1580" y="469" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="WCAhdfDyXNgSblpAfxki-6" value="&lt;b id=&quot;docs-internal-guid-bc43ed48-7fff-5aa8-ecb2-96911e4df62e&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Thay đổi thông tin cá nhân&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WCAhdfDyXNgSblpAfxki-6" value="&lt;b id=&quot;docs-internal-guid-bc43ed48-7fff-5aa8-ecb2-96911e4df62e&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Thay đổi thông tin cá nhân&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1370" y="129" width="220" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="WCAhdfDyXNgSblpAfxki-7" value="&lt;b id=&quot;docs-internal-guid-44eb4a09-7fff-bebc-4375-02c51291237e&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Thay đổi thông tin tài khoản (Mật khẩu)&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WCAhdfDyXNgSblpAfxki-7" value="&lt;b id=&quot;docs-internal-guid-44eb4a09-7fff-bebc-4375-02c51291237e&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Thay đổi thông tin tài khoản (Mật khẩu)&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1350" y="549" width="200" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="WCAhdfDyXNgSblpAfxki-8" value="&lt;b id=&quot;docs-internal-guid-072ce859-7fff-dba4-0432-201968501e71&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Tạo, thêm, xóa, sửa playlist (&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Sync&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;) &lt;br&gt;của bản thân&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WCAhdfDyXNgSblpAfxki-8" value="&lt;b id=&quot;docs-internal-guid-072ce859-7fff-dba4-0432-201968501e71&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Tạo, thêm, xóa, sửa playlist (&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Sync&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;) &lt;br&gt;của bản thân&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1370" y="29" width="200" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="WCAhdfDyXNgSblpAfxki-9" value="&lt;b id=&quot;docs-internal-guid-6393125c-7fff-570f-39c6-a9ffac4714c0&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Sửa các &lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;options setting&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Sync&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;)(Theme, Music player, volume, Audio Spectrum, Lyrics Font,...)&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WCAhdfDyXNgSblpAfxki-9" value="&lt;b id=&quot;docs-internal-guid-6393125c-7fff-570f-39c6-a9ffac4714c0&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Sửa các &lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;options setting&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Sync&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;)(Theme, Music player, volume, Audio Spectrum, Lyrics Font,...)&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1560" y="334" width="280" height="125" as="geometry" />
         </mxCell>
-        <mxCell id="WCAhdfDyXNgSblpAfxki-10" value="&lt;b id=&quot;docs-internal-guid-c5519cd0-7fff-1c39-69e2-57ed84991389&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Thêm, xóa, sửa nhạc vào playlist(&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Sync&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;) của bản thân&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WCAhdfDyXNgSblpAfxki-10" value="&lt;b id=&quot;docs-internal-guid-c5519cd0-7fff-1c39-69e2-57ed84991389&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Thêm, xóa, sửa nhạc vào playlist (&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(19, 79, 92); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Sync&lt;/span&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;) của bản thân&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1600" y="229" width="230" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="WCAhdfDyXNgSblpAfxki-11" value="&lt;b id=&quot;docs-internal-guid-39337c48-7fff-c38d-7a92-fe229f5eb1aa&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Upload nhạc lên MoonLight music library&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WCAhdfDyXNgSblpAfxki-11" value="&lt;b id=&quot;docs-internal-guid-39337c48-7fff-c38d-7a92-fe229f5eb1aa&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Upload nhạc lên MoonLight music library&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1550" y="589" width="200" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="WCAhdfDyXNgSblpAfxki-12" value="&lt;b id=&quot;docs-internal-guid-da163141-7fff-edbc-0529-bdcd3d15d4e3&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Yêu thích, like &lt;br&gt;cho bài nhạc (Thêm vào danh sách nhạc &lt;br&gt;yêu thích)&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WCAhdfDyXNgSblpAfxki-12" value="&lt;b id=&quot;docs-internal-guid-da163141-7fff-edbc-0529-bdcd3d15d4e3&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Yêu thích, like &lt;br&gt;cho bài nhạc (Thêm vào danh sách nhạc &lt;br&gt;yêu thích)&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1610" y="29" width="220" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="WCAhdfDyXNgSblpAfxki-13" value="&lt;b id=&quot;docs-internal-guid-89d00f69-7fff-92a4-2bf0-f31b1d614c37&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Follow người dùng&lt;br&gt;&amp;nbsp;hoặc nghệ sĩ&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WCAhdfDyXNgSblpAfxki-13" value="&lt;b id=&quot;docs-internal-guid-89d00f69-7fff-92a4-2bf0-f31b1d614c37&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Follow người dùng&lt;br&gt;&amp;nbsp;hoặc nghệ sĩ&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1630" y="134" width="190" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="WCAhdfDyXNgSblpAfxki-14" value="&lt;b id=&quot;docs-internal-guid-f609e29d-7fff-bd51-e43c-be6957b2322a&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Kết bạn với người dùng khác&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WCAhdfDyXNgSblpAfxki-14" value="&lt;b id=&quot;docs-internal-guid-f609e29d-7fff-bd51-e43c-be6957b2322a&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Kết bạn với người dùng khác&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1400" y="284" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="WCAhdfDyXNgSblpAfxki-15" value="&lt;span id=&quot;docs-internal-guid-6ee5d814-7fff-2fc6-6aa1-300d06972f1e&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Đăng nhập&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WCAhdfDyXNgSblpAfxki-15" value="&lt;span id=&quot;docs-internal-guid-6ee5d814-7fff-2fc6-6aa1-300d06972f1e&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;Đăng nhập&lt;/span&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1690" y="529" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="WCAhdfDyXNgSblpAfxki-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="WCAhdfDyXNgSblpAfxki-13" target="WCAhdfDyXNgSblpAfxki-13">
+        <mxCell id="WCAhdfDyXNgSblpAfxki-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="WCAhdfDyXNgSblpAfxki-13" target="WCAhdfDyXNgSblpAfxki-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ttkko6nfDFC5mr8ajj9p-1" value="Người quản lý" style="shape=rect;html=1;verticalAlign=top;fontStyle=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+        <mxCell id="Ttkko6nfDFC5mr8ajj9p-1" value="Người quản lý" style="shape=rect;html=1;verticalAlign=top;fontStyle=1;whiteSpace=wrap;align=center;" parent="1" vertex="1">
           <mxGeometry x="1430" y="750" width="345" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="Ttkko6nfDFC5mr8ajj9p-2" value="&lt;b id=&quot;docs-internal-guid-1c696552-7fff-0f11-4587-77ca5827eee2&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Nhìn thấy các hàm &lt;br&gt;(Nút-buttons) hỗ trợ &lt;br&gt;để test nhanh hệ thống.&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Ttkko6nfDFC5mr8ajj9p-2" value="&lt;b id=&quot;docs-internal-guid-1c696552-7fff-0f11-4587-77ca5827eee2&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Nhìn thấy các hàm &lt;br&gt;(Nút-buttons) hỗ trợ &lt;br&gt;để test nhanh hệ thống.&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1525" y="869" width="230" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="Ttkko6nfDFC5mr8ajj9p-3" value="&lt;b id=&quot;docs-internal-guid-2644acdd-7fff-7916-2540-7734a3061f23&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Thêm, sửa, xóa User Profile (Người dùng ảo)&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Ttkko6nfDFC5mr8ajj9p-3" value="&lt;b id=&quot;docs-internal-guid-2644acdd-7fff-7916-2540-7734a3061f23&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Thêm, sửa, xóa User Profile (Người dùng ảo)&lt;/span&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1440" y="779" width="205" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="9iNTuIlAkX-DMCIPwdb_-1" value="" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="1ioygv_L8oTHPTQc6RYt-17" target="ipOHaZo9tftv0nmQrPwW-1">
+        <mxCell id="9iNTuIlAkX-DMCIPwdb_-1" value="" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="1ioygv_L8oTHPTQc6RYt-17" target="ipOHaZo9tftv0nmQrPwW-1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="940" y="512.5" as="sourcePoint" />
             <mxPoint x="1030" y="504.5588235294117" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9iNTuIlAkX-DMCIPwdb_-2" value="" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="ipOHaZo9tftv0nmQrPwW-1" target="WCAhdfDyXNgSblpAfxki-1">
+        <mxCell id="9iNTuIlAkX-DMCIPwdb_-2" value="" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="ipOHaZo9tftv0nmQrPwW-1" target="WCAhdfDyXNgSblpAfxki-1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1180" y="627.94" as="sourcePoint" />
             <mxPoint x="1270" y="619.9988235294118" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9iNTuIlAkX-DMCIPwdb_-3" value="" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ipOHaZo9tftv0nmQrPwW-1" target="Ttkko6nfDFC5mr8ajj9p-1">
+        <mxCell id="9iNTuIlAkX-DMCIPwdb_-3" value="" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ipOHaZo9tftv0nmQrPwW-1" target="Ttkko6nfDFC5mr8ajj9p-1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1150" y="686.94" as="sourcePoint" />
             <mxPoint x="1240" y="678.9988235294118" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zx85jUPXUvpaEYu2-vEJ-1" value="Lựa chọn ngôn ngữ&lt;br style=&quot;font-size: 15px;&quot;&gt;(Anh Việt)" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="990" y="730" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zx85jUPXUvpaEYu2-vEJ-2" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" target="zx85jUPXUvpaEYu2-vEJ-1" source="1ioygv_L8oTHPTQc6RYt-27">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="849.9999999999932" y="785" as="sourcePoint" />
+            <mxPoint x="887.5" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aaj0yimUF6t3W9jDE7XK-1" value="Lựa chọn các&lt;br&gt;&amp;nbsp;cài đặt" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1037.5" y="855" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="aaj0yimUF6t3W9jDE7XK-2" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="aaj0yimUF6t3W9jDE7XK-1" source="1ioygv_L8oTHPTQc6RYt-25">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="887.5" y="905" as="sourcePoint" />
+            <mxPoint x="947.5" y="715" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wU4wx3opBg_jk099c_bx-1" value="Chọn bài hát cần chia sẻ --&amp;gt; nhấn chia sẻ" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="950" y="400" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="wU4wx3opBg_jk099c_bx-2" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;endArrow=open;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" target="wU4wx3opBg_jk099c_bx-1" source="1ioygv_L8oTHPTQc6RYt-28">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="878.0499999999986" y="444" as="sourcePoint" />
+            <mxPoint x="923.05" y="389" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wU4wx3opBg_jk099c_bx-3" value="Chọn cách chia sẻ&lt;br style=&quot;font-size: 15px;&quot;&gt;Người dùng ứng dụng, zalo,.." style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="334" width="160" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="wU4wx3opBg_jk099c_bx-4" value="Lưu bài hát về máy" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1153.05" y="459" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="wU4wx3opBg_jk099c_bx-5" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.786;exitY=0.957;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=15;" edge="1" parent="1" source="wU4wx3opBg_jk099c_bx-1" target="wU4wx3opBg_jk099c_bx-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="763.05" y="469" as="sourcePoint" />
+            <mxPoint x="923.05" y="469" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wU4wx3opBg_jk099c_bx-6" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=15;" edge="1" parent="1" source="wU4wx3opBg_jk099c_bx-1" target="wU4wx3opBg_jk099c_bx-3">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="763.05" y="469" as="sourcePoint" />
+            <mxPoint x="923.05" y="469" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wU4wx3opBg_jk099c_bx-7" value="Nhập nội dung tìm kiếm" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1013.05" y="185" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="wU4wx3opBg_jk099c_bx-8" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="wU4wx3opBg_jk099c_bx-7" source="1ioygv_L8oTHPTQc6RYt-26">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="855.0001417757774" y="293.7796894072799" as="sourcePoint" />
+            <mxPoint x="953.05" y="369" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wU4wx3opBg_jk099c_bx-9" value="Lựa chọn các bộ lọc&lt;br style=&quot;font-size: 15px;&quot;&gt;Album, nghệ sĩ, bài hát" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="270" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="wU4wx3opBg_jk099c_bx-10" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" target="wU4wx3opBg_jk099c_bx-9" source="1ioygv_L8oTHPTQc6RYt-26">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="890.4193254008844" y="326.69114480375674" as="sourcePoint" />
+            <mxPoint x="953.05" y="489" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5XDEIXXa4CA6b9Y0wW5l-1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;endArrow=open;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" target="5XDEIXXa4CA6b9Y0wW5l-2" source="1ioygv_L8oTHPTQc6RYt-20">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="440" y="225" as="sourcePoint" />
+            <mxPoint x="260" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5XDEIXXa4CA6b9Y0wW5l-2" value="Nhập thông tin&lt;br style=&quot;font-size: 15px;&quot;&gt;xác thực thông tin&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="180" y="228.9999999999999" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5XDEIXXa4CA6b9Y0wW5l-3" value="Chấp nhận điều khoản&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="190" y="310" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5XDEIXXa4CA6b9Y0wW5l-4" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;endArrow=open;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="5XDEIXXa4CA6b9Y0wW5l-3" source="1ioygv_L8oTHPTQc6RYt-20">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="440" y="225" as="sourcePoint" />
+            <mxPoint x="324.5144762596635" y="208.58199500203443" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5XDEIXXa4CA6b9Y0wW5l-5" value="Ghi nội dung/ đính kèm tệp hình ảnh,..." style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="145" y="386" width="160" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="5XDEIXXa4CA6b9Y0wW5l-6" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1" target="5XDEIXXa4CA6b9Y0wW5l-7" source="1ioygv_L8oTHPTQc6RYt-18">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="430" y="125" as="sourcePoint" />
+            <mxPoint x="260" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5XDEIXXa4CA6b9Y0wW5l-7" value="Lựa chọn bài hát" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="170" y="140" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5XDEIXXa4CA6b9Y0wW5l-8" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;endArrow=open;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="5XDEIXXa4CA6b9Y0wW5l-5" source="1ioygv_L8oTHPTQc6RYt-22">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="440" y="315" as="sourcePoint" />
+            <mxPoint x="580" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5XDEIXXa4CA6b9Y0wW5l-9" value="Lựa chọn sao review&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="170" y="500" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5XDEIXXa4CA6b9Y0wW5l-10" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;endArrow=open;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="5XDEIXXa4CA6b9Y0wW5l-9" source="1ioygv_L8oTHPTQc6RYt-23">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="440" y="425" as="sourcePoint" />
+            <mxPoint x="580" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5XDEIXXa4CA6b9Y0wW5l-11" value="Nhập nhận xét đánh giá" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="170" y="630" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5XDEIXXa4CA6b9Y0wW5l-12" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" target="5XDEIXXa4CA6b9Y0wW5l-13" source="1ioygv_L8oTHPTQc6RYt-29">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="440" y="660" as="sourcePoint" />
+            <mxPoint x="275" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5XDEIXXa4CA6b9Y0wW5l-13" value="Lựa chọn bài hát hoặc album, hoặc danh sách các bài hát" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="160" y="765" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="5XDEIXXa4CA6b9Y0wW5l-14" value="Nhập tên, id người dùng, user name" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="140" y="940" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5XDEIXXa4CA6b9Y0wW5l-15" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5XDEIXXa4CA6b9Y0wW5l-14" target="1ioygv_L8oTHPTQc6RYt-30">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="420" y="840" as="sourcePoint" />
+            <mxPoint x="440" y="885" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gR9OBlnA9VrNoUD4JWOf-1" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1ioygv_L8oTHPTQc6RYt-23" target="5XDEIXXa4CA6b9Y0wW5l-11">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="474.8959235991433" y="620.8198051533946" as="sourcePoint" />
+            <mxPoint x="310" y="679" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-AgN9FR_HV4wQ7QXRTAC-1" value="Đăng nhập" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1153.05" y="100" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-AgN9FR_HV4wQ7QXRTAC-2" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;endArrow=open;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" target="-AgN9FR_HV4wQ7QXRTAC-1" source="WCAhdfDyXNgSblpAfxki-2">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1385" y="205" as="sourcePoint" />
+            <mxPoint x="1310" y="408.75" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="nHqCNXuInoX8R09EDn8E" name="Người quản lý">
-    <mxGraphModel dx="1635" dy="908" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="868" dy="393" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1595,32 +1739,32 @@
     </mxGraphModel>
   </diagram>
   <diagram id="L_BmCCqkgcdJwNyE6EbY" name="NewClassDIagram">
-    <mxGraphModel dx="1168" dy="649" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="868" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="2nO41XbgQ2EDhumDYI2S-1" value="UserAccound" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+        <mxCell id="2nO41XbgQ2EDhumDYI2S-1" value="UserAccound" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="280" y="400" width="280" height="192" as="geometry" />
         </mxCell>
-        <mxCell id="38zOXD-C0H0dm79vPRKe-1" value="+ id: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2nO41XbgQ2EDhumDYI2S-1">
+        <mxCell id="38zOXD-C0H0dm79vPRKe-1" value="+ id: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2nO41XbgQ2EDhumDYI2S-1" vertex="1">
           <mxGeometry y="26" width="280" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="2nO41XbgQ2EDhumDYI2S-2" value="+ userName: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2nO41XbgQ2EDhumDYI2S-1">
+        <mxCell id="2nO41XbgQ2EDhumDYI2S-2" value="+ userName: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2nO41XbgQ2EDhumDYI2S-1" vertex="1">
           <mxGeometry y="52" width="280" height="28" as="geometry" />
         </mxCell>
-        <mxCell id="2nO41XbgQ2EDhumDYI2S-5" value="+ password: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2nO41XbgQ2EDhumDYI2S-1">
+        <mxCell id="2nO41XbgQ2EDhumDYI2S-5" value="+ password: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2nO41XbgQ2EDhumDYI2S-1" vertex="1">
           <mxGeometry y="80" width="280" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="2nO41XbgQ2EDhumDYI2S-6" value="+ email: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2nO41XbgQ2EDhumDYI2S-1">
+        <mxCell id="2nO41XbgQ2EDhumDYI2S-6" value="+ email: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2nO41XbgQ2EDhumDYI2S-1" vertex="1">
           <mxGeometry y="106" width="280" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="2nO41XbgQ2EDhumDYI2S-7" value="+ phoneNumber: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2nO41XbgQ2EDhumDYI2S-1">
+        <mxCell id="2nO41XbgQ2EDhumDYI2S-7" value="+ phoneNumber: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2nO41XbgQ2EDhumDYI2S-1" vertex="1">
           <mxGeometry y="132" width="280" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="2nO41XbgQ2EDhumDYI2S-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="2nO41XbgQ2EDhumDYI2S-1">
+        <mxCell id="2nO41XbgQ2EDhumDYI2S-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="2nO41XbgQ2EDhumDYI2S-1" vertex="1">
           <mxGeometry y="158" width="280" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="2nO41XbgQ2EDhumDYI2S-4" value="+ Đăng nhập(string,string): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2nO41XbgQ2EDhumDYI2S-1">
+        <mxCell id="2nO41XbgQ2EDhumDYI2S-4" value="+ Đăng nhập(string,string): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2nO41XbgQ2EDhumDYI2S-1" vertex="1">
           <mxGeometry y="166" width="280" height="26" as="geometry" />
         </mxCell>
       </root>
