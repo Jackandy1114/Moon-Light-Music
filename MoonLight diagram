@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-11-29T13:36:41.789Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="YDDDdEvd0GnX95EeVFy9" version="20.6.0" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2022-11-30T09:07:43.231Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.62" etag="Dt9FJRTZz3OiXel0h3mQ" version="20.6.0" type="github" pages="7">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Classdiagram">
-    <mxGraphModel dx="2522" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2645" dy="550" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -1739,12 +1739,12 @@
     </mxGraphModel>
   </diagram>
   <diagram id="L_BmCCqkgcdJwNyE6EbY" name="NewClassDIagram">
-    <mxGraphModel dx="868" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1308" dy="726" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="2nO41XbgQ2EDhumDYI2S-1" value="UserAccound" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="280" y="400" width="280" height="192" as="geometry" />
+          <mxGeometry x="280" y="400" width="280" height="218" as="geometry" />
         </mxCell>
         <mxCell id="38zOXD-C0H0dm79vPRKe-1" value="+ id: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2nO41XbgQ2EDhumDYI2S-1" vertex="1">
           <mxGeometry y="26" width="280" height="26" as="geometry" />
@@ -1766,6 +1766,9 @@
         </mxCell>
         <mxCell id="2nO41XbgQ2EDhumDYI2S-4" value="+ Đăng nhập(string,string): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2nO41XbgQ2EDhumDYI2S-1" vertex="1">
           <mxGeometry y="166" width="280" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Lp0YxiDdKlpQbbMcXRw--1" value="+ Đăng ký(string,string,string): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2nO41XbgQ2EDhumDYI2S-1">
+          <mxGeometry y="192" width="280" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
