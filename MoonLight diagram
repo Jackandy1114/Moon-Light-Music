@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-30T09:15:33.198Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.62" etag="9RSTFCN9fPgjnmFAHi0a" version="20.6.0" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2022-11-30T09:16:05.342Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.62" etag="ApLP1U-i2XkAfBs2Iu7y" version="20.6.0" type="github" pages="7">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Classdiagram">
     <mxGraphModel dx="3698" dy="1135" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1739,7 +1739,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="L_BmCCqkgcdJwNyE6EbY" name="NewClassDIagram">
-    <mxGraphModel dx="1798" dy="533" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2035" dy="667" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1830,10 +1830,10 @@
         <mxCell id="IpCimXAohRveIdHc1HN7-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="IpCimXAohRveIdHc1HN7-1">
           <mxGeometry y="106" width="280" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="IpCimXAohRveIdHc1HN7-8" value="+Add Friend (string, string): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IpCimXAohRveIdHc1HN7-1">
+        <mxCell id="IpCimXAohRveIdHc1HN7-8" value="+ Add Friend (string, string): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IpCimXAohRveIdHc1HN7-1">
           <mxGeometry y="114" width="280" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="IpCimXAohRveIdHc1HN7-9" value="+ Đăng ký(string,string,string): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IpCimXAohRveIdHc1HN7-1">
+        <mxCell id="IpCimXAohRveIdHc1HN7-9" value="+ Un Friend (string, string): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IpCimXAohRveIdHc1HN7-1">
           <mxGeometry y="140" width="280" height="26" as="geometry" />
         </mxCell>
       </root>
