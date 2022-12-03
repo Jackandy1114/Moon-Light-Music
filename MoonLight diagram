@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-03T20:18:57.449Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.62" etag="c8-P7TByzIMPlgFYybis" version="20.6.0" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2022-12-03T22:13:19.912Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.62" etag="VUu0KZBOkkimFwG3oVkX" version="20.6.0" type="github" pages="8">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Classdiagram">
     <mxGraphModel dx="3076" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1739,7 +1739,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="L_BmCCqkgcdJwNyE6EbY" name="NewClassDIagram">
-    <mxGraphModel dx="1798" dy="533" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1903" dy="593" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1898,7 +1898,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IpCimXAohRveIdHc1HN7-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="IpCimXAohRveIdHc1HN7-4" edge="1" target="yx8FMtY9s-lUKHzsAV5b-2">
+        <mxCell id="IpCimXAohRveIdHc1HN7-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="IpCimXAohRveIdHc1HN7-4" target="yx8FMtY9s-lUKHzsAV5b-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="560" y="440" as="targetPoint" />
             <Array as="points">
@@ -1950,6 +1950,123 @@
           <mxGeometry x="-0.8745" y="1" relative="1" as="geometry">
             <mxPoint x="-22" y="-1" as="offset" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Pfc9_zInbKELH-NrJUqq" name="sequence Diagram">
+    <mxGraphModel dx="695" dy="1760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="svSNMk2NrsxuPlfgG37_-12" value="User" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="100" width="20" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-13" value="Run Program" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;rounded=0;" edge="1" parent="1" target="svSNMk2NrsxuPlfgG37_-15">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="120" y="200" as="sourcePoint" />
+            <mxPoint x="260" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-15" value="Loading Animation" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="100" width="100" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-18" value="Select" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;rounded=0;" edge="1" parent="1" target="svSNMk2NrsxuPlfgG37_-19">
+          <mxGeometry x="0.0036" y="10" width="60" relative="1" as="geometry">
+            <mxPoint x="260" y="240" as="sourcePoint" />
+            <mxPoint x="320" y="240" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-20" value="Frame" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="100" width="100" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-21" value="GUI navigation to" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;rounded=0;" edge="1" parent="svSNMk2NrsxuPlfgG37_-20">
+          <mxGeometry x="0.0036" y="10" width="60" relative="1" as="geometry">
+            <mxPoint x="-90" y="180" as="sourcePoint" />
+            <mxPoint x="49.500000000000114" y="180" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-22" value="Account Frame" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="440" width="600" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-23" value="User" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="460" width="20" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-25" value="GUI" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="460" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-38" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="svSNMk2NrsxuPlfgG37_-25">
+          <mxGeometry x="45" y="60" width="10" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-42" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="svSNMk2NrsxuPlfgG37_-25">
+          <mxGeometry x="45" y="180" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-27" value="Login Interface" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="460" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-39" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="svSNMk2NrsxuPlfgG37_-27">
+          <mxGeometry x="45" y="90" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-28" value="Database" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="460" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-30" value="Click item in Menu" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;rounded=0;entryX=-0.069;entryY=0.395;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="svSNMk2NrsxuPlfgG37_-38">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="120" y="559.58" as="sourcePoint" />
+            <mxPoint x="240" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-34" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="484.5" y="600" width="10" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-29" value="Verify Succeed" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;rounded=0;" edge="1" parent="1" target="svSNMk2NrsxuPlfgG37_-34">
+          <mxGeometry x="0.0036" y="10" width="60" relative="1" as="geometry">
+            <mxPoint x="380" y="610" as="sourcePoint" />
+            <mxPoint x="489.5000000000001" y="640" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-37" value="Profile Data" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="1" target="svSNMk2NrsxuPlfgG37_-42">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="680" as="targetPoint" />
+            <mxPoint x="480" y="680" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-44" value="frame" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="800" width="600" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-48" value="If Fail validation" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=0.966;entryY=0.54;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" target="svSNMk2NrsxuPlfgG37_-38" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="256" y="550" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="280" y="550" />
+              <mxPoint x="280" y="574" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-24" value="Login (user + pass)" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;rounded=0;exitX=1.1;exitY=0.748;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="svSNMk2NrsxuPlfgG37_-38" target="svSNMk2NrsxuPlfgG37_-39">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="260" y="581" as="sourcePoint" />
+            <mxPoint x="363" y="581.72" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-50" value="Fail verify" style="edgeStyle=elbowEdgeStyle;fontSize=12;html=1;endArrow=blockThin;endFill=1;rounded=0;exitX=0.966;exitY=0.231;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.034;entryY=0.099;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="svSNMk2NrsxuPlfgG37_-39" target="svSNMk2NrsxuPlfgG37_-38">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="270" y="610" as="sourcePoint" />
+            <mxPoint x="377" y="580" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="400" y="560" />
+              <mxPoint x="400" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-16" value="Run" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="-150" width="600" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="svSNMk2NrsxuPlfgG37_-19" value="Menu Item" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="100" width="100" height="220" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
