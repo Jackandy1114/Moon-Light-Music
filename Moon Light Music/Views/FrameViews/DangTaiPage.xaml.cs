@@ -36,7 +36,7 @@ public sealed partial class DangTaiPage : Page
             //var a = Directory.GetCurrentDirectory();
             FolderPicker folderPicker = new FolderPicker()
             {
-                CommitButtonText = "What?",
+                CommitButtonText = "Mở",
             };
             WinRT.Interop.InitializeWithWindow.Initialize(folderPicker, hwnd);
             var folder = await folderPicker.PickSingleFolderAsync();

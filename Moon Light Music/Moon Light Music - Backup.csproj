@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows10.0.22621.0</TargetFramework>
+    <TargetFramework>net7.0-windows10.0.22621.0</TargetFramework>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <RootNamespace>Moon_Light_Music</RootNamespace>
     <ApplicationIcon>Assets/WindowIcon.ico</ApplicationIcon>
@@ -17,17 +17,17 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <PackageCertificateThumbprint>48B88B909CF22FC6666E95E36256FA4616D3A72F</PackageCertificateThumbprint>
     <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <Authors>Tran Phu Dat</Authors>
     <PackageIcon>StoreLogo.scale-400.png</PackageIcon>
     <NeutralLanguage>en-US</NeutralLanguage>
     <GenerateAppInstallerFile>True</GenerateAppInstallerFile>
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
-    <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
+    <AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
     <GenerateTestArtifacts>True</GenerateTestArtifacts>
     <AppxBundle>Auto</AppxBundle>
-    <AppxBundlePlatforms>x86</AppxBundlePlatforms>
+    <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
     <AppInstallerUri>D:\Moon Light</AppInstallerUri>
   </PropertyGroup>
   <ItemGroup>
@@ -57,14 +57,31 @@
     <Content Remove="Assets\WindowIcon.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="AnimatedVisuals\Donut.json" />
+    <None Remove="Audio\WaitingForYou-MONOOnionn.mp3" />
+    <None Remove="Dialog\OpenUrlMusicLink.xaml" />
+    <None Remove="Dialog\SignUpDialog.xaml" />
     <None Remove="Dialog\TrangChuContentDiaglog.xaml" />
     <None Remove="Image\Logo\1.png" />
+    <None Remove="Image\Logo\2.png" />
+    <None Remove="Image\Logo\Dark.png" />
     <None Remove="Styles\AlbumListView.xaml" />
-    <None Remove="Views\MoAppLanDau.xaml" />
+    <None Remove="Styles\generic.xaml" />
+    <None Remove="Views\ChildViews\ChuDeChildPage.xaml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AnimatedVisuals\Donut.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\WaitingForYou-MONOOnionn.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Image\Logo\1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Logo\2.png" />
+    <Content Include="Image\Logo\Dark.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
@@ -72,20 +89,23 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
     <PackageReference Include="Microsoft.Graphics.Win2D" Version="1.0.4" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.1.5" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.2.221116.1" />
     <PackageReference Include="Microsoft.Xaml.Behaviors.WinUI.Managed" Version="2.0.9" />
-    <PackageReference Include="RestSharp" Version="108.0.2" />
-    <PackageReference Include="Selenium.Support" Version="4.6.0" />
+    <PackageReference Include="RestSharp" Version="108.0.3" />
     <PackageReference Include="Selenium.WebDriver" Version="4.6.0" />
-    <PackageReference Include="Selenium.WebDriver.MicrosoftDriver" Version="17.17134.0" />
-    <PackageReference Include="Selenium.WebDriver.MSEdgeDriver" Version="106.0.1370.34" />
-    <PackageReference Include="Selenium.WebDriverBackedSelenium" Version="4.1.0" />
+    <PackageReference Include="Selenium.WebDriver.MSEdgeDriver" Version="107.0.1418.42" />
     <PackageReference Include="WinUIEx" Version="1.8.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Moon Light Music.Core\Moon Light Music.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="appsettings.json">
@@ -95,15 +115,24 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+    <Page Update="Dialog\SignUpDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Dialog\OpenUrlMusicLink.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Styles\generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\ChildViews\ChuDeChildPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Update="Views\MoAppLanDau.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Update="Dialog\TrangChuContentDiaglog.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <None Update="Image\Logo\Dark.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Update="Image\Logo\Light.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

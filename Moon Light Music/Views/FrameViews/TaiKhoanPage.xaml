@@ -17,7 +17,7 @@
                 <ColumnDefinition Width="100"  />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
-        <PersonPicture Width="80" HorizontalAlignment="Left" Grid.Column="0" ></PersonPicture>
+        <PersonPicture Width="80" HorizontalAlignment="Left" Tapped="PersonPicture_Tapped" Grid.Column="0" ></PersonPicture>
             <HyperlinkButton Grid.Column="1"
                              Click="HyperlinkButton_ClickAsync">
                 

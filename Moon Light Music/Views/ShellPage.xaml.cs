@@ -39,7 +39,7 @@ public sealed partial class ShellPage : Page
     public string _logoTheme = "";
     public string LogoTheme
     {
-        get => _logoTheme = ActualTheme == ElementTheme.Light ? "/Image/Logo/Light.png" : "/Image/Logo/Dark.png"; set => _logoTheme = value;
+        get => _logoTheme = ActualTheme == ElementTheme.Light ? @"ms-appx:///Image/Logo/Light.png" : @"ms-appx:///Image/Logo/Dark.png"; set => _logoTheme = value;
     }
 
 
@@ -120,12 +120,12 @@ public sealed partial class ShellPage : Page
     {
         if (sender.ActualTheme == ElementTheme.Light)
         {
-            LogoTheme = "/Image/Logo/Light.png";
+            LogoTheme = @"ms-appx:///Image/Logo/Light.png";
 
         }
         else
         {
-            LogoTheme = "/Image/Logo/Dark.png";
+            LogoTheme = @"ms-appx:///Image/Logo/Dark.png";
 
         }
     }
