@@ -9,26 +9,145 @@
 
     <Grid x:Name="ContentArea" ColumnSpacing="100" RowSpacing="20">
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="30"/>
             <RowDefinition />
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
+        <Border Grid.Row="0" BorderThickness="1"
+                CornerRadius="20">
+           
+            <Border.Background>
+                <ImageBrush ImageSource="ms-appx:///Image/Logo/Wallpaper5.png"
+                            Stretch="UniformToFill" Opacity="0.4"  />
+            </Border.Background>
+            <Border.BorderBrush>
+                <LinearGradientBrush>
+                    <GradientStop Color="Pink"
+                                  Offset="0" />
+                    <GradientStop Color="#051937"
+                                  Offset="0.2" />
+                    <GradientStop Color="#008793"
+                                  Offset="0.4" />
+                    <GradientStop Color="#00bf72"
+                                  Offset="0.6" />
+                    <GradientStop Color="#a8eb12"
+                                  Offset="0.8" />
+                    <GradientStop Color="White"
+                                  Offset="1.0" />
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+        </Border>
+        <Grid Grid.Row="0" >
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="100"  />
-                <ColumnDefinition />
+                <ColumnDefinition MaxWidth="250"  />
+                <ColumnDefinition MinWidth="200"/>
             </Grid.ColumnDefinitions>
-        <PersonPicture Width="80" HorizontalAlignment="Left" Tapped="PersonPicture_Tapped" Grid.Column="0" ></PersonPicture>
-            <HyperlinkButton Grid.Column="1"
-                             Click="HyperlinkButton_ClickAsync">
-                
-        <TextBlock FontSize="20" TextDecorations="Underline" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="12 0" Text="Đăng nhập"></TextBlock>
+            <PersonPicture MinWidth="200"
+                           Padding="0"
+                           MinHeight="200"
+                           HorizontalAlignment="Center"
+                           ProfilePicture="{x:Bind ViewModel.AccountPicture}"
+                           Tapped="PersonPicture_Tapped"
+                 
+                           Grid.Column="0">
+            </PersonPicture>
+
+            
+                <HyperlinkButton x:Name="btn_login" Grid.Column="1" Visibility="Visible"
+                             Click="Login_ClickAsync">
+
+                <TextBlock FontSize="40"
+                           TextDecorations="Underline" VerticalAlignment="Center" HorizontalAlignment="Left"   Text="Đăng nhập"></TextBlock>
             </HyperlinkButton>
+            <HyperlinkButton x:Name="btn_logout"
+                             Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top"
+                             Visibility="Visible"
+                             Margin=" 0 12 12 0"
+                             Click="Logout_ClickAsync">
+
+                <TextBlock FontSize="16"
+                           TextDecorations="Underline"
+                           VerticalAlignment="Center"
+                           Text="Đăng xuất"></TextBlock>
+            </HyperlinkButton>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition MaxHeight="50"/>
+                    <RowDefinition />
+                    <RowDefinition MaxHeight="50"/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0"
+                           Text="PROFILE"
+                           Margin="3 3 0 0"
+                           Foreground="Black" Opacity="0.3"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center" />
+                
+                <TextBlock Grid.Row="0"
+                           Text="PROFILE"
+                           HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="1"
+                           FontSize="{x:Bind tb_Name.FontSize}"
+                           Margin="6 6 0 0"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Left"
+                           FontWeight="{x:Bind tb_Name.FontWeight}"
+                           TextWrapping="Wrap"
+                           Visibility="{x:Bind tb_Name.Visibility}"
+                           Foreground="Black"
+                           Opacity="0.6"
+                           
+                           Text="{x:Bind tb_Name.Text}" />
+                <TextBlock Grid.Row="1"
+                           FontSize="{x:Bind tb_Name.FontSize}"
+                           Margin="3 3 0 0"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Left"
+                           FontWeight="{x:Bind tb_Name.FontWeight}"
+               
+                           Visibility="{x:Bind tb_Name.Visibility}"
+                           TextWrapping="Wrap"
+                           Opacity="0.4"
+                           Text="{x:Bind tb_Name.Text}">
+                    <TextBlock.Foreground>
+                        <LinearGradientBrush>
+                            <GradientStop Color="HotPink"
+                                          Offset="0.3" />
+
+                            <GradientStop Color="White"
+                                          Offset="0.8" />
+                        </LinearGradientBrush>
+                    </TextBlock.Foreground>
+                </TextBlock>
+                <TextBlock x:Name="tb_Name"
+                           Grid.Row="1"
+                           FontSize="64"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Left"
+                           FontWeight="ExtraBold"
+                           
+                           TextWrapping="Wrap"
+                           Visibility="Collapsed"
+                           Text="{x:Bind ViewModel.AccountName}">
+                </TextBlock>
+                <TextBlock  Grid.Row="2"
+                            Margin="2 2 0 0"
+                            Visibility="{x:Bind tb_Email.Visibility}"
+                            Opacity="0.4" Foreground="Black" FontWeight="ExtraBold"
+                            Text="{x:Bind tb_Email.Text}" />
+                <TextBlock x:Name="tb_Email"
+                           Grid.Row="2"
+                           FontWeight="ExtraBold"
+                           Visibility="Collapsed"
+                           Text="{x:Bind ViewModel.AccountEmail}" />
+            </Grid>
+           
 
         </Grid >
-        <GridView Grid.Row="1" CanBeScrollAnchor="True" >
-            <GridView.Header>
-                <TextBlock Text="Chức năng" FontSize="24"></TextBlock>
-            </GridView.Header>
+        <TextBlock  Grid.Row="1"
+                    Text="Chức năng" FontSize="24"></TextBlock>
+        <GridView Grid.Row="2" >
+           
             <GridView.ItemContainerStyle>
                 <Style TargetType="GridViewItem">
                     <Setter Property="Margin"
@@ -39,16 +158,18 @@
                     <Setter Property="BorderBrush">
                         <Setter.Value>
                             <LinearGradientBrush>
-                                <GradientStop Color="#051937"
+                                <GradientStop Color="Pink"
                                               Offset="0" />
-                                <GradientStop Color="#004d7a"
+                                <GradientStop Color="#051937"
                                               Offset="0.2" />
                                 <GradientStop Color="#008793"
-                                              Offset="0.5" />
+                                              Offset="0.4" />
                                 <GradientStop Color="#00bf72"
-                                              Offset="0.7" />
+                                              Offset="0.6" />
                                 <GradientStop Color="#a8eb12"
-                                              Offset="1" />
+                                              Offset="0.8" />
+                                <GradientStop Color="White"
+                                              Offset="1.0" />
                             </LinearGradientBrush>
                         </Setter.Value>
                     </Setter>

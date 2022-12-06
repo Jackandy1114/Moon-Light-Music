@@ -184,4 +184,9 @@ public sealed partial class SignUpDialog : ContentDialog
 
         }
     }
+
+    private void ContentDialog_PrimaryButtonClick(object sender, RoutedEventArgs e)
+    {
+
+    }
 }

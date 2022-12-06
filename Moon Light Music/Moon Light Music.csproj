@@ -57,24 +57,23 @@
     <Content Remove="Assets\WindowIcon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="AnimatedVisuals\Donut.json" />
     <None Remove="Audio\WaitingForYou-MONOOnionn.mp3" />
     <None Remove="Dialog\OpenUrlMusicLink.xaml" />
     <None Remove="Dialog\SignUpDialog.xaml" />
     <None Remove="Dialog\TrangChuContentDiaglog.xaml" />
     <None Remove="Image\Logo\1.png" />
     <None Remove="Image\Logo\2.png" />
+    <None Remove="Image\Logo\Avatar.png" />
     <None Remove="Image\Logo\Dark.png" />
     <None Remove="Image\Logo\Light.png" />
+    <None Remove="Image\Logo\Wallpaper5.png" />
     <None Remove="Styles\AlbumListView.xaml" />
     <None Remove="Styles\generic.xaml" />
     <None Remove="Views\ChildViews\ChuDeChildPage.xaml" />
+    <None Remove="Views\ChildViews\TaiKhoanLoginChildPage.xaml" />
     <None Remove="Views\ChildViews\TaiKhoanSignUpChildPage.xaml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AnimatedVisuals\Donut.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Audio\WaitingForYou-MONOOnionn.mp3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -82,10 +81,16 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Image\Logo\2.png" />
+    <Content Include="Image\Logo\Avatar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Image\Logo\Dark.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Image\Logo\Light.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Logo\Wallpaper5.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -120,6 +125,9 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+    <Page Update="Views\ChildViews\TaiKhoanLoginChildPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Update="Views\ChildViews\TaiKhoanSignUpChildPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>

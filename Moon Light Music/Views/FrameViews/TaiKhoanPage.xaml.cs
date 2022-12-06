@@ -1,6 +1,7 @@
 ﻿using Microsoft.UI.Xaml.Controls;
 
 using Moon_Light_Music.Contracts.Services;
+using Moon_Light_Music.Models;
 using Moon_Light_Music.ViewModels;
 
 namespace Moon_Light_Music.Views;
@@ -16,10 +17,28 @@ public sealed partial class TaiKhoanPage : Page
     {
         ViewModel = App.GetService<TaiKhoanViewModel>();
         _navigationService = ViewModel._navigationService;
+
         InitializeComponent();
+        if (StaticDataBindingModel.IsLogin)
+        {
+            tb_Name.Visibility = Microsoft.UI.Xaml.Visibility.Visible;
+            tb_Email.Visibility = Microsoft.UI.Xaml.Visibility.Visible;
+            btn_login.Visibility = Microsoft.UI.Xaml.Visibility.Collapsed;
+            btn_logout.Visibility = Microsoft.UI.Xaml.Visibility.Visible;
+
+        }
+        else
+        {
+            tb_Name.Visibility = Microsoft.UI.Xaml.Visibility.Collapsed;
+            tb_Email.Visibility = Microsoft.UI.Xaml.Visibility.Collapsed;
+            StaticDataBindingModel.AccountPicture = "ms-appx:///Image/Logo/1.png";
+            StaticDataBindingModel.AccountName = "";
+            btn_logout.Visibility = Microsoft.UI.Xaml.Visibility.Collapsed;
+            btn_login.Visibility = Microsoft.UI.Xaml.Visibility.Visible;
+
+        }
     }
-    //Đang làm việc
-    private async void HyperlinkButton_ClickAsync(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    private async void Login_ClickAsync(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
 
         _navigationService.NavigateTo("Moon_Light_Music.ViewModels.TaiKhoanSignUpChildViewModel");
@@ -45,6 +64,12 @@ public sealed partial class TaiKhoanPage : Page
         //    };
         //    ContentDialogResult signUpResult = await _SignupDialog.ShowAsync();
         //}
+    }
+    private async void Logout_ClickAsync(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    {
+        StaticDataBindingModel.IsLogin = false;
+        _navigationService.NavigateTo("Moon_Light_Music.ViewModels.TaiKhoanSignUpChildViewModel");
+
     }
 
 

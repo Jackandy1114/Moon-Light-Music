@@ -27,6 +27,7 @@ public class PageService : IPageService
         Configure<SettingsViewModel, SettingsPage>();
         Configure<ChuDeChildViewModel, ChuDeChildPage>();
         Configure<TaiKhoanSignUpChildViewModel, TaiKhoanSignUpChildPage>();
+        Configure<TaiKhoanLoginViewModel, TaiKhoanLoginChildPage>();
         Configure<ShellViewModel, ShellPage>();
 
     }

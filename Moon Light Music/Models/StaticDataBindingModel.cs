@@ -67,4 +67,8 @@ public static class StaticDataBindingModel
 
     public static bool _isEnableBtn_moreLoading = true;
 
+    public static string AccountPicture = "ms-appx:///Image/Logo/1.png";
+
+    public static string AccountName = "Tên người dùng";
+    public static string AccountEmail = "Email người dùng";
 }
