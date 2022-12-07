@@ -28,7 +28,8 @@
     <GenerateTestArtifacts>True</GenerateTestArtifacts>
     <AppxBundle>Auto</AppxBundle>
     <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
-    <AppInstallerUri>D:\Moon Light</AppInstallerUri>
+    <AppInstallerUri>https://victorious-rock-05e388c00.2.azurestaticapps.net/</AppInstallerUri>
+    <AppxPackageDir>D:\Universal_App\Moon Light Music\InstallerMoonLightMusic\</AppxPackageDir>
   </PropertyGroup>
   <ItemGroup>
     <Content Remove="Assets\BadgeLogo.scale-125.png" />
