@@ -1,7 +1,7 @@
-﻿using Microsoft.UI.Xaml;
-using Microsoft.UI.Xaml.Controls;
+﻿using Microsoft.UI.Xaml.Controls;
 
-using Moon_Light_Music.Dialog;
+using Moon_Light_Music.Contracts.Services;
+using Moon_Light_Music.Models;
 using Moon_Light_Music.ViewModels;
 
 namespace Moon_Light_Music.Views;
@@ -12,27 +12,70 @@ public sealed partial class TaiKhoanPage : Page
     {
         get;
     }
-
+    public INavigationService _navigationService;
     public TaiKhoanPage()
     {
         ViewModel = App.GetService<TaiKhoanViewModel>();
-        InitializeComponent();
-    }
+        _navigationService = ViewModel._navigationService;
 
-    private async void HyperlinkButton_ClickAsync(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
-    {
-        TaiKhoanLoginDialog _LoginDialog = new TaiKhoanLoginDialog()
+        InitializeComponent();
+        if (StaticDataBindingModel.IsLogin)
         {
-            XamlRoot = App.MainWindow.Content.XamlRoot,
-            Style = Application.Current.Resources["DefaultContentDialogStyle"] as Style,
-        };
-        ContentDialogResult result = await _LoginDialog.ShowAsync();
-        if (result == ContentDialogResult.Primary)
-        {
-            //var a = (string)_LoginDialog.UserName;
-            //var b = (string)_LoginDialog.Password;
+            tb_Name.Visibility = Microsoft.UI.Xaml.Visibility.Visible;
+            tb_Email.Visibility = Microsoft.UI.Xaml.Visibility.Visible;
+            btn_login.Visibility = Microsoft.UI.Xaml.Visibility.Collapsed;
+            btn_logout.Visibility = Microsoft.UI.Xaml.Visibility.Visible;
 
         }
+        else
+        {
+            tb_Name.Visibility = Microsoft.UI.Xaml.Visibility.Collapsed;
+            tb_Email.Visibility = Microsoft.UI.Xaml.Visibility.Collapsed;
+            StaticDataBindingModel.AccountPicture = "ms-appx:///Image/Logo/1.png";
+            StaticDataBindingModel.AccountName = "";
+            btn_logout.Visibility = Microsoft.UI.Xaml.Visibility.Collapsed;
+            btn_login.Visibility = Microsoft.UI.Xaml.Visibility.Visible;
+
+        }
+    }
+    private async void Login_ClickAsync(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    {
+
+        _navigationService.NavigateTo("Moon_Light_Music.ViewModels.TaiKhoanSignUpChildViewModel");
+
+
+        //TaiKhoanLoginDialog _LoginDialog = new TaiKhoanLoginDialog()
+        //{
+        //    XamlRoot = App.MainWindow.Content.XamlRoot,
+        //    Style = Application.Current.Resources["DefaultContentDialogStyle"] as Style,
+        //};
+        //ContentDialogResult result = await _LoginDialog.ShowAsync();
+        //if (result == ContentDialogResult.Primary)
+        //{
+
+
+        //}
+        //else if (result == ContentDialogResult.Secondary)
+        //{
+        //    SignUpDialog _SignupDialog = new SignUpDialog()
+        //    {
+        //        XamlRoot = App.MainWindow.Content.XamlRoot,
+        //        Style = Application.Current.Resources["DefaultContentDialogStyle"] as Style,
+        //    };
+        //    ContentDialogResult signUpResult = await _SignupDialog.ShowAsync();
+        //}
+    }
+    private async void Logout_ClickAsync(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    {
+        StaticDataBindingModel.IsLogin = false;
+        _navigationService.NavigateTo("Moon_Light_Music.ViewModels.TaiKhoanSignUpChildViewModel");
+
+    }
+
+
+    private void PersonPicture_Tapped(object sender, Microsoft.UI.Xaml.Input.TappedRoutedEventArgs e)
+    {
+
 
     }
 }

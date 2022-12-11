@@ -5,15 +5,48 @@
                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                Title="Đăng nhập"
                PrimaryButtonText="Đăng nhập"
+               PrimaryButtonClick="ContentDialog_PrimaryButtonClick"
                SecondaryButtonText="Đăng ký"
                x:Uid="LoginDialog"
                CloseButtonText="Trở lại">
     <StackPanel Spacing="20">
+        <Grid ColumnSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <FontIcon Grid.Column="0" FontFamily="{StaticResource SymbolThemeFontFamily}"
+                      Glyph="&#xEA8C;" />
+            <TextBox x:Name="tb_Email" Grid.Column="1" PlaceholderText="Tài khoản..." ></TextBox>
+        </Grid>
 
-        <TextBox PlaceholderText="Tài khoản..." Text="{x:Bind UserName,Mode=TwoWay}"></TextBox>
+        <Grid ColumnSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <AppBarToggleButton Grid.Column="0" Margin="0" Padding="0" VerticalAlignment="Center" HorizontalAlignment="Center"
+                                Name="revealModeCheckBox"
+                                Height="40"
+                                IsChecked="False"
+                                ToolTipService.ToolTip="Hiện mật khẩu"
+                                Checked="RevealModeCheckbox_Changed"
+                                Unchecked="RevealModeCheckbox_Changed">
 
-        <TextBox PlaceholderText="Mật khẩu..."
-                 Text="{x:Bind Password,Mode=TwoWay}"></TextBox>
-        
-	</StackPanel>
+                <FontIcon  FontFamily="{StaticResource SymbolThemeFontFamily}"
+                          Glyph="&#xf78d;" />
+            </AppBarToggleButton>
+            <PasswordBox  Grid.Column="1"
+                         Name="passworBoxWithRevealmode"
+                         PlaceholderText="Mật khẩu..."
+                         PasswordRevealMode="Hidden"
+                         Height="40"
+                         
+                         AutomationProperties.Name="Sample password box">
+            </PasswordBox>
+            
+        </Grid>
+      
+
+    </StackPanel>
 </ContentDialog>
