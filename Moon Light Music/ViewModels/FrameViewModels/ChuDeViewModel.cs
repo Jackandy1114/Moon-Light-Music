@@ -17,7 +17,7 @@ public class ChuDeViewModel : ObservableRecipient
     private static bool First = false;
     public IOAuthTokkenService _oAuthTokkenService;
     public INavigationService _navigationService;
-    public IAppNotificationService _appNotification;
+    //public IAppNotificationService _appNotification;
     public bool IsEnableBtnMoreLoading
     => StaticDataBindingModel._isEnableBtn_moreLoading;
     public ObservableCollection<Item> AlbumsSpotify => StaticDataBindingModel.AlbumsSpotify;

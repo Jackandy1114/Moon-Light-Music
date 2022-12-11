@@ -3,6 +3,16 @@
 namespace Moon_Light_Music.Models;
 public static class StaticDataBindingModel
 {
+
+    public static Dictionary<int, string> roles = new()
+    {
+        {0,"Admin" },
+        {1,"Người dùng"},
+        {2,"Nguười kiểm thử"},
+        {3,"TestUser" }
+    };
+
+    public static bool IsLogin { get; set; } = false;
     public static string RequestSpotifyALbums
     {
         get; set;
@@ -53,8 +63,12 @@ public static class StaticDataBindingModel
     //https://stream.nixcdn.com/NhacCuaTui940/MayonakaNoDoorStayWithMe-MikiMatsubara-4892669.mp3?st=PwGNSvVfkzi21atGdFwM4A&e=1669125309
 
     //https://stream.nixcdn.com/NhacCuaTui877/NuocNgoai-PhanManhQuynh-3640447.mp3?st=cGl4BcsPWLKV-km-pb08qg&e=1669176567
-
+    //Scaffold-DbContext "Server=tcp:moonlightmusic.database.windows.net,1433; User ID=jayandy;Password=Iloveuzienoi1114 ;Database=MoonLightMusicDataBase;Trusted_Connection=False;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -f
 
     public static bool _isEnableBtn_moreLoading = true;
 
+    public static string AccountPicture = "ms-appx:///Image/Logo/1.png";
+
+    public static string AccountName = "Tên người dùng";
+    public static string AccountEmail = "Email người dùng";
 }

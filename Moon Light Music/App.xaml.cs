@@ -122,6 +122,11 @@ public partial class App : Application
             services.AddTransient<TrangChuPage>();
             services.AddTransient<ShellPage>();
             services.AddTransient<ShellViewModel>();
+            services.AddTransient<TaiKhoanSignUpChildPage>();
+            services.AddTransient<TaiKhoanSignUpChildViewModel>();
+            services.AddTransient<TaiKhoanLoginChildPage>();
+            services.AddTransient<TaiKhoanLoginViewModel>();
+
 
             // Configuration
             services.Configure<LocalSettingsOptions>(context.Configuration.GetSection(nameof(LocalSettingsOptions)));

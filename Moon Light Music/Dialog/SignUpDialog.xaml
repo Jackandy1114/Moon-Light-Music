@@ -1,0 +1,74 @@
+﻿<ContentDialog
+    x:Class="Moon_Light_Music.Dialog.SignUpDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Moon_Light_Music.Dialog"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Đăng ký"
+    FontSize="14"
+    
+    PrimaryButtonText="Đăng ký"
+    CloseButtonText="Trở lại"
+    PrimaryButtonClick="ContentDialog_PrimaryButtonClick">
+
+	<StackPanel Spacing="20">
+        <TextBlock Text="Tạo một tài khoản"></TextBlock>
+        <Grid RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            
+            <StackPanel Grid.Row="0"
+                        Spacing="10"
+                        Orientation="Horizontal">
+                <TextBox x:Name="email" Grid.Row="1" Width="250"
+                         TextChanged="email_TextChanged"
+                         PlaceholderText="Email"></TextBox>
+
+                <FontIcon x:Name="email_Check"  Foreground="Yellow" FontFamily="{StaticResource SymbolThemeFontFamily}"
+                          Glyph="&#xe730;">
+                    <ToolTipService.ToolTip>
+                        <TextBlock Width="150"
+                                   TextWrapping="Wrap"
+                                   Text="Email không để trống"></TextBlock>
+                    </ToolTipService.ToolTip>
+                </FontIcon>
+            </StackPanel>
+            <StackPanel Grid.Row="1"
+                        Spacing="10"
+                        Orientation="Horizontal">
+                <PasswordBox x:Name="password" Grid.Row="2" Width="250"
+                             PasswordChanged="PasswordBox_PasswordChanged"
+                         PlaceholderText="Password"></PasswordBox>
+                <FontIcon x:Name="Password_Check"
+                          Foreground="Yellow" FontFamily="{StaticResource SymbolThemeFontFamily}"
+                          Glyph="&#xe730;">
+                    <ToolTipService.ToolTip>
+                        <TextBlock Width="150"
+                                   TextWrapping="Wrap"
+                                   Text="Mật khẩu trên 8 chữ cái
+                                   Chứa Chữ hoa
+                                   Chứa số"></TextBlock>
+                    </ToolTipService.ToolTip>
+                </FontIcon>
+            </StackPanel>
+            <StackPanel Grid.Row="2"
+                        Spacing="10"
+                        Orientation="Horizontal">
+                <PasswordBox x:Name="verifyPassword" Grid.Row="3"
+                             Width="250" PasswordChanged="verifyPassword_PasswordChanged"
+                             PlaceholderText="Verify Password"></PasswordBox>
+                <FontIcon x:Name="verifyPass_Check"
+                          Foreground="Yellow"
+                          FontFamily="{StaticResource SymbolThemeFontFamily}"
+                          Glyph="&#xe730;">
+                    <ToolTipService.ToolTip>
+                        <TextBlock Width="150" TextWrapping="Wrap" Text="Xác nhận mật khẩu phải khớp và không để trống"></TextBlock>
+                    </ToolTipService.ToolTip>
+                </FontIcon>
+            </StackPanel>
+        </Grid>
+	</StackPanel>
+</ContentDialog>
