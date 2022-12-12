@@ -2,6 +2,7 @@
 
 using Moon_Light_Music.Contracts.Services;
 using Moon_Light_Music.Models;
+using Moon_Light_Music.Services;
 using Moon_Light_Music.ViewModels;
 
 namespace Moon_Light_Music.Views;
@@ -12,14 +13,13 @@ public sealed partial class TaiKhoanPage : Page
     {
         get;
     }
-    public INavigationService _navigationService;
     public TaiKhoanPage()
     {
         ViewModel = App.GetService<TaiKhoanViewModel>();
-        _navigationService = ViewModel._navigationService;
-
+        
+        
         InitializeComponent();
-        if (StaticDataBindingModel.IsLogin)
+        if (ViewModel._isLoginService.IsLogin == "true")
         {
             tb_Name.Visibility = Microsoft.UI.Xaml.Visibility.Visible;
             tb_Email.Visibility = Microsoft.UI.Xaml.Visibility.Visible;
@@ -41,7 +41,7 @@ public sealed partial class TaiKhoanPage : Page
     private async void Login_ClickAsync(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
 
-        _navigationService.NavigateTo("Moon_Light_Music.ViewModels.TaiKhoanSignUpChildViewModel");
+        ViewModel._navigationService.NavigateTo("Moon_Light_Music.ViewModels.TaiKhoanSignUpChildViewModel");
 
 
         //TaiKhoanLoginDialog _LoginDialog = new TaiKhoanLoginDialog()
@@ -67,8 +67,8 @@ public sealed partial class TaiKhoanPage : Page
     }
     private async void Logout_ClickAsync(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-        StaticDataBindingModel.IsLogin = false;
-        _navigationService.NavigateTo("Moon_Light_Music.ViewModels.TaiKhoanSignUpChildViewModel");
+        ViewModel._isLoginService.SetTokkenAsync("false");
+        ViewModel._navigationService.NavigateTo("Moon_Light_Music.ViewModels.TaiKhoanSignUpChildViewModel");
 
     }
 

@@ -16,8 +16,7 @@ namespace Moon_Light_Music.Views;
 /// </summary>
 public sealed partial class TaiKhoanSignUpChildPage : Page
 {
-    public INavigationService _navigationService;
-    private string id = "";
+    private string id = "User1";
     public TaiKhoanSignUpChildViewModel ViewModel
     {
         get;
@@ -25,8 +24,6 @@ public sealed partial class TaiKhoanSignUpChildPage : Page
     public TaiKhoanSignUpChildPage()
     {
         ViewModel = App.GetService<TaiKhoanSignUpChildViewModel>();
-        _navigationService = ViewModel._navigationService;
-
         this.InitializeComponent();
     }
 
@@ -61,7 +58,8 @@ public sealed partial class TaiKhoanSignUpChildPage : Page
                         </binding>
                     </visual>
                 </toast>");
-                StaticDataBindingModel.IsLogin = true;
+                ViewModel._isLoginService.SetTokkenAsync("true");
+                
             }
         }
         catch (Exception)
@@ -79,20 +77,20 @@ public sealed partial class TaiKhoanSignUpChildPage : Page
         }
         finally
         {
-            if (StaticDataBindingModel.IsLogin)
+            if (ViewModel._isLoginService.IsLogin=="true")
             {
                 var query = db.UserProfiles.Where(p => p.Id == id).FirstOrDefault();
                 StaticDataBindingModel.AccountPicture = query.Avatar;
                 StaticDataBindingModel.AccountName = query.Name;
 
-                _navigationService.NavigateTo("Moon_Light_Music.ViewModels.TaiKhoanViewModel");
+                ViewModel._navigationService.NavigateTo("Moon_Light_Music.ViewModels.TaiKhoanViewModel");
             }
         }
     }
 
     private void Button_Click_1(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-        _navigationService.NavigateTo("Moon_Light_Music.ViewModels.TaiKhoanLoginViewModel");
+        ViewModel._navigationService.NavigateTo("Moon_Light_Music.ViewModels.TaiKhoanLoginViewModel");
 
     }
 }

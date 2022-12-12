@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using System.Security.Cryptography.X509Certificates;
+
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.UI.Xaml;
 
@@ -26,20 +28,7 @@ public partial class App : Application
     // https://docs.microsoft.com/dotnet/core/extensions/configuration
     // https://docs.microsoft.com/dotnet/core/extensions/logging
 
-    public static GetAPI? _oAuthToken
-    {
-        get
-        {
-            try
-            {
-                return JsonConvert.DeserializeObject<GetAPI>(GetResponseFromAPIHelper.GetResponse_AndToken().Content!)!;
-            }
-            catch (Exception)
-            {
-                return null;
-            }
-        }
-    }
+
     public IHost Host
     {
         get;
@@ -85,6 +74,7 @@ public partial class App : Application
             services.AddSingleton<ILocalSettingsService, LocalSettingsService>();
             services.AddSingleton<IThemeSelectorService, ThemeSelectorService>();
             services.AddSingleton<IOAuthTokkenService, OAuthTokkenService>();
+            services.AddSingleton<IisLoginService, isLoginService>();
             services.AddTransient<INavigationViewService, NavigationViewService>();
 
             services.AddSingleton<IActivationService, ActivationService>();

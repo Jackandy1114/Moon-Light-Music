@@ -14,14 +14,16 @@ public class ActivationService : IActivationService
     private readonly IEnumerable<IActivationHandler> _activationHandlers;
     private readonly IThemeSelectorService _themeSelectorService;
     private readonly IOAuthTokkenService _oAuthTokkenService;
+    private readonly IisLoginService _isLoginService;
     private UIElement? _shell = null;
 
-    public ActivationService(ActivationHandler<Microsoft.UI.Xaml.LaunchActivatedEventArgs> defaultHandler, IEnumerable<IActivationHandler> activationHandlers, IThemeSelectorService themeSelectorService, IOAuthTokkenService oAuthTokkenService)
+    public ActivationService(ActivationHandler<Microsoft.UI.Xaml.LaunchActivatedEventArgs> defaultHandler, IEnumerable<IActivationHandler> activationHandlers, IThemeSelectorService themeSelectorService, IOAuthTokkenService oAuthTokkenService, IisLoginService iisLoginService)
     {
         _defaultHandler = defaultHandler;
         _activationHandlers = activationHandlers;
         _themeSelectorService = themeSelectorService;
         _oAuthTokkenService = oAuthTokkenService;
+        _isLoginService= iisLoginService;
     }
 
     public async Task ActivateAsync(object activationArgs)
@@ -66,6 +68,8 @@ public class ActivationService : IActivationService
         await _themeSelectorService.InitializeAsync().ConfigureAwait(false);
 
         await _oAuthTokkenService.InitializeAsync().ConfigureAwait(false);
+        await _isLoginService.InitializeAsync().ConfigureAwait(false);
+
         await Task.CompletedTask;
     }
 

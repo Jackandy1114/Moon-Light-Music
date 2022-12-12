@@ -21,6 +21,7 @@ public class ShellViewModel : ObservableRecipient
     {
         get;
     }
+    public IOAuthTokkenService OAuthTokkenService;
 
 
 
@@ -36,12 +37,13 @@ public class ShellViewModel : ObservableRecipient
         set => SetProperty(ref _selected, value);
     }
 
-    public ShellViewModel(INavigationService navigationService, INavigationViewService navigationViewService)
+    public ShellViewModel(INavigationService navigationService, INavigationViewService navigationViewService, IOAuthTokkenService oAuthTokkenService)
     {
 
         NavigationService = navigationService;
         NavigationService.Navigated += OnNavigated;
         NavigationViewService = navigationViewService;
+        OAuthTokkenService = oAuthTokkenService;
         //_shellPage = shellPage;
 
     }

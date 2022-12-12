@@ -11,8 +11,10 @@ public class BaiHatViewModel : ObservableRecipient
 {
     public ObservableCollection<Item> TracksSpotify => StaticDataBindingModel.TracksSpotify;
     public INavigationService _navigationService;
-    public BaiHatViewModel(INavigationService navigationService)
+    public IOAuthTokkenService _oauthTokkenService;
+    public BaiHatViewModel(INavigationService navigationService , IOAuthTokkenService oauthTokkenService)
     {
         _navigationService = navigationService;
+        _oauthTokkenService = oauthTokkenService;
     }
 }

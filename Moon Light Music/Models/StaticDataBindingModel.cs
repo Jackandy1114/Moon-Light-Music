@@ -12,7 +12,6 @@ public static class StaticDataBindingModel
         {3,"TestUser" }
     };
 
-    public static bool IsLogin { get; set; } = false;
     public static string RequestSpotifyALbums
     {
         get; set;

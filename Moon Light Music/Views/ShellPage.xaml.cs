@@ -33,9 +33,6 @@ public sealed partial class ShellPage : Page
 
     public TextBlock _MediaName => Shell_MediaName;
     public TextBlock MediaArtist => Shell_MediaArtist;
-
-    public INavigationService _navigationService;
-
     public string _logoTheme = "";
     public string LogoTheme
     {
@@ -50,7 +47,6 @@ public sealed partial class ShellPage : Page
         BaiHatPage = App.GetService<BaiHatPage>();
         MainMPE.Source = MediaSource.CreateFromUri(new Uri("https://stream.nixcdn.com/NhacCuaTui1026/Psychofreak-CamilaCabelloWillowSmith-7182840.mp3?st=DEmuSFVapY4ThJvlRAKBew&e=1667985229"));
 
-        _navigationService = ViewModel.NavigationService;
 
         ViewModel.NavigationService.Frame = NavigationFrame;
         ViewModel.NavigationViewService.Initialize(NavigationViewControl);
@@ -138,7 +134,7 @@ public sealed partial class ShellPage : Page
             Tracks? _tracks = null;
             try
             {
-                _tracks = JsonConvert.DeserializeObject<Tracks>(GetResponseFromAPIHelper.GetResponse(App._oAuthToken.Token, StaticDataBindingModel.StringToRequestSpotifyTracks(args.QueryText)).Content!);
+                _tracks = JsonConvert.DeserializeObject<Tracks>(GetResponseFromAPIHelper.GetResponse(ViewModel.OAuthTokkenService.OAuthTokken, StaticDataBindingModel.StringToRequestSpotifyTracks(args.QueryText)).Content!);
             }
             catch (Exception)
             {
@@ -174,8 +170,8 @@ public sealed partial class ShellPage : Page
                     }
                 }
             }
-            _navigationService.NavigateTo("Moon_Light_Music.ViewModels.XepHangViewModel");
-            _navigationService.NavigateTo("Moon_Light_Music.ViewModels.BaiHatViewModel");
+            ViewModel.NavigationService.NavigateTo("Moon_Light_Music.ViewModels.XepHangViewModel");
+            ViewModel.NavigationService.NavigateTo("Moon_Light_Music.ViewModels.BaiHatViewModel");
         }
     }
     private void AutoSuggestBox_SuggestionChosen(AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)

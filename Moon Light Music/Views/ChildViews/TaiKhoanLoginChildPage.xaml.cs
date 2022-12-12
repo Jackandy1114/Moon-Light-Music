@@ -107,73 +107,76 @@ public sealed partial class TaiKhoanLoginChildPage : Page
         if (_email_Check && _password_Check && _verifyPass_Check)
         {
             using var db = new MoonLightMusicDataBaseContext();
-            var query = db.UserAccounts.Where(p => p.Email == email.Text).FirstOrDefault();
-            if (query != null)
+            try
             {
-                email_Check.Foreground = new SolidColorBrush(Colors.Red);
-                _email_Check = false;
-                App.GetService<IAppNotificationService>().Show(@"<toast>
+                var query = db.UserAccounts.Where(p => p.Email == email.Text).FirstOrDefault();
+                if (query != null)
+                {
+                    email_Check.Foreground = new SolidColorBrush(Colors.Red);
+                    _email_Check = false;
+                    App.GetService<IAppNotificationService>().Show(@"<toast>
                     <visual>
                         <binding template=""ToastGeneric"">
                             <text hint-maxLines=""1"">Trần Hoàng</text>
                             <text>❤️Dùng email khác nha!🤨</text>
-                            <image placement=""appLogoOverride"" hint-crop=""circle"" src=""https://i.ibb.co/94Ywqnm/Moon-Light-Logo.png""/>
+                        
                         </binding>
                     </visual>
                 </toast>");
-            }
-            else
-            {
-                var userIdProfile = "MoonLight" + Guid.NewGuid().ToString() + Guid.NewGuid().ToString();
-                var randomUserProfileName = "MoonLight " + Guid.NewGuid().ToString().Substring(0, 6);
-                var queryId = db.UserProfiles.Where(p => p.Id == userIdProfile).FirstOrDefault();
-                //Tạo ra một id mới nếu trùng
-                while (queryId != null)
-                {
-                    userIdProfile = "MoonLight" + Guid.NewGuid().ToString() + Guid.NewGuid().ToString();
                 }
-                var userProfile = new UserProfile()
+                else
                 {
-                    Id = userIdProfile,
-                    Name = randomUserProfileName,
-                    Avatar = @"ms-appx:///Image/Logo/1.png",
-                };
-                var user = new UserAccount()
-                {
-                    Email = email.Text,
-                    Password = password.Password,
-                    Role = StaticDataBindingModel.roles[1],
-                    UserProfile = userIdProfile
-                };
-                try
-                {
-                    db.Add(userProfile);
-                    await db.SaveChangesAsync();
-                    db.Add(user);
-                    await db.SaveChangesAsync();
-                    App.GetService<IAppNotificationService>().Show(@"<toast>
+                    var userIdProfile = "MoonLight" + Guid.NewGuid().ToString() + Guid.NewGuid().ToString();
+                    var randomUserProfileName = "MoonLight " + Guid.NewGuid().ToString().Substring(0, 6);
+                    var queryId = db.UserProfiles.Where(p => p.Id == userIdProfile).FirstOrDefault();
+                    //Tạo ra một id mới nếu trùng
+                    while (queryId != null)
+                    {
+                        userIdProfile = "MoonLight" + Guid.NewGuid().ToString() + Guid.NewGuid().ToString();
+                    }
+                    var userProfile = new UserProfile()
+                    {
+                        Id = userIdProfile,
+                        Name = randomUserProfileName,
+                        Avatar = @"ms-appx:///Image/Logo/1.png",
+                    };
+                    var user = new UserAccount()
+                    {
+                        Email = email.Text,
+                        Password = password.Password,
+                        Role = StaticDataBindingModel.roles[1],
+                        UserProfile = userIdProfile
+                    };
+                    
+                        db.Add(userProfile);
+                        await db.SaveChangesAsync();
+                        db.Add(user);
+                        await db.SaveChangesAsync();
+                        App.GetService<IAppNotificationService>().Show(@"<toast>
                     <visual>
                         <binding template=""ToastGeneric"">
                             <text hint-maxLines=""1"">Trần Hoàng</text>
                             <text>❤️Đăng ký thành công 😝</text>
-                            <image placement=""appLogoOverride"" hint-crop=""circle"" src=""https://i.ibb.co/94Ywqnm/Moon-Light-Logo.png""/>
                         </binding>
                     </visual>
                 </toast>");
+                    
+                    
                 }
-                catch (Exception)
-                {
-                    App.GetService<IAppNotificationService>().Show(@"<toast>
+            }
+            catch (Exception)
+            {
+                App.GetService<IAppNotificationService>().Show(@"<toast>
                     <visual>
                         <binding template=""ToastGeneric"">
                             <text hint-maxLines=""1"">Trần Hoàng</text>
                             <text>❤️Có gì đó sai sai🤨</text>
-                            <image placement=""appLogoOverride"" hint-crop=""circle"" src=""https://i.ibb.co/94Ywqnm/Moon-Light-Logo.png""/>
+                            
                         </binding>
                     </visual>
                 </toast>");
-                }
             }
+
         }
         else
         {
@@ -182,7 +185,7 @@ public sealed partial class TaiKhoanLoginChildPage : Page
                         <binding template=""ToastGeneric"">
                             <text hint-maxLines=""1"">Trần Hoàng</text>
                             <text>❤️Hãy nhập đúng yêu cầu🤨</text>
-                            <image placement=""appLogoOverride"" hint-crop=""circle"" src=""https://i.ibb.co/94Ywqnm/Moon-Light-Logo.png""/>
+                            
                         </binding>
                     </visual>
                 </toast>");

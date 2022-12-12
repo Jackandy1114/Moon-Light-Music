@@ -1,6 +1,11 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
 using Moon_Light_Music.Contracts.Services;
+using Moon_Light_Music.Helpers;
+using Moon_Light_Music.Models;
+using Moon_Light_Music.Services;
+
+using Newtonsoft.Json;
 
 namespace Moon_Light_Music.ViewModels;
 
@@ -14,22 +19,26 @@ public class TrangChuViewModel : ObservableRecipient
     {
         _oAuthTokkenService = oAuthTokkenService;
 
-        if (App._oAuthToken != null)
+        if (_oAuthTokkenService.OAuthTokken == "null")
         {
-            oAuthTokkenService.SetTokkenAsync(tokken: App._oAuthToken.Token);
-        }
-        else
-        {
-            App.GetService<IAppNotificationService>().Show(@"<toast>
+            try
+            {
+                var token = JsonConvert.DeserializeObject<GetAPI>(GetResponseFromAPIHelper.GetResponse_AndToken().Content!)!;
+                _oAuthTokkenService.SetTokkenAsync(token.Token);
+            }
+            catch (Exception)
+            {
+                App.GetService<IAppNotificationService>().Show(@"<toast>
                     <visual>
                         <binding template=""ToastGeneric"">
                             <text hint-maxLines=""1"">Trần Hoàng</text>
                             <text>❤️Mất mạng rồi hay sao ấy bạn ơi🙄</text>
-                            <image placement=""appLogoOverride"" hint-crop=""circle"" src=""https://i.ibb.co/94Ywqnm/Moon-Light-Logo.png""/>
-                        </binding>
+                           </binding>
                     </visual>
                 </toast>");
+            }
         }
+        
     }
 
 }

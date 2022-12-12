@@ -36,46 +36,46 @@ public static class GetResponseFromAPIHelper
 
         return client.GetAsync(request).GetAwaiter().GetResult();
     }
-    public static async Task<string> getTokkenOnlineBySelenium()
-    {
-        var service = EdgeDriverService.CreateDefaultService();
-        service.HideCommandPromptWindow = true;
-        service.Start();
+    //public static async Task<string> getTokkenOnlineBySelenium()
+    //{
+    //    var service = EdgeDriverService.CreateDefaultService();
+    //    service.HideCommandPromptWindow = true;
+    //    service.Start();
 
-        EdgeOptions edgeOptions = new EdgeOptions();
-        edgeOptions.BrowserVersion = "latest";
+    //    EdgeOptions edgeOptions = new EdgeOptions();
+    //    edgeOptions.BrowserVersion = "latest";
 
-        var edge = new RemoteWebDriver(service.ServiceUrl, edgeOptions);
-        var js = (IJavaScriptExecutor)edge;
+    //    var edge = new RemoteWebDriver(service.ServiceUrl, edgeOptions);
+    //    var js = (IJavaScriptExecutor)edge;
 
-        edge.Url = "https://developer.spotify.com/console/get-search-item/?q=&type=&market=&limit=&offset=&include_external=";
-        edge.Navigate();
-        var tokken = "";
-        try
-        {
-            js.ExecuteScript(@"document.querySelector('#console-form > div.form-group.header-params > div > span > button').click()");
+    //    edge.Url = "https://developer.spotify.com/console/get-search-item/?q=&type=&market=&limit=&offset=&include_external=";
+    //    edge.Navigate();
+    //    var tokken = "";
+    //    try
+    //    {
+    //        js.ExecuteScript(@"document.querySelector('#console-form > div.form-group.header-params > div > span > button').click()");
 
-            //spotify
-            edge.FindElement(By.XPath("//*[@id=\"oauth-modal\"]/div/div/div[2]/form")).Submit();
+    //        //spotify
+    //        edge.FindElement(By.XPath("//*[@id=\"oauth-modal\"]/div/div/div[2]/form")).Submit();
 
-            //login way
-            edge.FindElement(By.XPath(@"//*[@id=""root""]/div/div[2]/div/div/button[1]")).Click();
+    //        //login way
+    //        edge.FindElement(By.XPath(@"//*[@id=""root""]/div/div[2]/div/div/button[1]")).Click();
 
-            //Facebook
-            edge.FindElement(By.XPath("//*[@id=\"email\"]")).SendKeys(@"0985950723");
-            edge.FindElement(By.XPath("//*[@id=\"pass\"]")).SendKeys(@"iloveuzienoi249");
-            edge.FindElement(By.XPath(@"//*[@id=""loginbutton""]")).Click();
-            tokken = (string)edge.FindElement(By.XPath(@"//*[@id=""oauth-input""]")).GetAttribute("value");
-        }
-        catch (Exception)
-        {
-            await App.MainWindow.ShowMessageDialogAsync("Không thành công", "Có lỗi phát sinh");
-            tokken = "fail";
-        }
-        finally
-        {
-            edge.Quit();
-        }
-        return tokken;
-    }
+    //        //Facebook
+    //        edge.FindElement(By.XPath("//*[@id=\"email\"]")).SendKeys(@"0985950723");
+    //        edge.FindElement(By.XPath("//*[@id=\"pass\"]")).SendKeys(@"iloveuzienoi249");
+    //        edge.FindElement(By.XPath(@"//*[@id=""loginbutton""]")).Click();
+    //        tokken = (string)edge.FindElement(By.XPath(@"//*[@id=""oauth-input""]")).GetAttribute("value");
+    //    }
+    //    catch (Exception)
+    //    {
+    //        await App.MainWindow.ShowMessageDialogAsync("Không thành công", "Có lỗi phát sinh");
+    //        tokken = "fail";
+    //    }
+    //    finally
+    //    {
+    //        edge.Quit();
+    //    }
+    //    return tokken;
+    //}
 }

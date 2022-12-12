@@ -7,6 +7,7 @@ using CommunityToolkit.Mvvm.Input;
 using Moon_Light_Music.Contracts.Services;
 using Moon_Light_Music.Helpers;
 using Moon_Light_Music.Models;
+using Moon_Light_Music.Services;
 
 using Newtonsoft.Json;
 
@@ -29,12 +30,12 @@ public class ChuDeViewModel : ObservableRecipient
         _oAuthTokkenService = oAuthTokkenService;
         if (!First)
         {
-            AlbumsCollection(oAuthTokkenService.OAuthTokken!).WaitAsync(new TimeSpan(3000));
+            AlbumsCollection(_oAuthTokkenService.OAuthTokken!).WaitAsync(new TimeSpan(3000));
             First = true;
         }
         moreListcommand = new RelayCommand(async () =>
         {
-            await AlbumsCollection(oAuthTokkenService.OAuthTokken!).ConfigureAwait(false);
+            await AlbumsCollection(_oAuthTokkenService.OAuthTokken!).ConfigureAwait(false);
         }
        );
     }
@@ -78,49 +79,9 @@ public class ChuDeViewModel : ObservableRecipient
             }
             catch (Exception)
             {
-                //                ContentDialog _dialog = new ContentDialog()
-                //                {
-                //                    XamlRoot = App.MainWindow.Content.XamlRoot,
-                //                    Style = Application.Current.Resources["DefaultContentDialogStyle"] as Style,
-                //                    Title = "Nhập tokken mới",
-                //                    PrimaryButtonText = "Lưu",
-                //                    SecondaryButtonText = "Lấy tự động",
-                //                    CloseButtonText = "Rời đi",
-                //                    DefaultButton = ContentDialogButton.Primary,
-                //                };
-                //                _dialog.Content = new TrangChuContentDiaglog();
-                //                ContentDialogResult result = await _dialog.ShowAsync();
-                //                if (result == ContentDialogResult.Primary)
-                //                {
-                //                    var _content = (TrangChuContentDiaglog)_dialog.Content;
-                //                    await _oAuthTokkenService.SetTokkenAsync(_content.New_OAuthor2Tokken);
-                //                }
-                //                else if (result == ContentDialogResult.Secondary)
-                //                {
-
-                //                    _appNotification.Show(@"<toast>
-                //    <visual>
-                //        <binding template=""ToastGeneric"">
-                //            <text hint-maxLines=""1"">Trần Hoàng</text>
-                //            <text>❤️Chờ mình lấy tokken xíu nha😊</text>
-                //            <image placement=""appLogoOverride"" hint-crop=""circle"" src=""https://i.ibb.co/94Ywqnm/Moon-Light-Logo.png""/>
-                //        </binding>
-                //    </visual>
-                //</toast>");
-                //                    await _oAuthTokkenService.SetTokkenAsync(await GetResponseFromAPIHelper.getTokkenOnlineBySelenium());
-                //                    _appNotification.Show(@"<toast>
-                //    <visual>
-                //        <binding template=""ToastGeneric"">
-                //            <text hint-maxLines=""1"">Trần Hoàng</text>
-                //            <text>❤️Lấy tokken thành công😊</text>
-                //            <image placement=""appLogoOverride"" hint-crop=""circle"" src=""https://i.ibb.co/94Ywqnm/Moon-Light-Logo.png""/>
-                //        </binding>
-                //    </visual>
-                //</toast>");
-                //                    StaticDataBindingModel.AlbumsSpotify = new();
-                //                    _navigationService.NavigateTo("Moon_Light_Music.ViewModels.TrangChuViewModel");
-                //                    _navigationService.NavigateTo("Moon_Light_Music.ViewModels.ChuDeViewModel");
-                //                }
+                //var token = JsonConvert.DeserializeObject<GetAPI>(GetResponseFromAPIHelper.GetResponse_AndToken().Content!)!;
+               
+                               
             }
 
         }

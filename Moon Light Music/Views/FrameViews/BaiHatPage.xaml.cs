@@ -4,6 +4,7 @@ using Microsoft.UI.Xaml.Media.Imaging;
 using Moon_Light_Music.Contracts.Services;
 using Moon_Light_Music.Helpers;
 using Moon_Light_Music.Models;
+using Moon_Light_Music.Services;
 using Moon_Light_Music.ViewModels;
 
 using Newtonsoft.Json;
@@ -21,12 +22,10 @@ public sealed partial class BaiHatPage : Page
         get;
     }
     public Button Btn_moreList => btn_moreList;
-    public INavigationService _navigationService;
     public BaiHatPage()
     {
         ViewModel = App.GetService<BaiHatViewModel>();
         Shell = (ShellPage)App.MainWindow.Content;
-        _navigationService = ViewModel._navigationService;
         InitializeComponent();
     }
 
@@ -60,7 +59,7 @@ public sealed partial class BaiHatPage : Page
         Tracks? _tracks = null;
         try
         {
-            _tracks = JsonConvert.DeserializeObject<Tracks>(GetResponseFromAPIHelper.GetResponse(App._oAuthToken.Token, StaticDataBindingModel.RequestSpotifyTracks).Content)!;
+            _tracks = JsonConvert.DeserializeObject<Tracks>(GetResponseFromAPIHelper.GetResponse(ViewModel._oauthTokkenService.OAuthTokken, StaticDataBindingModel.RequestSpotifyTracks).Content)!;
         }
         catch (Exception)
         {
