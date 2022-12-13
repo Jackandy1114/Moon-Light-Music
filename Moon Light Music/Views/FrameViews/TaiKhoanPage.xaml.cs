@@ -17,7 +17,6 @@ public sealed partial class TaiKhoanPage : Page
     {
         ViewModel = App.GetService<TaiKhoanViewModel>();
         
-        
         InitializeComponent();
         if (ViewModel._isLoginService.IsLogin == "true")
         {
@@ -31,8 +30,8 @@ public sealed partial class TaiKhoanPage : Page
         {
             tb_Name.Visibility = Microsoft.UI.Xaml.Visibility.Collapsed;
             tb_Email.Visibility = Microsoft.UI.Xaml.Visibility.Collapsed;
-            StaticDataBindingModel.AccountPicture = "ms-appx:///Image/Logo/1.png";
-            StaticDataBindingModel.AccountName = "";
+            ViewModel._isLoginService.picture = "ms-appx:///Image/Logo/1.png";
+            ViewModel._isLoginService.name = "";
             btn_logout.Visibility = Microsoft.UI.Xaml.Visibility.Collapsed;
             btn_login.Visibility = Microsoft.UI.Xaml.Visibility.Visible;
 

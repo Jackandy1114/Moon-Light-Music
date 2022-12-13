@@ -46,7 +46,7 @@
                            Padding="0"
                            MinHeight="200"
                            HorizontalAlignment="Center"
-                           ProfilePicture="{x:Bind ViewModel.AccountPicture}"
+                           ProfilePicture="{x:Bind ViewModel._isLoginService.picture}"
                            Tapped="PersonPicture_Tapped"
                  
                            Grid.Column="0">
@@ -128,7 +128,7 @@
                            
                            TextWrapping="Wrap"
                            Visibility="Collapsed"
-                           Text="{x:Bind ViewModel.AccountName}">
+                           Text="{x:Bind ViewModel._isLoginService.name}">
                 </TextBlock>
                 <TextBlock  Grid.Row="2"
                             Margin="2 2 0 0"
@@ -139,7 +139,7 @@
                            Grid.Row="2"
                            FontWeight="ExtraBold"
                            Visibility="Collapsed"
-                           Text="{x:Bind ViewModel.AccountEmail}" />
+                           Text="{x:Bind ViewModel._isLoginService.account}" />
             </Grid>
            
 

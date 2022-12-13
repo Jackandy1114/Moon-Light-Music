@@ -6,16 +6,32 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid x:Name="ContentArea">
-        <StackPanel>
+        <StackPanel Spacing="10"
+                    x:Name="ContentArea">
             
         <TextBlock Text="Danh sách đã tải"></TextBlock>
-            
-            
+
+            <ListView x:Name="Lb_DaTai" MaxHeight="100">
+                
+            </ListView>
 
         <TextBlock Text="Danh sách đang tải"></TextBlock>
-            <Button Content="Tải nhạc thử"
+        <ListView x:Name="ListTb_LinkTai"
+                  MaxHeight="150">
+
+        </ListView>
+        <StackPanel Orientation="Horizontal" Spacing="20">
+
+                <Button x:Name="ThemTb_LinkTai"
+                        Content="Thêm link tải"
+                        Click="ThemTb_LinkTai_Click" />
+                <Button x:Name="XoaTb_LinkTai"
+                        Content="Xóa link tải"
+                        Click="XoaTb_LinkTai_Click" />
+            
+            <Button Content="Tải nhạc"
                     Click="Button_ClickAsync"></Button>
+            </StackPanel>
 
             <TextBlock x:Name="musicName" Text=""></TextBlock>
 
@@ -23,5 +39,5 @@
 
             <TextBlock x:Name="DowloadStatus" Text="Đang tải"></TextBlock>
         </StackPanel>
-    </Grid>
+  
 </Page>

@@ -58,7 +58,7 @@ public sealed partial class TaiKhoanSignUpChildPage : Page
                         </binding>
                     </visual>
                 </toast>");
-                ViewModel._isLoginService.SetTokkenAsync("true");
+                ViewModel._isLoginService.SetTokkenAsync("true", _password: query.Password, _account: query.Email);
                 
             }
         }
@@ -82,6 +82,7 @@ public sealed partial class TaiKhoanSignUpChildPage : Page
                 var query = db.UserProfiles.Where(p => p.Id == id).FirstOrDefault();
                 StaticDataBindingModel.AccountPicture = query.Avatar;
                 StaticDataBindingModel.AccountName = query.Name;
+                ViewModel._isLoginService.SetTokkenAsync("true", _name: query.Name, _picture: query.Avatar);
 
                 ViewModel._navigationService.NavigateTo("Moon_Light_Music.ViewModels.TaiKhoanViewModel");
             }
