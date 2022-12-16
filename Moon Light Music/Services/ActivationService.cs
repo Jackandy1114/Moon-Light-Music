@@ -17,13 +17,14 @@ public class ActivationService : IActivationService
     private readonly IisLoginService _isLoginService;
     private UIElement? _shell = null;
 
-    public ActivationService(ActivationHandler<Microsoft.UI.Xaml.LaunchActivatedEventArgs> defaultHandler, IEnumerable<IActivationHandler> activationHandlers, IThemeSelectorService themeSelectorService, IOAuthTokkenService oAuthTokkenService, IisLoginService iisLoginService)
+    public ActivationService(ActivationHandler<Microsoft.UI.Xaml.LaunchActivatedEventArgs> defaultHandler, IEnumerable<IActivationHandler> activationHandlers, IThemeSelectorService themeSelectorService, IOAuthTokkenService oAuthTokkenService, IisLoginService isLoginService)
     {
         _defaultHandler = defaultHandler;
         _activationHandlers = activationHandlers;
         _themeSelectorService = themeSelectorService;
         _oAuthTokkenService = oAuthTokkenService;
-        _isLoginService = iisLoginService;
+        _isLoginService = isLoginService;
+
     }
 
     public async Task ActivateAsync(object activationArgs)

@@ -1,8 +1,6 @@
 ﻿using Microsoft.UI.Xaml.Controls;
 
-using Moon_Light_Music.Contracts.Services;
 using Moon_Light_Music.Models;
-using Moon_Light_Music.Services;
 using Moon_Light_Music.ViewModels;
 
 namespace Moon_Light_Music.Views;
@@ -16,7 +14,7 @@ public sealed partial class TaiKhoanPage : Page
     public TaiKhoanPage()
     {
         ViewModel = App.GetService<TaiKhoanViewModel>();
-        
+
         InitializeComponent();
         if (ViewModel._isLoginService.IsLogin == "true")
         {
@@ -40,8 +38,8 @@ public sealed partial class TaiKhoanPage : Page
     private async void Login_ClickAsync(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
 
+        StaticDataBindingModel._isInput = true;
         ViewModel._navigationService.NavigateTo("Moon_Light_Music.ViewModels.TaiKhoanSignUpChildViewModel");
-
 
         //TaiKhoanLoginDialog _LoginDialog = new TaiKhoanLoginDialog()
         //{
@@ -67,6 +65,8 @@ public sealed partial class TaiKhoanPage : Page
     private async void Logout_ClickAsync(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
         ViewModel._isLoginService.SetTokkenAsync("false");
+
+        StaticDataBindingModel._isInput = true;
         ViewModel._navigationService.NavigateTo("Moon_Light_Music.ViewModels.TaiKhoanSignUpChildViewModel");
 
     }
