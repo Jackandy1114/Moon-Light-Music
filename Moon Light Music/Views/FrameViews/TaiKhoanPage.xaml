@@ -6,7 +6,9 @@
       mc:Ignorable="d">
 
     <Grid x:Name="ContentArea"
+
                RowSpacing="20">
+
         <Grid.RowDefinitions>
             <RowDefinition MinHeight="150" MaxHeight="200"/>
             <RowDefinition Height="30"/>

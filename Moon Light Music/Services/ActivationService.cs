@@ -24,6 +24,7 @@ public class ActivationService : IActivationService
         _themeSelectorService = themeSelectorService;
         _oAuthTokkenService = oAuthTokkenService;
         _isLoginService = isLoginService;
+
     }
 
     public async Task ActivateAsync(object activationArgs)
