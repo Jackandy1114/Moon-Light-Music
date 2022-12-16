@@ -28,7 +28,22 @@ public class FileService : IFileService
         }
 
         var fileContent = JsonConvert.SerializeObject(content);
-        File.WriteAllText(Path.Combine(folderPath, fileName), fileContent, Encoding.UTF8);
+
+        //Xử lý việc multi Writefile
+        while (true)
+        {
+            try
+            {
+                File.WriteAllText(Path.Combine(folderPath, fileName), fileContent, Encoding.UTF8);
+                break;
+            }
+            catch (Exception)
+            {
+                Thread.Sleep(500);
+            }
+        }
+
+
     }
 
     public void Delete(string folderPath, string fileName)

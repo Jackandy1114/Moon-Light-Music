@@ -7,7 +7,6 @@ using CommunityToolkit.Mvvm.Input;
 using Moon_Light_Music.Contracts.Services;
 using Moon_Light_Music.Helpers;
 using Moon_Light_Music.Models;
-using Moon_Light_Music.Services;
 
 using Newtonsoft.Json;
 
@@ -30,17 +29,17 @@ public class ChuDeViewModel : ObservableRecipient
         _oAuthTokkenService = oAuthTokkenService;
         if (!First)
         {
-            AlbumsCollection(_oAuthTokkenService.OAuthTokken!).WaitAsync(new TimeSpan(3000));
+            AlbumsCollection(_oAuthTokkenService).WaitAsync(new TimeSpan(3000));
             First = true;
         }
         moreListcommand = new RelayCommand(async () =>
         {
-            await AlbumsCollection(_oAuthTokkenService.OAuthTokken!).ConfigureAwait(false);
+            await AlbumsCollection(_oAuthTokkenService).ConfigureAwait(false);
         }
        );
     }
 
-    public static async Task AlbumsCollection(string OAuth2Tokken)
+    public static async Task AlbumsCollection(IOAuthTokkenService oAuthTokkenService)
     {
         if (StaticDataBindingModel._isEnableBtn_moreLoading)
         {
@@ -52,7 +51,7 @@ public class ChuDeViewModel : ObservableRecipient
             }
             try
             {
-                _albums = JsonConvert.DeserializeObject<Albums>(GetResponseFromAPIHelper.GetResponse(OAuth2Tokken, StaticDataBindingModel.RequestSpotifyALbums).Content!)!;
+                _albums = JsonConvert.DeserializeObject<Albums>(GetResponseFromAPIHelper.GetResponse(oAuthTokkenService, StaticDataBindingModel.RequestSpotifyALbums).Content!)!;
                 if (_albums != null)
                 {
                     if (_albums.Album.Items != null)
@@ -79,9 +78,10 @@ public class ChuDeViewModel : ObservableRecipient
             }
             catch (Exception)
             {
+                //Lấy token nếu như bị lỗi api
                 //var token = JsonConvert.DeserializeObject<GetAPI>(GetResponseFromAPIHelper.GetResponse_AndToken().Content!)!;
-               
-                               
+
+                //oAuthTokkenService.SetTokkenAsync(token.Token);
             }
 
         }

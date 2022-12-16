@@ -10,7 +10,7 @@
     <Grid x:Name="ContentArea">
         <Grid.RowDefinitions>
             <RowDefinition />
-            <RowDefinition Height="75"/>
+            <RowDefinition MaxHeight="75"/>
         </Grid.RowDefinitions>
         <ListView Grid.Row="0"
                   x:Name="listviewAlbums"
@@ -106,6 +106,8 @@
                                                VerticalAlignment="Center"></TextBlock>
                                     <HyperlinkButton FontSize="18"
                                                      VerticalAlignment="Top"
+                                                     Click="HyperlinkButton_Click"
+                                                     Tag="{Binding Path= Artists[0].Id,Mode=OneWay}"
                                                      Content="{ Binding Path= Artists[0].Name,Mode=OneWay}" />
                                     <!--Comment code này lại cho đỡ lỗi binding gỡ ra khi xong viêc nhé-->
                                     <!--<HyperlinkButton FontSize="18"
@@ -157,7 +159,6 @@
                 Width="200"
                 FontSize="16"
                 CornerRadius="10"
-                MinHeight="50"
                 Click="Btn_moreList_Click"
                 
                 >

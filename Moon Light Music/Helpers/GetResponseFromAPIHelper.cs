@@ -1,8 +1,9 @@
 ﻿using System.Text;
 
-using OpenQA.Selenium;
-using OpenQA.Selenium.Edge;
-using OpenQA.Selenium.Remote;
+using Moon_Light_Music.Contracts.Services;
+using Moon_Light_Music.Models;
+
+using Newtonsoft.Json;
 
 using RestSharp;
 using RestSharp.Authenticators.OAuth2;
@@ -24,17 +25,28 @@ public static class GetResponseFromAPIHelper
         request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
         return client.PostAsync(request).GetAwaiter().GetResult();
     }
-    public static RestResponse GetResponse(string OAuth2Tokken, string _request)
+    public static RestResponse GetResponse(IOAuthTokkenService oAuthTokkenService, string _request)
     {
         var client = new RestClient();
 
         //Spotify
-        client.Authenticator = new OAuth2AuthorizationRequestHeaderAuthenticator($"{OAuth2Tokken}", "Bearer");
+        client.Authenticator = new OAuth2AuthorizationRequestHeaderAuthenticator($"{oAuthTokkenService.OAuthTokken}", "Bearer");
         var request = new RestRequest(_request, Method.Get);
         request.AddHeader("Accept", "application/json");
         request.AddHeader("Content-Type", "application/json");
 
-        return client.GetAsync(request).GetAwaiter().GetResult();
+        try
+        {
+            return client.GetAsync(request).GetAwaiter().GetResult();
+        }
+        catch (Exception)
+        {
+
+            var token = JsonConvert.DeserializeObject<GetAPI>(GetResponseFromAPIHelper.GetResponse_AndToken().Content!)!;
+
+            oAuthTokkenService.SetTokkenAsync(token.Token);
+            return client.GetAsync(request).GetAwaiter().GetResult();
+        }
     }
     //public static async Task<string> getTokkenOnlineBySelenium()
     //{

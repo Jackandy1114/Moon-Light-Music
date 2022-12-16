@@ -58,20 +58,38 @@ public sealed partial class ChuDeChildPage : Page
 
     private void HyperlinkButton_Tapped(object sender, Microsoft.UI.Xaml.Input.TappedRoutedEventArgs e)
     {
-        Artist _artist;
+
+        Artist data;
+        TopAritisTrack topTrack;
+        var btn = (TextBlock)sender;
+        var n = (string)btn.Tag;
+
         try
         {
-            _artist = JsonConvert.DeserializeObject<Artist>(GetResponseFromAPIHelper.GetResponse(ViewModel._oAuthTokkenService.OAuthTokken!, @$"https://api.spotify.com/v1/artists/{StaticDataBindingModel.TracksInAlbumsSpotify[TrackAlbums.SelectedIndex].Artists[0].Id}").Content!)!;
+            data = JsonConvert.DeserializeObject<Artist>(GetResponseFromAPIHelper.GetResponse(ViewModel._oAuthTokkenService, $"https://api.spotify.com/v1/artists/{n}?market=VN").Content!)!;
 
-            if (_artist != null)
+            if (data != null)
             {
-
+                StaticDataBindingModel.Artist = new();
+                StaticDataBindingModel.Artist.Add(data);
             }
+            topTrack = JsonConvert.DeserializeObject<TopAritisTrack>(GetResponseFromAPIHelper.GetResponse(ViewModel._oAuthTokkenService, $"https://api.spotify.com/v1/artists/{n}/top-tracks?market=VN").Content!)!;
+            if (topTrack != null)
+            {
+                StaticDataBindingModel.TopSpotifyTracks = new();
+                var index = 1;
+                foreach (var item in topTrack.Tracks)
+                {
+                    item.Index = index;
+                    StaticDataBindingModel.TopSpotifyTracks.Add(topTrack);
+                    index++;
+                }
+            }
+            ViewModel._navigationService.NavigateTo("Moon_Light_Music.ViewModels.NgheSiViewModel");
         }
         catch (Exception)
         {
 
-            throw;
         }
 
     }

@@ -45,6 +45,11 @@ public static class StaticDataBindingModel
         get => artist;
         set => artist = value;
     }
+    public static ObservableCollection<TopAritisTrack> TopSpotifyTracks
+    {
+        get => topSpotifyTracks;
+        set => topSpotifyTracks = value;
+    }
 
     public static string StringToRequestSpotifyTracks(string query = "Black Pink")
     {
@@ -54,6 +59,10 @@ public static class StaticDataBindingModel
 
     private static ObservableCollection<Item> albumsSpotify = new();
     private static ObservableCollection<Item> tracksSpotify = new();
+    private static ObservableCollection<TopAritisTrack> topSpotifyTracks = new()
+    {
+        new TopAritisTrack() { }
+    };
     private static ObservableCollection<Album> albumSpotify = new();
     private static ObservableCollection<Item> tracksInAlbumsSpotify = new();
     private static ObservableCollection<Artist> artist = new();
