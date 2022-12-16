@@ -50,23 +50,8 @@ namespace Moon_Light_Music.Models
         {
             get; set;
         }
-        [J("copyrights")]
-        public List<Copyright> Copyrights
-        {
-            get; set;
-        }
-        [J("external_ids")]
-        public ExternalIds ExternalIds
-        {
-            get; set;
-        }
         [J("external_urls")]
         public ExternalUrls ExternalUrls
-        {
-            get; set;
-        }
-        [J("genres")]
-        public List<object> Genres
         {
             get; set;
         }
@@ -85,16 +70,39 @@ namespace Moon_Light_Music.Models
         {
             get; set;
         }
-        [J("label")]
-        public string Label
-        {
-            get; set;
-        }
         [J("name")]
         public string Name
         {
             get; set;
         }
+        
+       
+      
+      
+        [J("copyrights")]
+        public List<Copyright> Copyrights
+        {
+            get; set;
+        }
+        [J("external_ids")]
+        public ExternalIds ExternalIds
+        {
+            get; set;
+        }
+        
+        [J("genres")]
+        public List<object> Genres
+        {
+            get; set;
+        }
+       
+        
+        [J("label")]
+        public string Label
+        {
+            get; set;
+        }
+        
         [J("popularity")]
         public long Popularity
         {
@@ -303,14 +311,119 @@ namespace Moon_Light_Music.Models
             get; set; 
         }
     }
+    public partial class TopAritisTrack
+    {
+        [J("tracks")]
+        public List<Track> Tracks
+        {
+            get; set;
+        }
+    }
 
     public partial class Track
     {
+        public int Index
+        {
+            get; set;
+        }
+
+        [J("album")]
+        public Album Album
+        {
+            get; set;
+        }
+        [J("artists")]
+        public List<Artist> Artists
+        {
+            get; set;
+        }
+        [J("disc_number")]
+        public long DiscNumber
+        {
+            get; set;
+        }
+        [J("duration_ms")]
+        public long DurationMs
+        {
+            get; set;
+        }
+        public string DurationPresent
+        {
+            get
+            {
+                var _sc = TimeSpan.FromMilliseconds(DurationMs);
+                int hr = _sc.Hours;
+                int mn = _sc.Minutes;
+                int sec = _sc.Seconds;
+                return ($"{hr.ToString("00")}:{mn.ToString("00")}:{sec.ToString("00")}");
+            }
+        }
+        [J("explicit")]
+        public bool Explicit
+        {
+            get; set;
+        }
+        [J("external_ids")]
+        public ExternalIds ExternalIds
+        {
+            get; set;
+        }
+        [J("external_urls")]
+        public ExternalUrls ExternalUrls
+        {
+            get; set;
+        }
         [J("href")]
         public Uri Href
         {
             get; set;
         }
+        [J("id")]
+        public string Id
+        {
+            get; set;
+        }
+        [J("is_local")]
+        public bool IsLocal
+        {
+            get; set;
+        }
+        [J("is_playable")]
+        public bool IsPlayable
+        {
+            get; set;
+        }
+        [J("name")]
+        public string Name
+        {
+            get; set;
+        }
+        [J("popularity")]
+        public long Popularity
+        {
+            get; set;
+        }
+        [J("preview_url")]
+        public Uri PreviewUrl
+        {
+            get; set;
+        }
+        [J("track_number")]
+        public long TrackNumber
+        {
+            get; set;
+        }
+        [J("type")]
+        public string Type
+        {
+            get; set;
+        }
+        [J("uri")]
+        public string Uri
+        {
+            get; set;
+        }
+        
         [J("items")]
         public List<Item> Items
         {
@@ -379,6 +492,28 @@ namespace Moon_Light_Music.Models
     }
     public partial class Artist
     {
+        [J("external_urls")]
+        public ExternalUrls ExternalUrls
+        {
+            get; set;
+        }
+        [J("href")]
+        public Uri Href
+        {
+            get; set;
+        }
+        
+      
+        [J("type")]
+        public string Type
+        {
+            get; set;
+        }
+        [J("uri")]
+        public string Uri
+        {
+            get; set;
+        }
         [J("genres")]
         public List<string> Genres
         {
@@ -398,16 +533,7 @@ namespace Moon_Light_Music.Models
         {
             get; set;
         }
-        [J("external_urls")]
-        public ExternalUrls ExternalUrls
-        {
-            get; set;
-        }
-        [J("href")]
-        public Uri Href
-        {
-            get; set;
-        }
+      
         [J("id")]
         public string Id
         {
@@ -418,16 +544,7 @@ namespace Moon_Light_Music.Models
         {
             get; set;
         }
-        [J("type")]
-        public string Type
-        {
-            get; set;
-        }
-        [J("uri")]
-        public string Uri
-        {
-            get; set;
-        }
+      
     }
 
     public partial class ExternalUrls

@@ -11,7 +11,7 @@
             
         <TextBlock Text="Danh sách đã tải"></TextBlock>
 
-            <ListView x:Name="Lb_DaTai" MaxHeight="100">
+            <ListView x:Name="Lb_DaTai" MaxHeight="150">
                 
             </ListView>
 

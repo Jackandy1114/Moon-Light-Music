@@ -23,7 +23,7 @@ public class ActivationService : IActivationService
         _activationHandlers = activationHandlers;
         _themeSelectorService = themeSelectorService;
         _oAuthTokkenService = oAuthTokkenService;
-        _isLoginService= iisLoginService;
+        _isLoginService = iisLoginService;
     }
 
     public async Task ActivateAsync(object activationArgs)
@@ -67,6 +67,7 @@ public class ActivationService : IActivationService
     {
         await _themeSelectorService.InitializeAsync().ConfigureAwait(false);
 
+        //Xíu thêm vô nha ba
         await _oAuthTokkenService.InitializeAsync().ConfigureAwait(false);
         await _isLoginService.InitializeAsync().ConfigureAwait(false);
 

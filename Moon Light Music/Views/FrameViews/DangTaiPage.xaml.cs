@@ -22,11 +22,10 @@ public sealed partial class DangTaiPage : Page
         ViewModel = App.GetService<DangTaiViewModel>();
         InitializeComponent();
     }
-    //https://stream.nixcdn.com/NhacCuaTui940/MayonakaNoDoorStayWithMe-MikiMatsubara-4892669.mp3?st=PwGNSvVfkzi21atGdFwM4A&e=1669125309
     private async void Button_ClickAsync(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
         ListLinkDownload = new List<string>();
-        for (int i = ListTb_LinkTai.Items.Count - 1; i > 0; i--)
+        for (int i = ListTb_LinkTai.Items.Count - 1; i >= 0; i--)
         {
             var item = ListTb_LinkTai.Items[i] as TextBox;
             if (string.IsNullOrEmpty(item.Text))
@@ -68,11 +67,14 @@ public sealed partial class DangTaiPage : Page
                         string? name = null;
                         try
                         {
-                            name = item.Split('/')[4].Split('?')[0];
+                            //https://stream.nixcdn.com/NhacCuaTui940/MayonakaNoDoorStayWithMe-MikiMatsubara-4892669.mp3?st=PwGNSvVfkzi21atGdFwM4A&e=1669125309
+
+                            name = item.Split('?')[0].Substring(item.LastIndexOf('/') + 1);
+                            string after = item.Split('?')[0].Substring(item.LastIndexOf('.'));
                             musicName.Text = name;
                             var uri = new Uri(item);
 
-                            await wc.DownloadFileTaskAsync(uri, @$"{folder.Path}/{name}");
+                            await wc.DownloadFileTaskAsync(uri, @$"{folder.Path}/{name}{after}");
                             //Xử lý multiple dowload file
                             Lb_DaTai.Items.Add(new TextBlock() { Tag = item, Text = name == null ? "Tên hỏng nhưng đã tải về" : name, Foreground = new SolidColorBrush(Colors.Green) });
 

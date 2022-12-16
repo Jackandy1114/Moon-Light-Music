@@ -67,7 +67,7 @@
                 https://docs.microsoft.com/windows/apps/design/style/segoe-fluent-icons-font#icon-list
                 -->
                 <NavigationViewItem >
-                    <AutoSuggestBox PlaceholderText="Tìm Kiếm"
+                    <AutoSuggestBox x:Name="SearchSong" PlaceholderText="Tìm Kiếm bài hát"
                                     QueryIcon="Find" SuggestionChosen="AutoSuggestBox_SuggestionChosen" TextChanged="AutoSuggestBox_TextChanged" QuerySubmitted="AutoSuggestBox_QuerySubmitted">
                         
                     </AutoSuggestBox>

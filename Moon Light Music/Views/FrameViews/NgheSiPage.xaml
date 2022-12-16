@@ -7,6 +7,180 @@
     mc:Ignorable="d">
 
     <Grid x:Name="ContentArea">
-        
+        <Grid.RowDefinitions>
+            <RowDefinition MaxHeight="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="50" />
+
+            <RowDefinition Height="0.5*" />
+        </Grid.RowDefinitions>
+        <GridView ItemsSource="{x:Bind ViewModel.artists}">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnSpacing="50"
+                          Padding="12">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"
+                                              MinWidth="100"
+                                              MaxWidth="200" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Border MinWidth="100"
+                                MaxWidth="150"
+                                MaxHeight="150"
+                                MinHeight="100"
+                                CornerRadius="20"
+                                Grid.Column="0">
+
+                            <Image  Source="{Binding Images[1].Url}"></Image>
+                        </Border>
+                        <Grid Grid.Column="1">
+                            <Grid.RowDefinitions>
+                             
+                                <RowDefinition />
+                                <RowDefinition Height="2*" />
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <TextBlock Grid.Row="0" Text="{Binding Type}"></TextBlock>
+                            <TextBlock Grid.Row="1"
+                                       Text="{Binding Name}"
+                                       TextWrapping="Wrap"
+                                       FontSize="44"
+                                       HorizontalTextAlignment="Center"
+                                       TextAlignment="Center"
+                                       FontWeight="ExtraBlack" />
+                            <Grid Grid.Row="2">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="Follower:" />
+                                <TextBlock Grid.Column="1"
+                                           Text="{Binding Follower.Total}" />
+                                <TextBlock Grid.Column="2"
+                                           Text="Người" />
+                            </Grid>
+                            <Grid Grid.Row="3">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                   
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="Độ phổ biến:" />
+                                <TextBlock Grid.Column="1"
+                                           Text="{Binding Popularity}" />
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+        <TextBlock Grid.Row="1"
+                   Text="Top Track"
+                   HorizontalAlignment="Center"
+                   FontSize="24"
+                   FontWeight="ExtraBlack"></TextBlock>
+
+        <Grid Grid.Row="2" Margin="12"
+              ColumnSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition Width="4*" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0"
+                  HorizontalAlignment="Center">
+
+                <TextBlock FontSize="18"
+                           FontWeight="Bold"
+                           Text="#"></TextBlock>
+            </Grid>
+            <Grid Grid.Column="2"
+                  HorizontalAlignment="Left">
+                <TextBlock  FontSize="18"
+                            FontWeight="Bold"
+                            Text="Tiêu đề"></TextBlock>
+            </Grid>
+            <Grid Grid.Column="4"
+                  HorizontalAlignment="Center">
+                <TextBlock x:Uid="DurationPresent"
+                           FontSize="18"
+                           FontWeight="Bold"
+                           Text="Thời lượng"></TextBlock>
+            </Grid>
+        </Grid>
+        <ListView x:Name="TrackAlbums"
+                  Grid.Row="3"
+                  ItemsSource="{x:Bind ViewModel.topTracks,Mode=OneWay}">
+            
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Background="Transparent">
+                        <ToolTipService.ToolTip>
+                            <ToolTip MinWidth="200"
+                                     BorderThickness="2"
+                                     CornerRadius="10"
+                                     Padding="10"
+                                     Placement="Right">
+                                <StackPanel Orientation="Horizontal"
+                                            Spacing="20">
+                                    <SymbolIcon Symbol="Play"></SymbolIcon>
+                                    <TextBlock Text="Nghe thử"
+                                               TextAlignment="Center"
+                                               FontSize="16"
+                                               TextWrapping="Wrap"></TextBlock>
+
+                                </StackPanel>
+                            </ToolTip>
+
+                        </ToolTipService.ToolTip>
+                        <Rectangle HorizontalAlignment="Stretch"
+                                   VerticalAlignment="Stretch"
+                                   Fill="Transparent"
+                                   Tapped="SymbolIcon_Tapped" />
+                        <Grid ColumnSpacing="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="70" />
+                                <ColumnDefinition MinWidth="150" />
+                                <ColumnDefinition Width="4*" />
+                                <ColumnDefinition />
+                                <ColumnDefinition Width="2*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0"
+                                  HorizontalAlignment="Center">
+                                <TextBlock FontSize="18"
+                                           FontWeight="Bold"
+                                           Text="{Binding Index}"></TextBlock>
+                            </Grid>
+                            <Border Margin="12"
+                                    CornerRadius="20"
+                                    Grid.Column="1">
+                                <Image Source="{Binding Album.Images[1].Url}" />
+                            </Border>
+                            <Grid Grid.Column="2"
+                                  HorizontalAlignment="Left"
+                                  VerticalAlignment="Center">
+                                <TextBlock  FontSize="18"
+                                            FontWeight="Bold"
+                                            Text="{Binding Name}"></TextBlock>
+                            </Grid>
+                            <Grid Grid.Column="4"
+                                  HorizontalAlignment="Center">
+                                <TextBlock x:Uid="DurationPresent"
+                                           FontSize="18"
+                                           FontWeight="Bold"
+                                           VerticalAlignment="Center"
+                                           Text="{Binding DurationPresent}"></TextBlock>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Page>

@@ -1,4 +1,6 @@
-﻿using Microsoft.UI.Xaml;
+﻿using System.Web;
+
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
@@ -134,11 +136,13 @@ public sealed partial class ShellPage : Page
             Tracks? _tracks = null;
             try
             {
-                _tracks = JsonConvert.DeserializeObject<Tracks>(GetResponseFromAPIHelper.GetResponse(ViewModel.OAuthTokkenService.OAuthTokken, StaticDataBindingModel.StringToRequestSpotifyTracks(args.QueryText)).Content!);
+                _tracks = JsonConvert.DeserializeObject<Tracks>(GetResponseFromAPIHelper.GetResponse(ViewModel.OAuthTokkenService, StaticDataBindingModel.StringToRequestSpotifyTracks(HttpUtility.UrlEncode(args.QueryText.ToLowerInvariant()))).Content!);
             }
             catch (Exception)
             {
+                //var token = JsonConvert.DeserializeObject<GetAPI>(GetResponseFromAPIHelper.GetResponse_AndToken().Content!)!;
 
+                //ViewModel.OAuthTokkenService.SetTokkenAsync(token.Token);
             }
             if (_tracks == null)
             {
@@ -176,11 +180,44 @@ public sealed partial class ShellPage : Page
     }
     private void AutoSuggestBox_SuggestionChosen(AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)
     {
-
+        SearchSong.Text = args.SelectedItem.ToString();
     }
-
+    // List of Song
+    private List<string> Songs = new List<string>()
+{
+    "Phan Mạnh Quỳnh",
+    "Hôm nay tôi buồn",
+    "Waiting For You",
+    "Bao tiền một mớ bình yên",
+    "Giáng sinh an lành",
+    "Silent Night",
+};
     private void AutoSuggestBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
     {
+        if (args.Reason == AutoSuggestionBoxTextChangeReason.UserInput)
+        {
+            var suitableItems = new List<string>();
+            var splitText = sender.Text.ToLower().Split(" ");
+            foreach (var cat in Songs)
+            {
+                var found = splitText.All((key) =>
+                {
+                    return cat.ToLower().Contains(key);
+                });
+                if (found)
+                {
+                    suitableItems.Add(cat);
+                }
+            }
+            if (suitableItems.Count == 0)
+            {
+                //suitableItems.Add("Không tìm thấy bài hát");
+
+                //suitableItems.Add("No results found");
+
+            }
+            sender.ItemsSource = suitableItems;
+        }
 
     }
 
