@@ -147,12 +147,12 @@ public sealed partial class TaiKhoanLoginChildPage : Page
                         Role = StaticDataBindingModel.roles[1],
                         UserProfile = userIdProfile
                     };
-                    
-                        db.Add(userProfile);
-                        await db.SaveChangesAsync();
-                        db.Add(user);
-                        await db.SaveChangesAsync();
-                        App.GetService<IAppNotificationService>().Show(@"<toast>
+
+                    db.Add(userProfile);
+                    await db.SaveChangesAsync();
+                    db.Add(user);
+                    await db.SaveChangesAsync();
+                    App.GetService<IAppNotificationService>().Show(@"<toast>
                     <visual>
                         <binding template=""ToastGeneric"">
                             <text hint-maxLines=""1"">Trần Hoàng</text>
@@ -160,8 +160,8 @@ public sealed partial class TaiKhoanLoginChildPage : Page
                         </binding>
                     </visual>
                 </toast>");
-                    
-                    
+
+
                 }
             }
             catch (Exception)

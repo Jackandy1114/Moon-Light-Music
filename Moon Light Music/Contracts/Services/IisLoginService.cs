@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Moon_Light_Music.Contracts.Services;
+﻿namespace Moon_Light_Music.Contracts.Services;
 public interface IisLoginService
 {
     public string? IsLogin
@@ -15,20 +9,20 @@ public interface IisLoginService
     public string? password
     {
 
-        get;set;
+        get; set;
     }
     public string? account
     {
-        get;set;
+        get; set;
     }
     public string? picture
     {
-        get;set;
+        get; set;
     }
     public string? name
     {
-        get;set;
+        get; set;
     }
-     Task InitializeAsync();
+    Task InitializeAsync();
     Task SetTokkenAsync(string tokken, string _password = null, string _account = null, string _name = null, string _picture = null);
 }

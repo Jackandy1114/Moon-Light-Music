@@ -37,5 +37,5 @@ public class OAuthTokkenService : IOAuthTokkenService
         OAuthTokken = tokken;
         await SaveTokkenInSettingsAsync(OAuthTokken);
     }
-    
+
 }

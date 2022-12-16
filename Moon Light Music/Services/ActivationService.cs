@@ -68,7 +68,7 @@ public class ActivationService : IActivationService
     {
         await _themeSelectorService.InitializeAsync().ConfigureAwait(false);
 
-        //Xíu thêm vô nha ba
+
         await _oAuthTokkenService.InitializeAsync().ConfigureAwait(false);
         await _isLoginService.InitializeAsync().ConfigureAwait(false);
 
@@ -79,14 +79,9 @@ public class ActivationService : IActivationService
     {
         await AnimatedSplashScreenHelpers.RunAnimatedSplashScreenAsync();
         await _themeSelectorService.SetRequestedThemeAsync();
-        //await _themeSelectorService.SetRequestedThemeAsync();
-        //await _oAuthTokkenService.SetRequestedTokkenAsync();
+
 
         await Task.CompletedTask;
     }
-    //void DismissExtendedSplash()
-    //{
-    //    //Navigate to mainpage
 
-    //}
 }

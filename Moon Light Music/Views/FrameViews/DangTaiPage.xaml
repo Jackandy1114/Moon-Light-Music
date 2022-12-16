@@ -37,7 +37,7 @@
 
             <ProgressBar x:Name="progressBar"></ProgressBar>
 
-            <TextBlock x:Name="DowloadStatus" Text="Đang tải"></TextBlock>
+            <TextBlock x:Name="DowloadStatus" Text="Chưa tải"></TextBlock>
         </StackPanel>
   
 </Page>
