@@ -128,7 +128,7 @@ public sealed partial class ShellPage : Page
         }
     }
 
-    private void AutoSuggestBox_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
+    private async void AutoSuggestBox_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
     {
         if (!string.IsNullOrEmpty(args.QueryText))
         {
@@ -178,7 +178,7 @@ public sealed partial class ShellPage : Page
             ViewModel.NavigationService.NavigateTo("Moon_Light_Music.ViewModels.BaiHatViewModel");
         }
     }
-    private void AutoSuggestBox_SuggestionChosen(AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)
+    private async void AutoSuggestBox_SuggestionChosen(AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)
     {
         SearchSong.Text = args.SelectedItem.ToString();
     }
@@ -192,7 +192,7 @@ public sealed partial class ShellPage : Page
     "Giáng sinh an lành",
     "Silent Night",
 };
-    private void AutoSuggestBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
+    private async void AutoSuggestBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
     {
         if (args.Reason == AutoSuggestionBoxTextChangeReason.UserInput)
         {
@@ -238,7 +238,7 @@ public sealed partial class ShellPage : Page
 
     private void Page_KeyDown(object sender, KeyRoutedEventArgs e)
     {
-        if (e != null && e.Key == VirtualKey.Space)
+        if (e != null && e.Key == VirtualKey.Space && !StaticDataBindingModel._isInput)
         {
             if (Media.MediaPlayer.CurrentState == Windows.Media.Playback.MediaPlayerState.Playing)
             {
@@ -251,5 +251,11 @@ public sealed partial class ShellPage : Page
 
             }
         }
+
+    }
+
+    private void PlayPauseButtonOnLeft_Click(object sender, RoutedEventArgs e)
+    {
+        StaticDataBindingModel._isInput = false;
     }
 }

@@ -27,7 +27,36 @@ public sealed partial class TaiKhoanSignUpChildPage : Page
         this.InitializeComponent();
     }
 
-    private void Button_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    private async void AutoSuggestBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
+    {
+        if (args.Reason == AutoSuggestionBoxTextChangeReason.UserInput)
+        {
+            var suitableItems = new List<string>();
+            var splitText = sender.Text.ToLower().Split(" ");
+            foreach (var cat in ViewModel.listEmail)
+            {
+                var found = splitText.All((key) =>
+                {
+                    return cat.ToLower().Contains(key);
+                });
+                if (found)
+                {
+                    suitableItems.Add(cat);
+                }
+            }
+            if (suitableItems.Count == 0)
+            {
+                //suitableItems.Add("Không tìm thấy bài hát");
+
+                //suitableItems.Add("No results found");
+
+            }
+            sender.ItemsSource = suitableItems;
+        }
+
+    }
+
+    private async void Button_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
         using var db = new MoonLightMusicDataBaseContext();
         try
@@ -58,8 +87,15 @@ public sealed partial class TaiKhoanSignUpChildPage : Page
                         </binding>
                     </visual>
                 </toast>");
-                ViewModel._isLoginService.SetTokkenAsync("true", _password: query.Password, _account: query.Email);
-                
+                if ((bool)SavePassword.IsChecked)
+                {
+                    await ViewModel._isLoginService.SetTokkenAsync("true", _password: query.Password, _account: query.Email);
+                }
+                else
+                {
+                    await ViewModel._isLoginService.SetTokkenAsync("true");
+
+                }
             }
         }
         catch (Exception)
@@ -77,21 +113,31 @@ public sealed partial class TaiKhoanSignUpChildPage : Page
         }
         finally
         {
-            if (ViewModel._isLoginService.IsLogin=="true")
+            if (ViewModel._isLoginService.IsLogin == "true")
             {
                 var query = db.UserProfiles.Where(p => p.Id == id).FirstOrDefault();
                 StaticDataBindingModel.AccountPicture = query.Avatar;
                 StaticDataBindingModel.AccountName = query.Name;
-                ViewModel._isLoginService.SetTokkenAsync("true", _name: query.Name, _picture: query.Avatar);
+                await ViewModel._isLoginService.SetTokkenAsync("true", _name: query.Name, _picture: query.Avatar);
 
+                StaticDataBindingModel._isInput = false;
                 ViewModel._navigationService.NavigateTo("Moon_Light_Music.ViewModels.TaiKhoanViewModel");
             }
         }
     }
 
-    private void Button_Click_1(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    private async void Button_Click_1(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
         ViewModel._navigationService.NavigateTo("Moon_Light_Music.ViewModels.TaiKhoanLoginViewModel");
+    }
+
+    private void AutoSuggestBox_SuggestionChosen(AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)
+    {
+        passworBoxWithRevealmode.Password = ViewModel._isLoginService.password;
+    }
+
+    private void tb_Email_Tapped(object sender, Microsoft.UI.Xaml.Input.TappedRoutedEventArgs e)
+    {
 
     }
 }

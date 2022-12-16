@@ -79,4 +79,6 @@ public static class StaticDataBindingModel
 
     public static string AccountName = "Tên người dùng";
     public static string AccountEmail = "Email người dùng";
+
+    public static bool _isInput = false;
 }

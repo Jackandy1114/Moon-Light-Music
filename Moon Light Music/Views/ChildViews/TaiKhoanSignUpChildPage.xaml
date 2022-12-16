@@ -23,9 +23,12 @@
                 <FontIcon Grid.Column="0"
                           FontFamily="{StaticResource SymbolThemeFontFamily}"
                           Glyph="&#xEA8C;" />
-                <TextBox x:Name="tb_Email" 
+                <AutoSuggestBox x:Name="tb_Email" 
                          Grid.Column="1"
-                         PlaceholderText="Tài khoản..."></TextBox>
+                                Tapped="tb_Email_Tapped"
+                                    TextChanged="AutoSuggestBox_TextChanged"
+                                    SuggestionChosen="AutoSuggestBox_SuggestionChosen"
+                                    PlaceholderText="Tài khoản..."></AutoSuggestBox>
             </Grid>
 
             <Grid ColumnSpacing="10">
@@ -44,7 +47,7 @@
             </StackPanel>
             <StackPanel Orientation="Horizontal" Spacing="20"
                         HorizontalAlignment="Center">
-                <CheckBox Content="Lưu tài khoản" HorizontalAlignment="Left" ></CheckBox>
+                <CheckBox x:Name="SavePassword" Content="Lưu tài khoản" HorizontalAlignment="Left" ></CheckBox>
                 <HyperlinkButton Content="Quên mật khẩu" HorizontalAlignment="Right"></HyperlinkButton>
             </StackPanel>
             <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center" Spacing="20">
