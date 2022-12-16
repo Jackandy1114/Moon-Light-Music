@@ -192,7 +192,9 @@ public sealed partial class ShellPage : Page
     "Giáng sinh an lành",
     "Silent Night",
 };
+
     private async void AutoSuggestBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
+
     {
         if (args.Reason == AutoSuggestionBoxTextChangeReason.UserInput)
         {
