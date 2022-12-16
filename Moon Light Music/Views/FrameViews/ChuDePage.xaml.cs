@@ -95,8 +95,6 @@ public sealed partial class ChuDePage : Page
         {
 
         }
-        //StaticDataBindingModel.Artist = new();
-        //StaticDataBindingModel.Artist.Add(data);
         _navigationService.NavigateTo("Moon_Light_Music.ViewModels.NgheSiViewModel");
     }
 }

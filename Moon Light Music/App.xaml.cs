@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.UI.Xaml;
 
@@ -14,8 +12,6 @@ using Moon_Light_Music.Notifications;
 using Moon_Light_Music.Services;
 using Moon_Light_Music.ViewModels;
 using Moon_Light_Music.Views;
-
-using Newtonsoft.Json;
 
 namespace Moon_Light_Music;
 

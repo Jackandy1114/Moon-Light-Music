@@ -1,8 +1,5 @@
 ﻿using Microsoft.UI.Xaml.Controls;
 
-using Moon_Light_Music.Contracts.Services;
-using Moon_Light_Music.Models;
-
 namespace Moon_Light_Music.Dialog;
 
 public sealed partial class TaiKhoanLoginDialog : ContentDialog
@@ -69,6 +66,6 @@ public sealed partial class TaiKhoanLoginDialog : ContentDialog
         //            </toast>");
         //        //await App.MainWindow.ShowMessageDialogAsync("Đăng nhập thất bại", "Thất bại");
         //    }
-        
+
     }
 }

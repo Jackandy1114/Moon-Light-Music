@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Moon_Light_Music.Contracts.Services;
+﻿using Moon_Light_Music.Contracts.Services;
 
 namespace Moon_Light_Music.Services;
 public class isLoginService : IisLoginService
@@ -16,7 +10,7 @@ public class isLoginService : IisLoginService
     public string? password
     {
 
-        get;set;
+        get; set;
     }
     public string? account
     {
@@ -45,9 +39,9 @@ public class isLoginService : IisLoginService
     public async Task InitializeAsync()
     {
         IsLogin = await LoadTokkenFromSettingsAsync();
-        password= await LoadFromSettingsAsync("Password");
+        password = await LoadFromSettingsAsync("Password");
         account = await LoadFromSettingsAsync("Account");
-        name= await LoadFromSettingsAsync("Name");
+        name = await LoadFromSettingsAsync("Name");
         picture = await LoadFromSettingsAsync("Picture");
         await Task.CompletedTask;
     }
@@ -56,7 +50,7 @@ public class isLoginService : IisLoginService
         var tokken = await _localSettingsService.ReadSettingAsync<string>(SettingsKey);
         return tokken != null ? tokken : "false";
     }
-    private async Task<string> LoadFromSettingsAsync(string setting=SettingsKey)
+    private async Task<string> LoadFromSettingsAsync(string setting = SettingsKey)
     {
         var tokken = await _localSettingsService.ReadSettingAsync<string>(setting);
         if (setting == "Picture")
@@ -65,36 +59,36 @@ public class isLoginService : IisLoginService
         }
         return tokken != null ? tokken : "";
     }
-    
+
     private async Task SaveTokkenInSettingsAsync(string tokken)
     {
         await _localSettingsService.SaveSettingAsync(SettingsKey, tokken);
     }
 
-    public async Task SetTokkenAsync(string tokken,string _password=null,string _account=null,string _name = null,string _picture = null)
+    public async Task SetTokkenAsync(string tokken, string _password = null, string _account = null, string _name = null, string _picture = null)
     {
         IsLogin = tokken;
         await SaveTokkenInSettingsAsync(IsLogin);
-        if (_password!=null)
+        if (_password != null)
         {
-        password =_password;
-        await _localSettingsService.SaveSettingAsync("Password", password);
+            password = _password;
+            await _localSettingsService.SaveSettingAsync("Password", password);
 
         }
-        if (_account!=null)
+        if (_account != null)
         {
-        account = _account;
-        await _localSettingsService.SaveSettingAsync("Account", account);
+            account = _account;
+            await _localSettingsService.SaveSettingAsync("Account", account);
 
 
         }
-        if (_name!=null)
+        if (_name != null)
         {
 
             name = _name;
             await _localSettingsService.SaveSettingAsync("Name", name);
         }
-        if (_picture!=null)
+        if (_picture != null)
         {
             picture = _picture;
             await _localSettingsService.SaveSettingAsync("Picture", picture);

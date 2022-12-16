@@ -36,7 +36,7 @@ public class LocalSettingsService : ILocalSettingsService
         _localsettingsFile = _options.LocalSettingsFile ?? _defaultLocalSettingsFile;
 
         _settings = new Dictionary<string, object>();
-        
+
     }
 
     private async Task InitializeAsync()
@@ -44,7 +44,7 @@ public class LocalSettingsService : ILocalSettingsService
         if (!_isInitialized)
         {
             _settings = await Task.Run(() => _fileService.Read<IDictionary<string, object>>(_applicationDataFolder, _localsettingsFile)) ?? new Dictionary<string, object>();
-                    _isInitialized = true;
+            _isInitialized = true;
         }
     }
 
