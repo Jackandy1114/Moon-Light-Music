@@ -174,7 +174,6 @@ public sealed partial class ShellPage : Page
                     }
                 }
             }
-            ViewModel.NavigationService.NavigateTo("Moon_Light_Music.ViewModels.XepHangViewModel");
             ViewModel.NavigationService.NavigateTo("Moon_Light_Music.ViewModels.BaiHatViewModel");
         }
     }

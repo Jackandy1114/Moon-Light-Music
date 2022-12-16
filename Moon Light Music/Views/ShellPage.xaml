@@ -1012,7 +1012,7 @@
                                                 Visibility="Collapsed">
                                             <AppBarButton x:Name="PlayPauseButtonOnLeft"
                                                           Margin="0"
-                                                          Click="PlayPauseButtonOnLeft_Click"
+                                                          
                                                           VerticalAlignment="Center"
                                                           Style="{StaticResource AppBarButtonStyle}">
                                                 <AppBarButton.Icon>
@@ -1043,7 +1043,7 @@
 
                                                 <AppBarButton x:Name='PlayPauseButton'
                                                               Width="40"
-                                                              
+                                                              Click="PlayPauseButtonOnLeft_Click"
                                                               MediaTransportControlsHelper.DropoutOrder='23'>
                                                     <AppBarButton.Icon>
                                                         <SymbolIcon x:Name='PlayPauseSymbol'
